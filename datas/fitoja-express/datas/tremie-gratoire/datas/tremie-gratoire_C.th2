@@ -1,0 +1,16 @@
+encoding  utf-8
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {0} {0} datas/tremie-gratoire_C.xvi 0 {}
+
+
+
+scrap SC1_tremie-gratoire -projection plan -station-names "" "@tremie-gratoire"
+
+endscrap
+
+scrap SC2_tremie-gratoire -projection plan -station-names "" "@tremie-gratoire"
+
+endscrap
+
+
+

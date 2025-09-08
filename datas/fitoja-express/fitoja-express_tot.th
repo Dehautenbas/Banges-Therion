@@ -1,0 +1,22 @@
+encoding  utf-8
+
+survey fitoja-express_tot -title "fitoja-express"
+
+input fitoja-express_map.th
+
+
+    input datas/fitoja-express.th    
+
+    
+
+
+#####   PLAN    #####
+    input datas/fitoja-express_P.th2
+
+
+##### COUPE EXTENTED #####   
+    input datas/fitoja-express_C.th2
+
+
+
+endsurvey
