@@ -1,4 +1,4 @@
-Base de données Topographiques du sytème karstique du massif du Banges (Savoie, 73, France)
+Base de données Topographiques du sytème karstique du massif de Bange (Savoie, 73, France)
 ===============================================================================================
 
 Overview
@@ -20,7 +20,9 @@ Pour obtenir les topographies en plan, coupe et/ou 3D, il faut compiler les fich
 
 
 Une convention a été mise en place pour la gestion des points d'interrogation, avec la définition de différents champs.
-S'utilise de la façon suivante, pour le point "Continuation" : -attr Code "" -attr cavite "" -attr Reseau "" -attr CA "" -text ""
+S'utilise de la façon suivante, pour le point "Continuation" : 
+    
+    -attr Code "" -attr cavite "" -attr Reseau "" -attr CA "" -text ""
 
 	* le champ "Code" qui décrit le type de terminus. Il peut prendre les valeurs : 
 	
