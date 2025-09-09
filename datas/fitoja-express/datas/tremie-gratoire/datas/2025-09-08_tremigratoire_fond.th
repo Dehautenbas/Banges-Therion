@@ -1,0 +1,23 @@
+encoding utf-8
+
+survey 2025-09-08_tremigratoire_fond -title "2025-09-08 tremigratoire fond"
+
+  centerline
+    date 2025.09.08 
+    team "Martin Kern" 
+    team "Paul Bailleul"
+    team "Charlie Guichebaron"
+    team "Yann Gardère"
+    units length meters
+    units compass clino grads
+    data normal from to length clino compass left right up down ignoreall 
+
+
+    N00 N000 3.28 -24.4 294 [0.2 -] [1 -] [1.5 -] [1 -]
+    N000 N001 2.58 25.8 330 [0.4 -] [0.5 -] [0.8 -] [0 -]
+    
+endcenterline
+
+
+
+endsurvey
