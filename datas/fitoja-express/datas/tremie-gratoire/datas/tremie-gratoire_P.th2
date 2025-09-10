@@ -1,14 +1,51 @@
-
 encoding  utf-8
-##XTHERION## xth_me_area_zoom_to 400
-##XTHERION## xth_me_image_insert {0} {0} datas/tremie-gratoire_P.xvi 0 {}
+##XTHERION## xth_me_area_adjust -128.0 -128.0 1761.8549999999998 1328.7849999999999
+##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_image_insert {1397.633 1 1.0} {216.53299999999996 0} tremie-gratoire_P.xvi 0 {}
 
 
 
-scrap SP1_tremie-gratoire -projection plan -station-names "" "@tremie-gratoire"
+scrap SP1_tremie-gratoire -projection plan -station-names "" "@tremie-gratoire" -scale [0 0 1600 0 0.0 0.0 40.64 0.0 m]
+
+point 1127.163 265.933 station -name 9
+
+point 1112.033 271.143 station -name 10
+
+point 1096.873 256.29299999999995 station -name 11
+
+point 1074.5529999999999 272.15299999999996 station -name 12
+
+point 1050.683 265.443 station -name 13
+
+point 1030.7930000000001 274.053 station -name 14
+
+point 1025.863 286.453 station -name 15
+
+point 936.343 321.53299999999996 station -name 16
+
+point 913.193 330.753 station -name 17
+
+point 861.753 360.323 station -name 18
+
+line wall -reverse on
+  957.0 338.0
+  981.5 336.0 1027.0 297.0 1031.0 289.5
+  1035.0 282.0 1031.0 269.5 1047.5 270.0
+  1064.0 270.5 1071.5 280.5 1077.0 280.0
+  1082.5 279.5 1084.0 266.5 1091.5 266.5
+  1099.0 266.5 1099.5 271.5 1109.0 275.5
+  1118.5 279.5 1135.5 286.0 1141.0 286.5
+  smooth off
+endline
+
+point 675.663 445.913 station -name 19
 
 endscrap
 
-scrap SP2_tremie-gratoire -projection plan -station-names "" "@tremie-gratoire"
+
+
+scrap SP2_tremie-gratoire -projection plan -station-names "" "@tremie-gratoire" -scale [0 0 1600 0 0.0 0.0 40.64 0.0 m]
 
 endscrap
+
+
