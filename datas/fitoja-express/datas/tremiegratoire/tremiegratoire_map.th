@@ -1,0 +1,21 @@
+encoding  utf-8
+map MP_tremiegratoire -title "tremiegratoire"
+  SP1_tremiegratoire
+  break
+  SP2_tremiegratoire
+  break
+  SP1_tremiegratoire-2
+  break
+  SP2_tremiegratoire-2
+endmap
+
+
+map MC_tremiegratoire -title "tremiegratoire"
+  SC1_tremiegratoire
+  break
+  SC2_tremiegratoire
+  break
+  SC1_tremiegratoire-2
+  break
+  SC2_tremiegratoire-2
+endmap

@@ -1,12 +1,10 @@
 encoding utf-8
 
-survey 2025-09-08_tremigratoire_fond -title "2025-09-08 tremigratoire fond"
+survey tremiegratoire-2 -title "2025-09-08 tremiegratoire-2"
 
   centerline
     date 2025.09.08 
-    team "Martin Kern" 
     team "Paul Bailleul"
-    team "Charlie Guichebaron"
     team "Yann Gardère"
     units length meters
     units compass clino grads

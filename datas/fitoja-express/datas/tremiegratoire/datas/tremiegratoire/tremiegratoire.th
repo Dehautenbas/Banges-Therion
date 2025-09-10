@@ -1,14 +1,12 @@
 encoding utf-8
 # 2025.09.08 created by TopoDroid v 6.3.20
 
-survey 2025-09-08_tremigratoire -title "2025-09-08 tremigratoire"
+survey tremiegratoire -title "2025-09-08 tremiegratoire"
 
   centerline
     date 2025.09.08 
     team "Martin Kern" 
-    team "Paul Baieul"
     team "Charlie Guichebaron"
-    team "Yann Gardère"
     units length meters
     units compass clino degrees
     data normal from to length compass clino

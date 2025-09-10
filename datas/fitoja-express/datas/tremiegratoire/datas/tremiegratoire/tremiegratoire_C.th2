@@ -1,0 +1,18 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -679.173 -174.73649999999998 915.4069999999999 691.4985
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} datas/tremiegratoire_C.xvi 0 {}
+
+
+
+scrap SC1_tremiegratoire -projection plan -station-names "" "@tremiegratoire" -scale [0 0 1600 0 0.0 0.0 40.64 0.0 m]
+
+endscrap
+
+
+
+scrap SC2_tremiegratoire -projection plan -station-names "" "@tremiegratoire" -scale [0 0 1600 0 0.0 0.0 40.64 0.0 m]
+
+endscrap
+
+

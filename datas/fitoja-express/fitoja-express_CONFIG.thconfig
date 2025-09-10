@@ -1,13 +1,13 @@
 encoding  utf-8
-input ../../config2.thcfg
-input ../../../layouts/config3.thcfg
-source fitoja-express-tot.th
+input config2.thcfg
+input ../../layouts/config3.thcfg
+source fitoja-express_tot.th
 
 ###################################################################################################
 ################################## Selection de la map à exporter #################################
 ###################################################################################################
-select MP_fitoja-expresst@fitoja-express-tot       #uncomment ONLY one
-#select MC_fitoja-express@fitoja-express-tot      #uncomment ONLY one
+select MP_fitoja-expresst@fitoja-express_tot       #uncomment ONLY one
+#select MC_fitoja-express@fitoja-express_tot      #uncomment ONLY one
 
 
 

@@ -1,13 +1,9 @@
 encoding  utf-8
 map MP_fitoja-express -title "fitoja-express"
-  SP1_fitoja-express
-  break
-  SP2_fitoja-express
+  MP_tremiegratoire@tremiegratoire_tot
 endmap
 
 
 map MC_fitoja-express -title "fitoja-express"
-  SC1_fitoja-express
-  break
-  SC2_fitoja-express
+  MC_tremiegratoire@tremiegratoire_tot
 endmap

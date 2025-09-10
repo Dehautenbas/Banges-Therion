@@ -1,18 +1,17 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -679.173 -174.73649999999998 915.4069999999999 691.4985
-##XTHERION## xth_me_area_zoom_to 400
-##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} datas/tremie-gratoire_P.xvi 0 {}
-##XTHERION## xth_me_image_insert {157.485 1 1.0} {91.0575 N00} tremie-gratoire_P.xvi 0 {}
+##XTHERION## xth_me_area_adjust -561.25 75.75 1033.33 1090.2350000000001
+##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_image_insert {275.408 1 1.0} {489.794 N00} tremiegratoire-2_P.xvi 0 {}
 
 
 
-scrap SP1_tremie-gratoire -projection plan -station-names "" "@tremie-gratoire" -scale [0 0 1600 0 0.0 0.0 40.64 0.0 m]
+scrap SP1_tremiegratoire-2 -projection plan -station-names "" "@tremiegratoire-2" -scale [0 0 1600 0 0.0 0.0 40.64 0.0 m]
 
 endscrap
 
 
 
-scrap SP2_tremie-gratoire -projection plan -station-names "" "@tremie-gratoire" -scale [0 0 1600 0 0.0 0.0 40.64 0.0 m]
+scrap SP2_tremiegratoire-2 -projection plan -station-names "" "@tremiegratoire-2" -scale [0 0 1600 0 0.0 0.0 40.64 0.0 m]
 
 line wall
 endline
@@ -20,6 +19,7 @@ endline
 line wall
   -101.25 205.0
   -95.25 205.0 -50.25 208.5 -45.25 208.75
+  smooth off
 endline
 
 line wall
@@ -28,11 +28,13 @@ line wall
   -161.75 289.0 -124.25 281.75 -124.75 274.25
   -125.25 266.75 -122.5 240.0 -112.25 239.5
   -102.0 239.0 -80.5 241.75 -74.25 242.5
+  smooth off
 endline
 
 line wall
   -197.75 289.25
   -196.0 293.25 -180.25 315.75 -178.25 319.0
+  smooth off
 endline
 
 line wall
@@ -40,6 +42,7 @@ line wall
   -139.0 233.0 -130.0 239.25 -132.0 243.75
   -134.0 248.25 -135.75 258.25 -139.75 261.0
   -143.75 263.75 -177.5 284.75 -185.0 280.75
+  smooth off
 endline
 
 point -321.75 261.0 blocks -scale xl
@@ -54,6 +57,7 @@ line wall
   -207.0 229.0 -196.25 218.0 -189.75 217.75
   -183.25 217.5 -146.0 226.5 -141.75 225.25
   -137.5 224.0 -125.5 211.25 -122.75 207.25
+  smooth off
 endline
 
 line wall
@@ -67,6 +71,7 @@ line wall
   -255.5 251.5 -213.75 264.5 -203.5 259.5
   -193.25 254.5 -181.75 242.25 -175.5 240.25
   -169.25 238.25 -147.5 233.75 -143.25 233.0
+  smooth off
 endline
 
 point -431.29499999999996 283.3075 station -name N042

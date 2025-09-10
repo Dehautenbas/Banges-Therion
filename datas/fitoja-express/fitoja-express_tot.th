@@ -5,17 +5,9 @@ survey fitoja-express_tot -title "fitoja-express"
 input fitoja-express_map.th
 
 
-    input datas/fitoja-express.th    
+    input datas/tremiegratoire/tremiegratoire_tot.th    
 
     
-
-
-#####   PLAN    #####
-    input datas/fitoja-express_P.th2
-
-
-##### COUPE EXTENTED #####   
-    input datas/fitoja-express_C.th2
 
 
 

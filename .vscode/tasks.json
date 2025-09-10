@@ -14,7 +14,7 @@
                 "label": "compile-th-tot",
                 "type": "shell",
                 
-                  "command": "therion ${workspaceFolder}/E9_glaciere-du-furggeli/datas/2025-08-26_glaciere_fond-pts-borgne/CONFIG1.thconfig" // \u000Dexit\u000D run and close this new terminal  -> Only for keybindings.json 
+                  "command": "therion ${workspaceFolder}/datas/fitoja-express/datas/tremiegratoire/tremiegratoire_CONFIG.thconfig" // \u000Dexit\u000D run and close this new terminal  -> Only for keybindings.json 
             }
         ]
 
