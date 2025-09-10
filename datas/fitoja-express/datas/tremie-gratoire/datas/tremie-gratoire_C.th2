@@ -1,16 +1,19 @@
 encoding  utf-8
-##XTHERION## xth_me_area_zoom_to 400
-##XTHERION## xth_me_image_insert {0} {0} datas/tremie-gratoire_C.xvi 0 {}
+##XTHERION## xth_me_area_adjust -662.457 -174.74599999999998 1306.138 750.544
+##XTHERION## xth_me_area_zoom_to 50
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} datas/tremie-gratoire_C.xvi 0 {}
+##XTHERION## xth_me_image_insert {620.735 1 1.0} {130.423 N00} tremie-gratoire_C.xvi 0 {}
 
 
 
-scrap SC1_tremie-gratoire -projection plan -station-names "" "@tremie-gratoire"
-
-endscrap
-
-scrap SC2_tremie-gratoire -projection plan -station-names "" "@tremie-gratoire"
+scrap SC1_tremie-gratoire -projection plan -station-names "" "@tremie-gratoire" -scale [0 0 1600 0 0.0 0.0 40.64 0.0 m]
 
 endscrap
 
+
+
+scrap SC2_tremie-gratoire -projection plan -station-names "" "@tremie-gratoire" -scale [0 0 1600 0 0.0 0.0 40.64 0.0 m]
+
+endscrap
 
 

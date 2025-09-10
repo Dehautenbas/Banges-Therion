@@ -1,6 +1,6 @@
 encoding  utf-8
-input ../../config2.thcfg
-input ../../../layouts/config3.thcfg
+#input ../../config2.thcfg
+#input ../../../layouts/config3.thcfg
 source tremie-gratoire-tot.th
 
 ###################################################################################################
