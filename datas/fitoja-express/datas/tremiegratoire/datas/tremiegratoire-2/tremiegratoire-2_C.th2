@@ -6,13 +6,13 @@ encoding  utf-8
 
 
 
-scrap SC1_tremiegratoire-2 -projection plan -station-names "" "@tremiegratoire" -scale [0 0 1600 0 0.0 0.0 40.64 0.0 m]
+scrap SC1_tremiegratoire-2 -projection extended -station-names "" "@tremiegratoire" -scale [0 0 1600 0 0.0 0.0 40.64 0.0 m]
 
 endscrap
 
 
 
-scrap SC2_tremiegratoire-2 -projection plan -station-names "" "@tremiegratoire" -scale [0 0 1600 0 0.0 0.0 40.64 0.0 m]
+scrap SC2_tremiegratoire-2 -projection extended -station-names "" "@tremiegratoire" -scale [0 0 1600 0 0.0 0.0 40.64 0.0 m]
 
 endscrap
 

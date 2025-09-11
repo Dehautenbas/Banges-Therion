@@ -1,7 +1,7 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -561.25 75.75 1033.33 1090.2350000000001
-##XTHERION## xth_me_area_zoom_to 200
-##XTHERION## xth_me_image_insert {275.408 1 1.0} {489.794 N00} tremiegratoire-2_P.xvi 0 {}
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {157.65800000000002 1 1.0} {90.54399999999998 N00} tremiegratoire-2_P.xvi 0 {}
 
 
 
@@ -22,7 +22,7 @@ line wall
   smooth off
 endline
 
-line wall
+line wall -reverse on
   -168.0 311.75
   -168.75 307.75 -171.25 295.0 -166.5 292.0
   -161.75 289.0 -124.25 281.75 -124.75 274.25
@@ -31,7 +31,57 @@ line wall
   smooth off
 endline
 
-line wall
+point 273.94800000000004 203.634 station -name N016
+
+point 140.86800000000002 182.56399999999996 station -name N017
+
+point 86.87800000000001 145.86399999999998 station -name N018
+
+point 5.198000000000022 165.474 station -name N019
+
+point -180.00199999999995 447.674 station -name N025
+
+point -184.642 388.81399999999996 station -name N024
+
+point -161.53199999999998 363.414 station -name N023
+
+point -112.07199999999997 333.104 station -name N022
+
+point -39.081999999999965 270.764 station -name N021
+
+point -0.1519999999999726 250.094 station -name N030
+
+point -3.5719999999999743 220.884 station -name N026
+
+point -22.591999999999985 220.01399999999998 station -name N020
+
+point -27.71199999999999 220.884 station -name N027
+
+point -101.27199999999996 212.76399999999998 station -name N028
+
+point -187.88199999999995 297.774 station -name N032
+
+point -128.09199999999998 274.094 station -name N031
+
+point -124.33199999999997 226.404 station -name N029
+
+point -142.29199999999997 231.62399999999997 station -name N033
+
+point -188.012 224.384 station -name N034
+
+point -207.42199999999997 240.964 station -name N035
+
+point -264.042 245.95399999999998 station -name N036
+
+point -315.272 249.18399999999997 station -name N037
+
+point -316.542 273.044 station -name N039
+
+point -337.11199999999997 260.87399999999997 station -name N040
+
+point -390.322 276.334 station -name N041
+
+line wall -reverse on
   -197.75 289.25
   -196.0 293.25 -180.25 315.75 -178.25 319.0
   smooth off
@@ -45,14 +95,15 @@ line wall
   smooth off
 endline
 
-point -321.75 261.0 blocks -scale xl
+point -360.25 235.5 air-draught -orientation 108.3
+
+point -320.25 266.5 blocks
 
 line wall
-  -432.25 278.25
-  -426.25 277.0 -398.5 277.0 -391.5 275.5
-  -384.5 274.0 -342.25 260.0 -337.5 260.0
-  -332.75 260.0 -322.75 248.25 -316.0 248.0
-  -309.25 247.75 -270.5 244.75 -264.75 243.5
+  -385.75 269.25
+  -376.0 268.5 -341.25 257.5 -336.5 257.5
+  -331.75 257.5 -323.25 244.25 -316.5 244.0
+  -309.75 243.75 -270.5 244.75 -264.75 243.5
   -259.0 242.25 -218.0 235.5 -212.5 232.25
   -207.0 229.0 -196.25 218.0 -189.75 217.75
   -183.25 217.5 -146.0 226.5 -141.75 225.25
@@ -60,10 +111,9 @@ line wall
   smooth off
 endline
 
-line wall
-  -429.75 290.25
-  -424.25 289.25 -396.5 285.75 -389.25 284.0
-  -382.0 282.25 -342.75 265.5 -339.0 267.25
+line wall -reverse on
+  -382.0 282.0
+  -376.5 281.0 -342.75 265.5 -339.0 267.25
   -335.25 269.0 -324.5 281.75 -320.25 282.0
   -316.0 282.25 -306.0 277.0 -305.75 272.25
   -305.5 267.5 -310.5 259.5 -305.75 257.75
@@ -73,8 +123,6 @@ line wall
   -169.25 238.25 -147.5 233.75 -143.25 233.0
   smooth off
 endline
-
-point -431.29499999999996 283.3075 station -name N042
 
 endscrap
 

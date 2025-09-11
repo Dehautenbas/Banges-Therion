@@ -6,8 +6,8 @@ source tremiegratoire_tot.th
 ###################################################################################################
 ################################## Selection de la map à exporter #################################
 ###################################################################################################
-select MP_tremiegratoiret@tremiegratoire_tot       #uncomment ONLY one
-#select MC_tremiegratoire@tremiegratoire_tot      #uncomment ONLY one
+#select MP_tremiegratoire@tremiegratoire_tot       #uncomment ONLY one
+select MC_tremiegratoire@tremiegratoire_tot      #uncomment ONLY one
 
 
 
@@ -18,7 +18,7 @@ export map \
      -layout plan \
      -output exports/tremiegratoire_plan.pdf \
 
-#export map \
+export map \
      -projection extended \
      -layout coupe \
      -output exports/tremiegratoire_coupe.pdf \
@@ -33,7 +33,7 @@ export map \
      -layout centerline \
      -output exports/tremiegratoire_plan-travail.pdf \
 
-#export map \
+export map \
      -projection extended \
      -layout coupe \
      -layout centerline \

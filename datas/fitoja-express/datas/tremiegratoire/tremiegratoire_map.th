@@ -1,5 +1,5 @@
 encoding  utf-8
-map MP_tremiegratoire -title "tremiegratoire"
+map MP_tremiegratoire -title "tremiegratoire" -projection plan
   SP1_tremiegratoire
   break
   SP2_tremiegratoire
@@ -10,7 +10,7 @@ map MP_tremiegratoire -title "tremiegratoire"
 endmap
 
 
-map MC_tremiegratoire -title "tremiegratoire"
+map MC_tremiegratoire -title "tremiegratoire" -projection extended
   SC1_tremiegratoire
   break
   SC2_tremiegratoire
@@ -19,3 +19,4 @@ map MC_tremiegratoire -title "tremiegratoire"
   break
   SC2_tremiegratoire-2
 endmap
+

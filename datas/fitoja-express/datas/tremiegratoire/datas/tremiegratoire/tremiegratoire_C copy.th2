@@ -5,7 +5,7 @@ encoding  utf-8
 
 
 
-scrap SC1_tremiegratoire -projection extended -station-names "" "@tremiegratoire" -scale [0 0 1600 0 0.0 0.0 40.64 0.0 m]
+scrap SC1_tremiegratoire -projection plan -station-names "" "@tremiegratoire" -scale [0 0 1600 0 0.0 0.0 40.64 0.0 m]
 
 point 1765.5 318.0 blocks -orientation 114.9 -scale xs
 
@@ -89,6 +89,7 @@ line wall
   1902.0 226.0 1893.0 261.0 1899.0 261.0
   1905.0 261.0 1910.5 259.5 1921.5 257.5
   1932.5 255.5 1964.5 255.5 1964.5 255.5
+  smooth off
   1964.5 255.5 1970.5 256.0 1974.5 256.0
 endline
 
@@ -104,6 +105,7 @@ line wall
   1637.5 311.5
   1637.5 311.5 1632.5 275.5 1658.0 276.5
   1683.5 277.5 1698.0 275.0 1698.0 275.0
+  smooth off
   1698.0 275.0 1701.5 259.5 1705.5 254.5
 endline
 
@@ -147,7 +149,7 @@ endscrap
 
 
 
-scrap SC2_tremiegratoire -projection extended -station-names "" "@tremiegratoire" -scale [0 0 1600 0 0.0 0.0 40.64 0.0 m]
+scrap SC2_tremiegratoire -projection plan -station-names "" "@tremiegratoire" -scale [0 0 1600 0 0.0 0.0 40.64 0.0 m]
 
 endscrap
 
