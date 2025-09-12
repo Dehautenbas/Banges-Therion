@@ -101,10 +101,10 @@ layout coupe
 endlayout
 
 layout centerline
-    symbol-show point station        
+    symbol-hide point station        
     #debug scrap-names
     debug station-names
-    symbol-show line survey
+    symbol-hide line survey
 endlayout
 
 

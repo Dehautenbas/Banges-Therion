@@ -1,8 +1,8 @@
-
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -679.173 -174.73649999999998 915.4069999999999 691.4985
-##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_area_adjust -128 -128 1840.5949999999998 829.29
+##XTHERION## xth_me_area_zoom_to 50
 ##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} datas/tremiegratoire_C.xvi 0 {}
+##XTHERION## xth_me_image_insert {1155.192 1 1.0} {209.16899999999998 N00} ../tremiegratoire/tremiegratoire_C.xvi 0 {}
 
 
 

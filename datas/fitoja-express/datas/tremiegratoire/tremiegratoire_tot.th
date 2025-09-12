@@ -16,7 +16,7 @@ input tremiegratoire_map.th
     input datas/tremiegratoire/tremiegratoire_P.th2
         #join
     input datas/tremiegratoire-2/tremiegratoire-2_P.th2
-        join SP1_tremiegratoire SP2_tremiegratoire-2
+        join SP2_tremiegratoire SP1_tremiegratoire-2 #jointure plan Martin <> Yann
 
 ##### COUPE EXTENTED #####  
     input datas/tremiegratoire/tremiegratoire_C.th2
