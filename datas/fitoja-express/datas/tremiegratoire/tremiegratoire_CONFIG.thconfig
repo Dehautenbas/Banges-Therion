@@ -6,8 +6,8 @@ source tremiegratoire_tot.th
 ###################################################################################################
 ################################## Selection de la map à exporter #################################
 ###################################################################################################
-#select MP_tremiegratoire@tremiegratoire_tot       #uncomment ONLY one
-select MC_tremiegratoire@tremiegratoire_tot      #uncomment ONLY one
+select MP_tremiegratoire@tremiegratoire_tot       #uncomment ONLY one
+#select MC_tremiegratoire@tremiegratoire_tot      #uncomment ONLY one
 
 
 

@@ -110,6 +110,7 @@ line wall -reverse on
   1016.5 267.75 992.75 271.25 981.25 276.75
   969.75 282.25 935.0 306.25 932.25 307.25
   smooth off
+  smooth off
 endline
 
 point 1311.433 289.133 station -name 4
