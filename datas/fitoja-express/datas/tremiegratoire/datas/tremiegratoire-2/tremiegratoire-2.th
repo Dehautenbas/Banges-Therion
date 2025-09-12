@@ -10,9 +10,10 @@ survey tremiegratoire-2 -title "2025-09-08 tremiegratoire-2"
     units compass clino grads
     data normal from to length clino compass left right up down ignoreall
 
-    cs long-lat
-    fix N00 6.05954 45.73646 0
-    station N000 "N000" entrance
+    # cs long-lat
+    # fix N00 6.05954 45.73646 0
+    # station N000 "N000" entrance
+      #  -> Pourquoi?
 
     N00 N000 3.28 -24.4 294 [0.2 -] [1 -] [1.5 -] [1 -]
     N000 N001 2.58 25.8 330 [0.4 -] [0.5 -] [0.8 -] [0 -]

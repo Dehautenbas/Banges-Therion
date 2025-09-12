@@ -1,7 +1,7 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -128.0 -128.0 1761.8549999999998 1328.7849999999999
 ##XTHERION## xth_me_area_zoom_to 200
-##XTHERION## xth_me_image_insert {1397.633 1 1.0} {216.53299999999996 0} tremiegratoire_P.xvi 0 {}
+##XTHERION## xth_me_image_insert {1398.683 1 1.0} {189.98299999999995 N041} tremiegratoire_P.xvi 0 {}
 
 
 
@@ -23,6 +23,7 @@ endline
 line pit
   1297.5 298.0
   1297.5 298.0 1279.25 277.5 1282.25 268.0
+  smooth off
 endline
 
 point 1261.75 277.25 blocks -orientation 244.8 -scale s
@@ -30,6 +31,7 @@ point 1261.75 277.25 blocks -orientation 244.8 -scale s
 line slope
   1248.75 265.75
   1248.75 265.75 1244.5 290.75 1256.5 297.25
+  smooth off
   l-size 6.9
 endline
 
@@ -37,6 +39,7 @@ line slope
   1279.75 293.75
   l-size 8.3
   1279.75 293.75 1274.5 274.75 1276.25 267.5
+  smooth off
 endline
 
 line label -text "miroir de faille"
@@ -54,6 +57,7 @@ endline
 line pit
   1169.0 275.75
   1169.0 275.75 1170.5 265.0 1169.5 255.75
+  smooth off
 endline
 
 point 1110.75 238.0 label -text "étr. verticale" -scale xs
@@ -61,6 +65,7 @@ point 1110.75 238.0 label -text "étr. verticale" -scale xs
 line pit
   1117.75 276.75
   1117.75 276.75 1123.25 262.25 1119.0 253.25
+  smooth off
 endline
 
 point 1063.0 249.75 dig -scale xs
@@ -68,6 +73,7 @@ point 1063.0 249.75 dig -scale xs
 line pit
   1060.75 279.5
   1060.75 279.5 1065.0 262.0 1062.75 255.75
+  smooth off
 endline
 
 line rock-border -close on
@@ -109,7 +115,6 @@ line wall -reverse on
   1068.25 256.5 1033.5 264.25 1025.0 266.0
   1016.5 267.75 992.75 271.25 981.25 276.75
   969.75 282.25 935.0 306.25 932.25 307.25
-  smooth off
   smooth off
 endline
 
@@ -162,8 +167,8 @@ line wall -close on -reverse on
 endline
 
 line wall
-  1455.25 221.25
-  1449.25 220.25 1450.25 225.0 1448.0 231.5
+  1458.0 215.5
+  1450.5 216.5 1450.25 225.0 1448.0 231.5
   1445.75 238.0 1439.25 247.0 1432.25 247.0
   1425.25 247.0 1413.25 246.75 1407.5 241.0
   1401.75 235.25 1395.25 223.75 1389.75 222.75
@@ -232,6 +237,7 @@ line pit -reverse on
   1390.75 202.75
   1395.75 204.0 1395.75 206.25 1400.0 204.5
   1404.25 202.75 1411.5 200.75 1413.75 194.25
+  smooth off
 endline
 
 line wall
@@ -248,7 +254,7 @@ line wall
   1184.75 210.5 1204.25 214.5 1217.75 213.5
   1231.25 212.5 1291.75 207.75 1298.75 207.75
   1305.75 207.75 1391.25 212.5 1397.5 196.75
-  1403.54 181.53 1422.75 198.5 1428.5 199.5
+  1403.54 181.53 1444.25 198.5 1450.0 199.5
   smooth off
 endline
 
