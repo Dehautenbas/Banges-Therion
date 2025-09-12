@@ -7,8 +7,8 @@ input tremiegratoire_map.th
 
     input datas/tremiegratoire/tremiegratoire.th
         #equate
-    input datas/tremiegratoire-2/tremigratoire-2.th
-        equate N042@tremiegratoire-2 0@tremiegratoire
+    input datas/tremiegratoire-2/tremiegratoire-2.th
+        equate N041@tremiegratoire-2 0@tremiegratoire
     
 
 
@@ -16,7 +16,7 @@ input tremiegratoire_map.th
     input datas/tremiegratoire/tremiegratoire_P.th2
         #join
     input datas/tremiegratoire-2/tremiegratoire-2_P.th2
-        join SP2_tremiegratoire SP1_tremiegratoire-2 #jointure plan Martin <> Yann
+        join SP2_tremiegratoire SP2_tremiegratoire-2
 
 ##### COUPE EXTENTED #####  
     input datas/tremiegratoire/tremiegratoire_C.th2
