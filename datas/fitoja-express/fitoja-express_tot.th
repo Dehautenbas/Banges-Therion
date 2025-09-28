@@ -5,7 +5,9 @@ survey fitoja-express_tot -title "fitoja-express"
 input fitoja-express_map.th
 
 
-    input datas/tremiegratoire/tremiegratoire_tot.th    
+    input datas/tremiegratoire/tremiegratoire_tot.th  
+    input datas/FE/FE_tot.th  
+        equate 23@tremiegratoire.tremiegratoire_tot N0804@FE.FE_tot
 
     
 

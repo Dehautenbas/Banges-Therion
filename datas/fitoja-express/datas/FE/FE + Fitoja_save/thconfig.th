@@ -1,0 +1,341 @@
+encoding  utf-8
+select FE
+
+source donnee.th
+
+layout xvi-export
+  scale 1 100
+  grid-size 1 1 1  m
+  sketches on
+endlayout
+
+layout monPlan
+ 
+  code metapost
+     \fonts_setup( 8, 12, 15, 17, 40 );
+  endcode
+  
+  #options pdf
+  doc-author "Yann Gardère"
+  doc-keywords ""
+  doc-subject "Topographie Fe - Salle Fitoja"
+  doc-title "Fe - Salle Fitoja / Savoie"
+
+  symbol-hide point station
+  symbol-hide line survey
+  #rotate 100
+  #debug on
+  #taille du cadre legende
+  legend-width 55 cm
+  scale 1 500
+  #grid bottom
+  #grid-coords all
+  #grid-size 50 50 50 m
+  #color map-fg 85
+  #color map-bg 85
+  transparency on
+  opacity 100
+  language fr
+  statistics topo-length off
+  statistics explo-length off
+  #legend on
+  #margin autour de la carte
+  overlap 2 cm
+  map-header 60 66 s
+  #map-header 0 0 off
+  layers on
+
+  map-image 42 27 center img/5.jpg
+  map-image 57 25 center img/4.jpg
+  map-image 55 57 center img/3.jpg
+  map-image 71 30 center img/1.jpg
+  map-image 34 71 center img/cas.jpg
+  map-image 20 64 center img/lac.jpg
+  map-image 42 54 center img/col.jpg
+  map-image 68 60 center img/fit2.jpg
+  map-image 81 55 center img/fit.jpg
+  map-image 18 47 center img/p41.jpg
+  #map-image 21 32 center img/fe.jpg
+  map-image 30 19 center img/med.jpg
+
+  #color map-bg 96
+ 
+   code metapost
+     def PenA =
+       pensquare scaled (0.2);
+     enddef;
+   endcode
+   
+#mur
+code metapost
+  def l_wall_bedrock (expr P) =
+  pickup PenA;
+  draw P withpen pencircle scaled 0.2 withcolor (0.4, 0.4, 0.4);
+enddef;
+
+  def l_wall_unsurveyed (expr P) =
+  pickup PenA;
+  draw P withpen pencircle scaled 0.3 dashed evenly withcolor (0.4, 0.4, 0.4)
+enddef;
+
+def l_arrow (expr P, Q) =
+  T:=identity;
+        drawoptions(withcolor (0.62, 0.62, 0.62));
+  pickup PenA;
+  thdraw P;
+
+  p := (-.1u,-.25u)--(0,0)--(.1u,-.25u);
+  if odd Q:
+    draw p rotated (angle(thdir(P,0))+90) shifted (point 0 of P);
+  fi;
+  if Q>1:
+    draw p rotated (angle(thdir(P,length P))-90)
+         shifted (point infinity of P);
+  fi;
+enddef;
+
+endcode
+
+#pente
+code metapost
+def l_gradient(expr P) =
+  T:=identity;
+  pickup PenD;
+  thdraw P withpen pencircle scaled 0.5 withcolor (0.62, 0.62, 0.62);
+enddef;
+endcode
+
+code metapost
+    
+def l_pit (expr P) =
+  T:=identity;
+  cas := 0;
+  dlzka := arclength P;
+  mojkrok:=adjust_step(dlzka, 0.25u);
+  drawoptions(withcolor (0.45, 0.45, 0.45));
+  pickup pencircle scaled 0.2;
+  forever:
+    t := arctime cas of P;
+    mark_ (P,t,0.2u);
+    cas := cas + mojkrok;
+    exitif cas > dlzka + (mojkrok / 3); % for rounding errors
+  endfor;
+  pickup PenA;
+  thdraw P withcolor (0.8, 0.8, 0.8);
+enddef;
+endcode
+
+
+#puits
+ 
+   #       pencircle scaled (0.3);
+   
+  #largeur puits
+   
+      code metapost
+     def PenC =
+       pencircle scaled (0.3);
+     enddef;
+   endcode
+ 
+  #eau bleu
+  
+  code metapost
+  
+  def l_dripline (expr P) =
+  pickup PenD;
+  draw P withpen pencircle scaled 0.3 dashed evenly withcolor (0.52, 0.52, 0.41);;
+enddef;
+
+  def l_rockedge (expr P) =
+  pickup PenD;
+  draw P withpen pencircle scaled 0.3 withcolor (0.5, 0.5, 0.5);;
+enddef;
+
+endcode
+
+code metapost
+
+  def a_water_MY (expr p) =
+  T:=identity;
+  thfill p withcolor (0.25,0.44,0.89);
+  enddef;
+
+  initsymbol("a_water_MY");
+endcode
+
+code metapost
+  def a_sump_MY (expr p) =
+  T:=identity;
+  thfill p withcolor (0.25,0.44,0.89);
+  enddef;
+  initsymbol("a_sump_MY");
+  symbol-assign area water MY
+  symbol-assign area ice MY
+  symbol-assign area sump MY
+endcode
+ 
+#contour gris
+code metapost
+  def a_ice_MY (expr p) =
+  T:=identity;
+  thfill p withcolor (0.98, 0.98, 0.98);
+  enddef;
+  initsymbol("a_ice_MY");
+endcode
+
+  code tex-map
+    \legendtextheadersize={\size[90]\graycolor[0]}
+    \legendtextsize={\size[35]}
+    % \cavelength={} %peut etre vide
+    %\cavedepth={}  %peut etre vide
+    \topotitle={}
+    \topoteam{}
+  endcode 
+
+endlayout
+
+layout maCoupe
+
+  #options pdf
+  doc-author "Yann Gardère"
+  doc-keywords ""
+  doc-subject "Topographie Fe"
+  doc-title "Fe / Savoie"
+
+  code tex-map
+  \legendcontent={%
+    \hsize=\legendwidth
+    \ifnortharrow\vbox to 0pt{\line{\hfil\northarrow}\vss}\fi
+    \edef\tmp{\the\cavename} \ifx\tmp\empty \else
+      {\size[20]\the\cavename} \vskip0.5cm
+    \fi
+    \ifscalebar\scalebar\vskip0.5cm\fi
+    {\rightskip=0pt plus 3em\parskip=0.2bp
+      \edef\tmp{\the\comment} \ifx\tmp\empty \else
+        {\size[10]\the\comment} \par\medskip
+      \fi
+      \everypar{\hangindent=2em\hangafter=1}
+      \edef\tmp{\the\cavelength} \ifx\tmp\empty \else
+        {\size[6]\si\the\cavelengthtitle: \ss\the\cavelength\par}
+      \fi
+      \edef\tmp{\the\cavedepth} \ifx\tmp\empty \else
+        {\size[6]\si\the\cavedepthtitle: \ss\the\cavedepth\par}
+      \fi
+      \edef\tmp{\the\exploteam} \ifx\tmp\empty \else
+        {\size[6]\si\the\explotitle:
+  \ss\the\exploteam\quad\si\the\explodate\par}
+      \fi
+  \edef\tmp{\the\topoteam} \ifx\tmp\empty \else
+    {\size[6]\si\the\topotitle: \ss\the\topoteam\quad\si\the\topodate\par}
+  \fi
+  \edef\tmp{\the\cartoteam} \ifx\tmp\empty \else
+    {\size[6]\si\the\cartotitle:
+  \ss\the\cartoteam\quad\si\the\cartodate\par}
+      \fi
+      \edef\tmp{\the\copyrights} \ifx\tmp\empty \else
+        {\size[6]\ss\the\copyrights\par}
+      \fi
+    }
+    \formattedlegend
+  }
+  
+    code tex-map
+      \topoteam{}
+      \cavelength{}
+      \cavedepth{}
+  endcode
+  
+ 
+  #color map-fg altitude
+  symbol-hide point station
+  symbol-hide line survey
+  #rotate 100 # 95 # axe projection 10 
+  #debug on
+  scale 1 1000
+  #grid bottom
+  #grid-size 10 10 5 m
+  #color map-fg 10
+       #color map-bg 85
+  transparency on
+  opacity 60
+  language fr
+  map-comment "Montagny (Savoie - Bauges)<br>Banges - Prépoulain<br>DD X: 45.721343 Y: 6.067389<br>UTM X: 271.786	Y: 5067.271 Zone 32T<br>Z: 900 mètres "
+  #legend on
+  statistics topo off
+  statistics explo off
+  layers on
+  #map-header 100 gauche droite / 100 haut bas
+  map-header 80 100 n
+  map-header-bg off
+  #taille du cadre legende
+  legend-width 9.5 cm
+  #margin autour de la carte
+  overlap 0.5 cm
+  
+    #Epaisseur des traits
+  #code metapost
+    # u:=5pt;
+   #endcode
+   
+   code metapost
+     def PenA =
+       pencircle scaled (0.3);
+     enddef;
+   endcode
+  
+  #eau bleu
+code metapost
+def a_water_MY (expr p) =
+T:=identity;
+thfill p withcolor (0.0, 0.5, 1.0);
+enddef;
+initsymbol("a_water_MY");
+symbol-assign area water MY
+symbol-assign area ice MY
+
+endcode
+ 
+   #contour gris
+code metapost
+def a_ice_MY (expr p) =
+T:=identity;
+thfill p withcolor (0.9, 0.9, 0.9);
+enddef;
+initsymbol("a_ice_MY");
+endcode
+ 
+endlayout
+
+layout lesDeuxEnsemble
+    copy maCoupe
+    #incorpore le pdf (GD) - (HB)
+    map-image 18 35 center plan.pdf 
+endlayout
+
+
+## Coupe projetee
+
+#enlever les 3  pour revenir a l'original (04/05/2021)
+
+#export map -fmt xvi -o coupe_proj.xvi -projection [elevation 10] -layout xvi-export
+#export map   -o coupe_proj.pdf -projection [elevation 10] -layout monPlan
+
+## Coupe developpee
+#export map -fmt xvi -o coupe_dev.xvi -projection extended -layout xvi-export
+export map -o coupe_devs.pdf -projection extended -layout maCoupe
+
+## Plan
+export map -fmt xvi -o plan.xvi -layout xvi-export
+export map -o plan.pdf -projection plan -layout monPlan
+
+#export atlas -o atlas.pdf -projection plan -layout monPlan -layout-size 140 140 cm 
+
+##Les 2 ensembles
+#export map -o plan_et_coupe.pdf -projection extended -layout lesDeuxEnsemble
+#export map -o FE.pdf -projection extended -layout caf
+
+export map -o kml.kml  
+#export model -fmt kml -o kml3d.kml  
+#export model -o lox.lox
+#export model -o 3d.3d

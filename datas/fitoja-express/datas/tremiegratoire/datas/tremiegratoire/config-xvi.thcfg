@@ -10,5 +10,5 @@ source tremiegratoire.th
 #source datas/XVI-P-aorte2018.th2
 
 #3) EXPORT
-export map -proj plan -o tremiegratoire_P.xvi -layout-sketches on
+export map -proj plan -o tremiegratoire_P_100.xvi -layout-sketches on -layout-scale 1 100
 export map -proj extended -o tremiegratoire_C.xvi -layout-sketches on

@@ -327,13 +327,6 @@ layout custom_areas
                          thdraw (-.1u,-.1u)..(-.1u,.1u)..(.1u,.1u)..(.1u,-.1u)..cycle withcolor(1,0.5,0.1);
                     enddef;
 
-    ### new definitions
-
-         ## add legend names for each new symbol definition
-
-         ## initialise the symbols here
-
-         ## redefine the symbols here
 
 
     endcode

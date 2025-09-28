@@ -6,7 +6,7 @@ source fitoja-express_tot.th
 ###################################################################################################
 ################################## Selection de la map à exporter #################################
 ###################################################################################################
-select MP_fitoja-expresst@fitoja-express_tot       #uncomment ONLY one
+select MP_fitoja-express@fitoja-express_tot       #uncomment ONLY one
 #select MC_fitoja-express@fitoja-express_tot      #uncomment ONLY one
 
 
@@ -17,6 +17,11 @@ export map \
      -projection plan \
      -layout plan \
      -output exports/fitoja-express_plan.pdf \
+
+export map \
+     -projection plan \
+     -layout plan-images \
+     -output exports/fitoja-express_plan-images.pdf \
 
 #export map \
      -projection extended \

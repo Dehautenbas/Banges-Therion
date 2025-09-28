@@ -1,11 +1,32 @@
 layout custom_lines
+
+# text fr "line u:images" ""
+
     code metapost
 
     ### redefinitions of existing points
 
-         # initialise the symbols here
 
-         # redefine the symbols here
+
+               def l_gradient(expr P) =
+               T:=identity;
+               pickup PenD;
+               thdraw P withpen pencircle scaled 0.5 withcolor (0.62, 0.62, 0.62);
+               enddef;
+               
+
+               def l_dripline (expr P) =
+               pickup PenD;
+               draw P withpen pencircle scaled 0.3 dashed evenly withcolor (0.52, 0.52, 0.41);;
+               enddef;
+
+               def l_rockedge (expr P) =
+               pickup PenD;
+               draw P withpen pencircle scaled 0.3 withcolor (0.5, 0.5, 0.5);;
+               enddef;
+
+
+         
 
                # Modifier la ligne wall_pit par la ligne pit mais avec le trait ext épais comme celui des walls
                def l_wall_pit (expr P) =
@@ -162,10 +183,21 @@ layout custom_lines
     ### new definitions
 
          ## add legend names for each new symbol definition
+         ## initialise and define the symbols here
 
-         ## initialise the symbols here
 
-         ## define the symbols here
+     # Arrow line symbol for images 
+         def l_u_images (expr P) =
+                    T:=identity;
+                    pickup PenD;
+                    thdraw P withpen pencircle scaled 0.5 withcolor (0.62, 0.62, 0.62);
+                    draw p rotated (angle(thdir(P,length P))-90) 
+                    shifted (point infinity of P) withcolor (0.62, 0.62, 0.62); 
+
+          enddef;
+          initsymbol("l_u_images");
+ 
+
 
                # Deviation line (by Tarquin 2019)
                     def l_u_deviation (expr P) =

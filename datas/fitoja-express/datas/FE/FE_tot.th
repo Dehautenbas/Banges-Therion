@@ -1,0 +1,22 @@
+encoding  utf-8
+
+survey FE_tot -title "FE"
+
+input FE_map.th
+
+
+    input datas/FE.th    
+
+    
+
+
+#####   PLAN    #####
+    input datas/FE_P.th2
+
+
+##### COUPE EXTENTED #####   
+    input datas/FE_C.th2
+
+
+
+endsurvey
