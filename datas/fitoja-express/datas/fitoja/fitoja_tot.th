@@ -1,0 +1,26 @@
+encoding  utf-8
+
+survey fitoja_tot -title "fitoja"
+
+input fitoja_map.th
+
+
+    input datas/fitoja/fitoja.th
+        #equate
+    #input datas/tremiegratoire-2/tremiegratoire-2.th
+        #equate N041@tremiegratoire-2 0@tremiegratoire
+    
+
+
+#####   PLAN    #####
+    input datas/fitoja/fitoja_P.th2
+        #join
+    #input datas/tremiegratoire-2/tremiegratoire-2_P.th2
+       # join SP2_tremiegratoire SP1_tremiegratoire-2
+
+##### COUPE EXTENTED #####  
+    input datas/fitoja/fitoja_C.th2
+
+
+endsurvey
+

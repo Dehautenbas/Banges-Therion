@@ -14,21 +14,22 @@ encoding  utf-8
 # endmap
 
 map MP_FE_tot -projection plan
-  MP_salle-fitoja
   MP_fitoja-express
   MP_collecteur
+  MP_labyrinthe
 endmap
 
-
- map MP_salle-fitoja -projection plan 
-    fitoja
-  endmap
-  
   map MP_fitoja-express -projection plan 
     fe
+    fe1
+    fe2
   endmap
   
   map MP_collecteur -projection plan 
     collecteur
-    #labyrinthe
   endmap
+  
+  map MP_labyrinthe -projection plan 
+    labyrinthe
+  endmap
+
