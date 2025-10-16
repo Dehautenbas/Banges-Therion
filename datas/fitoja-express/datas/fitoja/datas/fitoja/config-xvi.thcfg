@@ -1,0 +1,14 @@
+encoding  utf-8
+
+###Pour morphing du XVI
+
+
+#1) .TH
+source fitoja.th
+
+#2) .TH2   ##SEULEMNT SI MORPHING
+#source datas/XVI-P-aorte2018.th2
+
+#3) EXPORT
+export map -proj plan -o fitoja_P_100.xvi -layout-sketches on -layout-scale 1 100
+export map -proj extended -o fitoja_C.xvi -layout-sketches on

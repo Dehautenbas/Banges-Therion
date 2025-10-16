@@ -1,12 +1,15 @@
 encoding  utf-8
-map MP_fitoja-express -title "Gouffre du Fitoja-Express"
+map MP_fitoja-express -title "Gouffre Fitoja-Express"
   
   MP_FE_tot@FE_tot
+  break
+  MP_fitoja_tot@fitoja_tot
   break
   MP_tremiegratoire@tremiegratoire_tot
 endmap
 
 
-map MC_fitoja-express -title "Gouffre du Fitoja-Express"
+map MC_fitoja-express -title "Gouffre Fitoja-Express"
   MC_tremiegratoire@tremiegratoire_tot
 endmap
+

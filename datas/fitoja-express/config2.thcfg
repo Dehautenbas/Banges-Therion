@@ -8,8 +8,8 @@ layout general
     copy legend
     copy comment
 
-    doc-title "Gouffre de Fe"
-    doc-author "Martin Kern - Yann Gardère"
+    doc-title "Gouffre FE"
+    doc-author "Yann Gardère - Martin Kern"
 
     transparency on         ### vue en transparence des galeries qui se superposent...
     opacity 80              ### ... avec une opacité de 80%
@@ -25,9 +25,6 @@ layout general
   symbol-hide line u:images
   
 
-
-
-
 endlayout
 
 
@@ -40,7 +37,7 @@ layout plan
   colour map-fg [96 96 86]   ###Couleur Galeries #Gris[80 80 80]#
   #color map-bg 96            ### couleur du fond (80% blanc / 20% gris => 80)
 
-  scale 1  500                    
+  scale 1  350                    
   #base-scale 1 300                
 
   cs UTM32
@@ -56,6 +53,271 @@ layout plan
   # grid bottom                                ### positionnement de la grille
   # grid-size 20 20 20 m                  ### dimension de la grille
   # grid-coords off                           ### border = sur les bords. off = pas de coordonnées. all = partout (horrible en plan)
+
+
+endlayout
+
+layout variant
+
+### Pour définir une nouvelle flèche du nord géographique (by bugmans debug)
+code metapost
+def s_northarrow (expr rot) =
+  T:=identity scaled 1 rotated -rot;
+  thdraw (-1.5cm,-0cm)--(0,6cm)--(1.5cm,0cm)--(0,-0cm)--cycle;
+  thfill (-1.5cm,-0cm)--(0,6cm)--(1.5cm,0cm)--(0,-0cm)--cycle withcolor (0.15, 0.15, 0.15);
+
+  label.rt(thTEX("N") scaled 6, (-0.8cm,1.7cm)) transformed T withcolor (1);
+  label.rt(thTEX("Nord Geo") scaled 1.6, (-1.2cm,.4cm)) transformed T withcolor (1);
+
+
+enddef;
+
+		def l_wall_bedrock (expr P) =
+			draw P withpen pencircle scaled 2 withcolor (0, 0, 0);
+		enddef;
+
+		def l_wall_unsurveyed (expr P) =
+			draw P withpen pencircle scaled 2 dashed dashpattern(off 4 on 4 off 2) withcolor (0, 0, 0)
+		enddef;
+
+                def l_wall_underlying (expr P) =
+			draw P withpen pencircle scaled 4 dashed dashpattern(off 8 on 8 off 2) withcolor (0, 0, 0)
+                enddef;
+
+
+endcode
+endlayout
+
+layout echelle_plan
+
+code metapost
+
+      def s_scalebar (expr l, units, txt) =
+    begingroup
+      interim warningcheck:=0;
+
+      tmpl:=l / Scale * cm * units / 2 * coeff_echelle_plan;
+      tmpx:=l / Scale * cm * units / 5 * coeff_echelle_plan;
+
+    endgroup;
+    pickup PenC;
+    draw (-tmpl,0)--(tmpl,0)--(tmpl,-tmph_echelle_plan)--(-tmpl,-tmph_echelle_plan)--cycle withcolor (0.1);
+    p:=(0,0)--(tmpx,0)--(tmpx,-tmph_echelle_plan)--(0,-tmph_echelle_plan)--cycle;
+    for i:=-2.5 step 2 until 2:
+      fill p shifted (i * tmpx,0) withcolor (0.1);
+    endfor;
+    begingroup
+      interim labeloffset:=20bp;
+      for i:=0 step (l/5) until (l-1):
+        tmpx:=tmpl * (i * 2 / l - 1);
+        label.bot(thTEX(decimal (i*coeff_echelle_plan)) scaled scaled_text_echelle_plan,(tmpx,-tmph_echelle_plan)) withcolor (0.1);
+      endfor;
+      label.bot(thTEX(decimal (l*coeff_echelle_plan) & "\thinspace" & txt) scaled scaled_text_echelle_plan,(tmpl,-tmph_echelle_plan)) withcolor (0.1);
+      label.top(thTEX("1 : " & decimal round(Scale*100)) scaled scaled_text_echelle_plan, (0,0)) withcolor (0.1);
+    endgroup;
+  enddef;
+
+endcode
+
+endlayout
+
+
+
+layout plan_variant
+  copy general
+  copy variant
+  copy echelle_plan
+
+  #margin autour de la carte
+  overlap 5 cm
+
+  #color map-fg scrap             ### couleur des galeries selon altitude, map ou scrap
+  #color map-fg map
+  colour map-fg [94 94 94]   ###Couleur Galeries #Gris[80 80 80]#
+  #color map-bg 96            ### couleur du fond (80% blanc / 20% gris => 80)
+
+  code metapost
+ 
+    	coeff_echelle_plan:=2;
+	scaled_text_echelle_plan:=4;
+	tmph_echelle_plan:=20bp; % bar height
+	\fonts_setup( 10, 15, 20, 40, 50 );
+
+  endcode
+
+  scale 1  200                    
+  #base-scale 1 300                
+
+  cs UTM32
+ 
+  map-header 65 55 sw
+  scale-bar 25 m
+  #copy scalebar_horiz
+  #copy scalebar_vert
+  legend on     
+  legend-columns 3
+  north grid
+  #colour-legend off
+
+  # grid bottom                                ### positionnement de la grille
+  # grid-size 20 20 20 m                  ### dimension de la grille
+  # grid-coords off                           ### border = sur les bords. off = pas de coordonnées. all = partout (horrible en plan)
+
+### Utiliser la fonction vskip pour espacer les éléments du header
+### eg: \vskip6mm
+### Language is latex
+# Ceci ne touche que les maps (plans)
+
+code tex-map
+    \legendcontent={
+      \hsize=\legendwidth
+      \color[0 0 0]\the\legendtextcolor
+      %\parskip=0bp
+      \everypar{\hangindent=0em\hangafter=0}
+
+      
+      %print northarrow
+      \ifnortharrow\vbox to 25pt{\line{\hfil\northarrow}\vss}
+      
+
+      \fi
+      %print cave map name
+      \edef\tmp{\the\cavename} \ifx\tmp\empty \else
+        {\the\legendtextheadersize\the\cavename}
+      \vskip16mm %Distance between title and scalebar
+      \fi
+      %print scalebar
+      \ifscalebar\scalebar
+      \vskip15mm
+      \fi
+      %print cavelength and depth
+      \edef\tmp{\the\cavelength} \ifx\tmp\empty \else
+        {\the\legendtextsize\the\cavelengthtitle: \ss\the\cavelength\par}
+      \fi
+      \edef\tmp{\the\cavedepth} \ifx\tmp\empty \else
+        {\the\legendtextsize\the\cavedepthtitle: \ss\the\cavedepth\par}
+      %\vskip4mm
+      \fi
+      %print comment
+      \edef\tmp{\the\comment} \ifx\tmp\empty \else
+        {\the\legendtextsize\the\comment}
+      %print explo date
+      %\edef\tmp{\the\explodate} \ifx\tmp\empty \else
+        %{\the\legendtextsize\si\the\explodate: \ss\the\explodate\par}
+
+      \vskip4mm
+      \fi
+
+                        %%altitude
+                        %\edef\tmp{\the\cavemaxz} \ifx\tmp\empty \else
+                        % {\the\legendtextsize\si\the\depthrangetitle \ss\the\cavemaxz m to}
+                        %\fi
+                        %\edef\tmp{\the\caveminz} \ifx\tmp\empty \else
+                        %{\the\legendtextsize\ss\the\caveminz m \par} %above mean sea level
+                        %\fi
+      %print explorers names
+      \edef\tmp{\the\exploteam} \ifx\tmp\empty \else
+        {\the\legendtextsize\si\the\explotitle: \ss\the\exploteam\quad\si\the\explodate\par}
+      \fi
+      %print surveyors names
+      \edef\tmp{\the\topoteam} \ifx\tmp\empty \else
+        {\the\legendtextsize\si\the\topotitle: \ss\the\topoteam\quad\si\the\topodate\par}
+     \vskip4mm
+      \fi
+
+      %print cartographers names
+      \edef\tmp{\the\cartoteam} \ifx\tmp\empty \else
+        {\the\legendtextsize\si\the\cartotitle: \ss\the\cartoteam\quad\si\the\cartodate\par}
+      \fi
+      %print synthesys name !!!  !!! with newtoks\synth \synth={Synth Name} in the thconfig
+      \edef\tmp{\the\synth} \ifx\tmp\empty \else
+        {\the\legendtextsize\si\the\thsynth: \ss\the\synth\par}
+      \fi
+      %print the club
+      \edef\tmp{\the\club} \ifx\tmp\empty \else
+        {\the\legendtextsize\si\the\thclub: \ss\the\club\par}
+      \fi
+      %%print the expedition
+      \edef\tmp{\the\expe} \ifx\tmp\empty \else
+        {\the\legendtextsize\si\the\thexpe: \ss\the\expe\par}
+      \fi
+      %%print the web page
+      \edef\tmp{\the\wpage} \ifx\tmp\empty \else
+        {\the\legendtextsize\si\the\thwpage: \ss\the\wpage\par}
+      \fi
+  
+      % start bruces addition (compilation version and date modified to use built-in 5.3.15 variables)
+      %\edef\tmp{\the\thversion} \ifx\tmp\empty \else  %only write version and date if version is not emplty
+      %  {\the\legendtextsize\si\the\thversiontitleA: \ss\the\thversiontitleB}
+      % \fi
+      % \edef\tmp{\the\currentdate} \ifx\tmp\empty \else
+      %  {\the\legendtextsize\si\the\datetitle \ss\the\currentdate\par}
+      %\fi
+
+      # % end bruces addition
+      %print copyrights
+
+
+      \edef\tmp{\the\copyrights} \ifx\tmp\empty \else
+        {\the\legendtextsize\ss\the\copyrights\par}
+      \fi
+      \bigskip
+      \edef\tmp{\the\thanksto} \ifx\tmp\empty \else
+          {\the\legendtextsize\si\the\ththanksto: \ss\the\thanksto\par}
+          %\def\ththankstotitle{Nos remerciements : }
+          %{\everypar{\hangindent=7.2em\hangafter=1}
+          %\size[\thsizem]\si\ththankstotitle \ss\ththanksto\par}
+      \fi
+      \vskip0mm
+      %print legend
+      \formattedlegend
+    }
+
+endcode
+
+code metapost
+
+def p_airdraught_winter (expr pos,theta,sc,al)=
+  U:=(.2u,u);
+
+#le scaled x est le facteur d'echelle generale de la fleche avec le texte
+  T:=identity aligned al rotated theta scaled 0.8 shifted pos;
+
+
+  #triangle
+  thdraw (-.3cm,-0cm)--(0,1.3cm)--(.3cm,0cm)--cycle scaled 0.2u shifted (0,0.05u) withcolor (0.35, 0.35, 0.35);
+  thfill (-.3cm,-0cm)--(0,1.3cm)--(.3cm,0cm)--cycle withcolor (0.96, 0.96, 0.96);
+
+  #rectangle
+  thdraw (-.3cm,0cm)--(-.3cm,-.15cm)--(.3cm,-.15cm)--(.3cm,0cm)--cycle scaled 0.2u shifted (0,0.05u) withcolor (0.35, 0.35, 0.35);
+  thfill (-.3cm,0cm)--(-.3cm,-.15cm)--(.3cm,-.15cm)--(.3cm,0cm)--cycle withcolor (0.35, 0.35, 0.35);
+
+ label.rt(thTEX("C. Air") scaled .75 rotated 90, (-0.105cm,0.40cm)) transformed T withcolor (0.35, 0.35, 0.35);
+ label.rt(thTEX("Hivernal") scaled .35 rotated 180, (-0.24cm,-.08cm)) transformed T withcolor (1, 1, 1);
+
+enddef;
+
+def p_airdraught_summer (expr pos,theta,sc,al)=
+  U:=(.2u,u);
+
+#le scaled x est le facteur d'echelle generale de la fleche avec le texte
+  T:=identity aligned al rotated theta scaled 0.8 shifted pos;
+
+
+  #triangle
+  thdraw (-.3cm,-0cm)--(0,1.3cm)--(.3cm,0cm)--cycle scaled 0.2u shifted (0,0.05u) withcolor (0.35, 0.35, 0.35);
+  thfill (-.3cm,-0cm)--(0,1.3cm)--(.3cm,0cm)--cycle withcolor (0.96, 0.96, 0.96);
+
+  #rectangle
+  thdraw (-.3cm,0cm)--(-.3cm,-.15cm)--(.3cm,-.15cm)--(.3cm,0cm)--cycle scaled 0.2u shifted (0,0.05u) withcolor (0.35, 0.35, 0.35);
+  thfill (-.3cm,0cm)--(-.3cm,-.15cm)--(.3cm,-.15cm)--(.3cm,0cm)--cycle withcolor (0.35, 0.35, 0.35);
+
+ label.rt(thTEX("C. Air") scaled .75 rotated 90, (-0.105cm,0.40cm)) transformed T withcolor (0.35, 0.35, 0.35);
+ label.rt(thTEX("Estival") scaled .35 rotated 180, (-0.17cm,-.08cm)) transformed T withcolor (1, 1, 1);
+
+enddef;
+
+endcode
 
 
 endlayout
@@ -94,10 +356,10 @@ endlayout
 
 layout comment
   code tex-map
-      \legendwidth=20cm
-      \legendtextsize={\size[13]}
-      \legendtextheadersize={\size[32]} 
-      \legendtextsectionsize={\size[22]}  %Taille mot "Légende"
+      \legendwidth=50cm
+      \legendtextsize={\size[30]} %petit texte sous les longueur
+      \legendtextheadersize={\size[100]} %titre
+      \legendtextsectionsize={\size[50]}  %Taille mot "Légende"
       %\legendtextcolor={\color[0 0 110]}      %# RGB values 0--100
    endcode
 

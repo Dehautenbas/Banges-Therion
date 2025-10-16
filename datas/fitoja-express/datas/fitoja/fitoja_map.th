@@ -1,0 +1,26 @@
+encoding  utf-8
+map MP_fitoja -title "fitoja" -projection plan
+  SP1_fitoja
+  #break
+  #SP2_tremiegratoire
+  #break
+  #SP1_tremiegratoire-2
+  #break
+  #SP2_tremiegratoire-2
+endmap
+
+map MP_fitoja_tot -projection plan
+  MP_fitoja
+endmap
+
+
+map MC_fitoja -title "fitoja" -projection extended
+  SC1_fitoja
+  #break
+  #SC2_tremiegratoire
+  #break
+  #SC1_tremiegratoire-2
+  #break
+  #SC2_tremiegratoire-2
+endmap
+

@@ -8,8 +8,8 @@ layout general
     copy legend
     copy comment
 
-    doc-title "Gouffre de Fe"
-    doc-author "Martin Kern - Yann Gardère"
+    doc-title "Gouffre FE"
+    doc-author "Yann Gardère - Martin Kern"
 
     transparency on         ### vue en transparence des galeries qui se superposent...
     opacity 80              ### ... avec une opacité de 80%
@@ -25,9 +25,6 @@ layout general
   symbol-hide line u:images
   
 
-
-
-
 endlayout
 
 
@@ -40,7 +37,7 @@ layout plan
   colour map-fg [96 96 86]   ###Couleur Galeries #Gris[80 80 80]#
   #color map-bg 96            ### couleur du fond (80% blanc / 20% gris => 80)
 
-  scale 1  500                    
+  scale 1  400                    
   #base-scale 1 300                
 
   cs UTM32

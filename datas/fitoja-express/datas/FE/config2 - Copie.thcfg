@@ -1,0 +1,166 @@
+encoding  utf-8
+
+
+################################# Layout général #############################
+layout general
+    copy langue-fr          ### Change the language
+    copy drawingconfig      ### Set colors/size of symbols, define new symbols
+    copy legend
+    copy comment
+
+    doc-title "Gouffre de Fe"
+    doc-author "Martin Kern - Yann Gardère"
+
+    transparency on         ### vue en transparence des galeries qui se superposent...
+    opacity 80              ### ... avec une opacité de 80%
+    rotate 0                ### rotation du nord géographique (en degré)
+
+
+    #min-symbol-scale <scale>    ### define minimal <scale>, from which points and lines are displayed on the map. 
+                                 ### Ex: for min-symbol-scale M, no points or lines scaled S and XS will be shown on the map. <scale> has the same format, as scale option for points and lines.
+        
+    
+  symbol-hide point station        
+  symbol-hide line survey
+  symbol-hide line u:images
+  
+
+
+
+
+endlayout
+
+
+
+layout plan
+  copy general
+
+  #color map-fg scrap             ### couleur des galeries selon altitude, map ou scrap
+  #color map-fg map
+  colour map-fg [96 96 86]   ###Couleur Galeries #Gris[80 80 80]#
+  #color map-bg 96            ### couleur du fond (80% blanc / 20% gris => 80)
+
+  scale 1  500                    
+  #base-scale 1 300                
+
+  cs UTM32
+ 
+  map-header 110 0 sw
+  scale-bar 25 m
+  #copy scalebar_horiz
+  #copy scalebar_vert
+  legend on     
+  legend-columns 3
+  #colour-legend off
+
+  # grid bottom                                ### positionnement de la grille
+  # grid-size 20 20 20 m                  ### dimension de la grille
+  # grid-coords off                           ### border = sur les bords. off = pas de coordonnées. all = partout (horrible en plan)
+
+
+endlayout
+
+layout coupe
+  copy general
+
+  #color map-fg scrap             ### couleur des galeries selon altitude, map ou scrap
+  #color map-fg map
+  colour map-fg [96 96 86]   ###Couleur Galeries #Gris[80 80 80]#
+  color map-bg 96            ### couleur du fond (80% blanc / 20% gris => 80)
+
+  scale 1  500                    
+  #base-scale 1 150                
+
+
+  cs UTM32
+ 
+  map-header -90 0 sw             ### positionnement du cartouche  Lower-left corner of the map is 0 0, upper-right corner is 100 100
+  scale-bar 25 m
+  #copy scalebar_horiz
+  #copy scalebar_vert
+  legend on     
+  legend-columns 3
+  #colour-legend off
+
+endlayout
+
+
+layout plan-images
+  copy plan
+  copy images
+  symbol-show line u:images
+endlayout
+
+
+layout comment
+  code tex-map
+      \legendwidth=20cm
+      \legendtextsize={\size[13]}
+      \legendtextheadersize={\size[32]} 
+      \legendtextsectionsize={\size[22]}  %Taille mot "Légende"
+      %\legendtextcolor={\color[0 0 110]}      %# RGB values 0--100
+   endcode
+
+map-comment "<br>\
+Localisation :Montagny (Savoie - Bauges)<br>Banges - Prépoulain <br>\
+Coordonnées : 45.721343N 6.06738E (WGS84)<br>\
+                   271.786N 5067.271E (UTM32T)<br>\
+                   Alt : 900 m<br>\
+                    <br>\
+ Synthèse et dessin : Yann Gardère - Martin Kern <br>\ 
+"
+
+
+endlayout
+
+layout images
+
+    map-image 42 27 center datas/img/5.jpg
+    map-image 57 25 center datas/img/4.jpg
+    map-image 55 57 center datas/img/3.jpg
+    map-image 71 30 center datas/img/1.jpg
+    map-image 34 71 center datas/img/cas.jpg
+    map-image 20 64 center datas/img/lac.jpg
+    map-image 42 54 center datas/img/col.jpg
+    map-image 68 60 center datas/img/fit2.jpg
+    map-image 81 55 center datas/img/fit.jpg
+    map-image 18 47 center datas/img/p41.jpg
+    #map-image 21 32 center datas/img/fe.jpg
+    map-image 30 19 center datas/img/med.jpg
+endlayout
+
+
+layout centerline
+    symbol-show point station        
+    #debug scrap-names
+    debug station-names
+    symbol-show line survey
+endlayout
+
+
+layout yearperyear ##Pour l'export année par année ; A besoin du lookup explo date
+    copy general
+    color map-bg 96
+    map-header 5 -5 nw                   ### positionnement du cartouche 5 15
+    statistics topo off
+    statistics carto off
+    scale 1 400                      ### echelle
+    symbol-hide group all
+    symbol-show line wall
+    legend off
+    colour map-fg explo-date
+endlayout
+
+
+lookup explo-date    #Pour l'export année par année
+  [2022.1.1 2022.12.31] [] "2022"
+  [2024.1.1 2024.12.31] [] "2024"
+  [2025.1.1 2025.12.31] [] "2025"
+endlookup
+
+# lookup map -title "Couleurs par réseaux"
+#       MP_serpent_tot@serpent-tot.E9-tot [73 83 93] "Réseau du Serpent"
+#       MP-principale@principale-tot.E9-tot [96 96 86] "Autres réseaux"
+#       MP_pts-borgne-fond@2025-08-26_glaciere_fond-pts-borgne.E9-tot [96 96 86] " "
+# endlookup
+
