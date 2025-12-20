@@ -1,0 +1,22 @@
+encoding  utf-8
+
+survey pts-douche_tot -title "pts-douche"
+
+input pts-douche_map.th
+
+
+    input datas/pts-douche.th    
+
+    
+
+
+#####   PLAN    #####
+    input datas/pts-douche_P.th2
+
+
+##### COUPE EXTENTED #####   
+    input datas/pts-douche_C.th2
+
+
+
+endsurvey

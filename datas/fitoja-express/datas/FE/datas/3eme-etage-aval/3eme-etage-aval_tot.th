@@ -1,0 +1,22 @@
+encoding  utf-8
+
+survey 3eme-etage-aval_tot -title "3eme-etage-aval"
+
+input 3eme-etage-aval_map.th
+
+
+    input datas/3eme-etage-aval.th    
+
+    
+
+
+#####   PLAN    #####
+    input datas/3eme-etage-aval_P.th2
+
+
+##### COUPE EXTENTED #####   
+    input datas/3eme-etage-aval_C.th2
+
+
+
+endsurvey

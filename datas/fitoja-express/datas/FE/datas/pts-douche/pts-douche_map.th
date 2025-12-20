@@ -1,0 +1,13 @@
+encoding  utf-8
+map MP_pts-douche -title "pts-douche"
+  SP1_pts-douche
+  break
+  SP2_pts-douche
+endmap
+
+
+map MC_pts-douche -title "pts-douche"
+  SC1_pts-douche
+  break
+  SC2_pts-douche
+endmap

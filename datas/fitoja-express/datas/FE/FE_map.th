@@ -1,34 +1,25 @@
 encoding  utf-8
 
-# map MP_FE -title "FE"
-#   SP1_FE
-#   break
-#   SP2_FE
-# endmap
-
-
-# map MC_FE -title "FE"
-#   SC1_FE
-#   break
-#   SC2_FE
-# endmap
 
 map MP_FE_tot -projection plan
-  MP_salle-fitoja
-  MP_fitoja-express
-  MP_collecteur
+  MP_entree-jonction@entree-jonction_tot
+  MP_jonction-meduse-haute@jonction-meduse-haute_tot
+  MP_boyau-rd-jonction@boyau-rd-jonction_tot
+  #MP_salle-fitoja
+  #MP_fitoja-express
+  #MP_collecteur
 endmap
 
 
- map MP_salle-fitoja -projection plan 
-    fitoja
-  endmap
+#  map MP_salle-fitoja -projection plan 
+#     fitoja
+#   endmap
   
-  map MP_fitoja-express -projection plan 
-    fe
-  endmap
+#   map MP_fitoja-express -projection plan 
+#     fe
+#   endmap
   
-  map MP_collecteur -projection plan 
-    collecteur
-    #labyrinthe
-  endmap
+#   map MP_collecteur -projection plan 
+#     collecteur
+#     #labyrinthe
+#   endmap

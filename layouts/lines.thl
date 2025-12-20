@@ -6,6 +6,19 @@ layout custom_lines
 
     ### redefinitions of existing points
 
+def l_contour(expr P)(text txt) =
+  T:=identity;
+  pickup PenD;
+  thdraw P withpen pencircle scaled 0.5 withcolor (0.62, 0.62, 0.62);
+  for pnt=txt:
+    if (pnt=-2) or (pnt=-1):
+      mark_(P,arctime(arclength(P)/2) of P, 0.2u);
+    elseif pnt>=0:
+      mark_(P,pnt,0.2*u);
+    fi;
+    exitif pnt<0;
+  endfor;
+enddef;
 
 
                def l_gradient(expr P) =

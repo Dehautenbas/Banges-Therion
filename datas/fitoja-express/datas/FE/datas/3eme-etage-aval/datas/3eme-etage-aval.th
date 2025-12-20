@@ -1,0 +1,113 @@
+encoding utf-8
+# 2025.12.14 created by TopoDroid v 6.3.53
+
+survey 3eme-etage-aval -title "fe-3eme-etage-aval"
+
+  centerline
+    date 2025.12.07 
+    team "Martin Kern"
+    team "Yaël Chemineau"
+    units length meter
+    units compass clino degree
+    data normal from to length compass clino
+    extend right
+    1 0 3.90 188.5 0.8
+    # extend auto
+    1 . 0.97 88.2 13.8
+    1 . 0.88 264.7 10.9
+    extend right
+    1 2 5.25 346.4 7.6
+    # extend auto
+    2 . 2.73 295.5 0.7
+    2 . 3.37 191.1 -4.5
+    2 . 1.53 76.8 80.5
+    2 . 1.18 197.2 -85.1
+    2 . 4.01 123.3 -1.9
+    2 . 4.60 17.3 -6.8
+    extend right
+    2 3 7.06 347.5 -15.4
+    # extend auto
+    3 . 4.14 288.0 72.0
+    3 . 2.25 330.3 14.3
+    3 . 11.57 162.2 8.7
+    3 . 7.85 167.8 23.8
+    3 . 6.41 303.8 38.8
+    3 . 3.23 299.2 11.8
+    3 . 9.33 286.2 1.1
+    3 . 8.21 261.4 -1.3
+    3 . 2.16 230.8 -2.2
+    3 . 2.23 118.6 -1.9
+    3 . 2.02 48.3 4.9
+    3 . 2.34 357.6 6.3
+    extend right
+  # 4= stalagmite sur bloc
+    3 4 8.42 270.5 -15.0
+    # extend auto
+    4 . 7.94 350.6 86.6
+    4 . 5.69 358.6 6.7
+    4 . 4.26 350.6 -20.6
+    4 . 2.58 300.9 -82.2
+    4 . 0.88 268.1 7.1
+    4 . 1.80 266.6 43.8
+    4 . 2.53 179.5 25.5
+    4 . 2.93 173.1 38.0
+    4 . 1.89 186.8 81.2
+    extend left
+    4 5 2.60 200.4 11.9
+    # extend auto
+    5 . 1.31 63.7 83.0
+    5 . 1.15 100.8 18.4
+    5 . 0.90 272.9 8.1
+    extend left
+    5 6 6.70 197.8 -11.8
+    # extend auto
+    6 . 0.84 85.9 -1.9
+    6 . 0.90 281.7 1.2
+    6 . 1.24 153.5 -87.8
+    6 . 4.67 171.4 -73.0
+    extend left
+  # 7 ptr
+    6 7 4.79 173.8 -54.0
+    # extend auto
+    7 . 2.83 293.0 79.4
+    7 . 1.46 242.3 9.0
+    7 . 1.70 120.8 8.3
+    7 . 0.99 138.1 -84.7
+    extend right
+    7 8 7.16 345.8 17.1
+    # extend auto
+    8 . 0.54 195.3 78.7
+    8 . 1.42 244.2 22.8
+    8 . 0.59 67.1 22.4
+    8 . 1.18 248.6 -67.7
+    extend right
+    8 9 9.36 299.3 4.7
+    # extend auto
+    9 . 1.72 206.4 -4.0
+    9 . 0.56 263.6 -87.1
+    9 . 1.39 20.3 0.4
+    extend right
+    9 10 3.38 274.3 -22.1
+    # extend auto
+    10 . 3.19 39.3 18.2
+    10 . 7.04 4.3 8.6
+    10 . 2.47 337.9 4.4
+    extend right
+    10 11 1.04 281.6 -28.6
+    # extend auto
+    11 . 5.73 268.2 -16.0
+    11 . 1.10 178.0 16.3
+    11 . 0.33 258.7 69.3
+    11 . 0.92 326.8 6.1
+    extend right
+    11 12 5.73 268.1 -16.0
+  endcenterline
+
+  # input "fe-3eme-etage-aval-1p.th2"
+
+  # map m1p -projection plan
+  #   fe-3eme-etage-aval-1p
+    #   fe-3eme-etage-aval-1p1
+  # endmap
+
+endsurvey

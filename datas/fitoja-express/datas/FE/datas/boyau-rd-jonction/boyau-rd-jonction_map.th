@@ -1,0 +1,15 @@
+encoding  utf-8
+map MP_boyau-rd-jonction -title "boyau-rd-jonction"
+  SP1_boyau-rd-jonction
+  break
+  SP2_boyau-rd-jonction
+  break
+  SP3_boyau-rd-jonction
+endmap
+
+
+map MC_boyau-rd-jonction -title "boyau-rd-jonction"
+  SC1_boyau-rd-jonction
+  break
+  SC2_boyau-rd-jonction
+endmap

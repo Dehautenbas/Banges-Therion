@@ -1,0 +1,22 @@
+encoding  utf-8
+
+survey boyau-rd-jonction_tot -title "boyau-rd-jonction"
+
+input boyau-rd-jonction_map.th
+
+
+    input datas/boyau-rd-jonction.th
+
+    
+
+
+#####   PLAN    #####
+    input datas/boyau-rd-jonction_P.th2
+
+
+##### COUPE EXTENTED #####   
+    input datas/boyau-rd-jonction_C.th2
+
+
+
+endsurvey

@@ -1,0 +1,164 @@
+survey jonction-meduse-haute -title "de la jonction à l'étage haut de la méduse" 
+  
+centerline
+  
+    team "Jacques Nant"
+    team "Charlie Guichebaron"
+
+    date 2024.09.18
+    #tpst 6h25
+    
+    data normal from to length compass clino left right up down ignoreall 
+    units compass clino degrees
+    units length meter
+
+
+MEDU7                MEDU7_1             6.21   26.2   79.1    1     0.5   9.6   0    VERS ETAGE SUP MEDUSE - départ base puits actif en direction étage supérieur de la Méduse. Arrivée en paroi puits à 2.5 m sous les amarrages. Suite à droite sur environ 10 m rejoint le bas par large passage au sol de blocs et calcite (équipement à faire par là plus sec). A gauche du point fermeture après 1 m par coulée stalagmitique
+MEDU7_1              MEDU7_2             4.08  321.3   49.6    3     2     6.8   0    sommet puits sur coulée stalagmitique
+MEDU7_2              MEDU7_3             2.10    1.01  39.2    3     2.5   5.3   1.2  Largeur gauche 1.3 m puis suite plus haut.  Coulée stalagmitique
+MEDU7_3              MEDU7_4             3.64  299.5   28.1   0.5   4.23   9.0   0    passage rétrécit large de 0.6 m  entre coulées stlagmitiques, sommet ressaut
+MEDU7_4              MEDU17              2.02  328.2    7.63  1.4   2.9  12.6   0.4  base puits actif, sur structure calcifiée
+MEDU17               MEDU18              3.05   93.6   36.4   2.6   3.1  10.2   0    VERS GALERIE SUD - sur bord et sommet massif calcifié (croix gravée pour point topo)
+MEDU18               SOMMET-R2-1982      2.91   99.7   29.9   0     0     0     0    VERS SOMMET RESSAUT  sommet ressaut dénué de prises de main, difficile à franchir sans risque
+
+MEDU17                 MEDU17_1            1.88  317.3   21.4   2.5   2.7   1.3   0.9  SUITE ETAGE SUP. MEDUSE - sur dôme stalagmitique avec arrivée d'eau dessus
+MEDU17_1               MEDU17_2            3.23  304.1   -7.7   1.0   3.0   2.0   0    plafond = grande dalle inclinée plantée formant la paroi droite avec suite en coulée stalagmitique à droite
+MEDU17_2               MEDU17_3             3.10   358.0    52.8    1.9    1.1   4.9    0    sommet ressaut en lucarne entre blocs large de 80 cm. Suite avec éboulis avec en arrière départ lucarne en hauteur redonnant sur un palier dans puits de la déviation
+MEDU17_3               MEDU17_4             2.78     6.8     2.6    1.7    1.0   5.2    0
+MEDU17_4               MEDU17_5             4.63    55.6   -10.8    1.8    0.3   3.6    0    gros champignon stalagmitique à gauche et suite en hauteur
+MEDU17_5               MEDU19               4.67     8.1   -41.0    1.5    1.5   8.5    0    carrefour trifide
+
+MEDU19                 MEDU20               2.23    58.6     8.3    3.0    1.5   0.0    0    SUITE ETAGE MEDUSE SUP.
+MEDU20                 MEDU20_1             3.81   299.5   -29.8    3.0    2.0   1.5    0    VERS GALERIE MEDUSE  INF- paroi 1 m devant
+MEDU20_1               MEDU20BIS            3.21   234.6   -25.6    1.1    2.0   2.9    2.5  dans surcreusement, sommet R 2,5 au sommet très étroit
+MEDU20BIS              MEDU20BIS_1          2.50     0.0   -90.0    0.0    0.0   0.0    0    VERS BAS -R 2.5
+MEDU20BIS_1            MEDU20BIS_2          8.00   240.0    -5.1    0.0    0.0   0.0    0    ressaut de 5,1 et arrivée dans galerie inf.
+MEDU20BIS              MEDU16              10.41   254.7    -0.4    0.0    0.0   0.0    0    RACCORD EN FACE - visée en face sur galerie point 16
+MEDU20                 MEDU20_1a             4.67     2.3   -13.1    0.5    0.5   4.9    0    SUITE ETAGE MEDUSE SUP. - coulée stalagmitique
+MEDU20_1a               MEDU20_2             4.29    23.8    19.5    2.0    1.0   8.7    0    grande stalagmite en obus sur la gauche
+MEDU20_2               MEDU21               5.35   353.0    21.1    2.0    2.0   6.3    0
+MEDU21                 MEDU22               5.52    16.4    32.6    1.5    3.0   3.5    0    SUITE ETAGE SUP. MEDUSE
+MEDU22                 MEDU22_1a            3.42   129.0     0.0    0.0    0.0   0.0    0    DEPART - départ méandre impénétrable avec arrivée actif
+MEDU22                 MEDU22_1             5.99    24.7    19.4    5.8    3.8   3.0    0    SUITE ETAGE SUP.  MEDUSE- -chaos de blocs
+MEDU22_1               MEDU22_2             6.38   316.7    16.9    2.4    1.7   9.6    0    énorme bloc à gauche
+MEDU22_2               MEDU23               1.07   251.6   -17.2    0      0.0   0.0    0    cairn circulaire dans éboulis. Carrefour avec à gauche paroi après 5 m. Départ de chaque côté. Autre gros départ à l'opposé au-dessus du cairn
+MEDU23                 MEDU23_1             8.55   336.8    10.7    3.0    2.0   4.5    0    SUITE ETAGE SUP. MEDUSE
+MEDU23_1               MEDU23_2             5.90   307.2    -4.8    2.5    2.5   6.5    0    col sur une arche,  sommet R 1.7 en arrière. R- 1.8 devant (descente large en opposition)
+MEDU23_2               MEDU23_3             4.48   324.2    -7.1    1.0    3.0   8.0    0    fin méandre sup. devant puits de 10 m
+MEDU23_3               MEDU23_4            10.00     0.0   -90.0    0.0    0.0   0.0    0    P 10 sur étage inférieur
+
+MEDU19                 MEDU19_1             3.97   206.4    -7.69   3.8    1.5   2.0    0    VERS GALERIE INF. - bord droit flaque
+MEDU19_1               MEDU19_2             4.15   178.3   -38.13   0.0    0.0   0.0    0    visée sur bord vide au-dessus galerie inférieure à proximité arrivée méandre actif
+MEDU19_2               MEDU19_3             9.95     0.0   -90.0    0.0    0.0   0.0    0    P 9,95 sur galerie inf.
+
+MEDU17                 MEDU17_1a             6.18   312.0    75.5    0.0    0.0   0.0    0    VERS JONCTION F.E. - remontée puits, point en paroi avant déviation
+MEDU17_1a               MEDU17_2a             5.178  219.3    52.1    7.3    2.3   0.0    1.8  sur la voûte au sommet puits. Suite large à droite et à gauche côté droit arrivée petit méandre en liaison partie nord
+MEDU17_2a               MEDU17_3a             4.46   246.2    14.2    3.2    1.6   2.2    0
+MEDU17_3a               MEDU24               4.01   304.4    17.5    2.9    3.8   2.2    0    point sur sommet joli dôme stalagmitique
+
+MEDU24                 MEDU24_1a            3.412  283.4     4.4    2.0    0.0   1.7    0.4  VERS MEANDRE - sur petite dalle dressée haute de 40 cm
+MEDU24_1a              MEDU24BIS            2.63   324.7     9.7    0.35   0.35  0.8    0    début galerie basse aspirante, suite à faire
+MEDU24                 MEDU25               4.73    29.9    17.9    0.0    2.4   1.1    0    VERS SALLE DE DROITE - arrêt topo sur bloc suite large devant. Traversée olé olé sur la gauche, vide devant
+MEDU24                 MEDU24_1             5.50   352.2    21.0    2.7    1.8   1.8    0    largeur à droite sur gros bloc séparateur
+MEDU24_1               MEDU24_2             4.43     5.0    39.2    2.4    2.0   2.0    0    largeur à droite sur gros bloc séparateur
+MEDU24_2               MEDU24_3             2.10    61.4    59.2    2.8    1.0   1.2    0    bordure sommet R +
+MEDU24_3               MEDU26               5.10   331.4    25.0    4.1    1.7   1.7    0    sur stalagmite
+MEDU26                 MEDU26_1a             2.98   272.6    28.3    2.7    1.5   2.7    1.5  SUITE
+MEDU26_1a               MEDU26_2a             6.63   262.9     8.3    1.5    2.2   2.0    0.2  sur paroi droite passage humide haut de 1 m (ex étroiture de jonction F.E.). Largeur droite à 16° selon coulée stalagmitique
+MEDU26_2a               jonction_FE-LITORNE  2.68   253.7    -0.8    0.4    0.4   0.6    0    fin flaque active , point de jonction trou F.E. et creux de la  LITORNE
+
+endcenterline
+
+
+centerline
+  
+    team "Jacques Nant"
+    team "Patrick Guichebaron"
+
+    date 2025.12.07
+    #tpst 7h30
+    
+    data normal from to length compass clino left right up down ignoreall 
+    units compass clino degrees
+    units length meter
+
+MEDU26                 MEDU26_1            1.670  79.0    -0.79    3.0    3.8    2.4    0.0    milieu toboggan argileux
+MEDU26_1               MEDU27              7.055  78.0   -40.20    2.0   14.7    7.4    0.0    descente ressaut sur visée. En fin de visée, largeur droite au plus loin az 163°. Point sur petite pierre blanche. Largeur gauche sous plafond sinon 1 m au sol. A droite juste avant fin grand bloc rocheux en triangle à 1 m à droite.
+MEDU27                 MEDU27_1           14.700 163.0     0.00    0.0    0.0    0.0    0.0    détail largueur à droite vers puits de la déviation
+MEDU27                 MEDU27BIS           4.533  85.0     4.30    2.2    6.8    5.3    0.0    coulée stalag en paroi gauche. Sol calcite
+MEDU27BIS              MEDU27BIS_1a        4.610 135.5    16.41    0.0    0.0    0.0    0.0    visée sur fracture fermée. Plancher stalagmitique sur visée
+MEDU27BIS              MEDU27BIS_1         3.439   0.0    25.60    0.6    0.6    3.2    0.0    petit ressaut en calcite pour passer dans la grande coulée qui est développée sur la droite
+MEDU27BIS_1            MEDU27BIS_2         1.461  31.5   -12.30    0.8    0.8    3.8    0.0    sommet R 1.8. Voûte parée de cloches et cupules
+MEDU27BIS_2            MEDU27BIS_3         2.933  32.0   -35.30    2.1    3.5    2.0    0.0    dans galerie sur sol argile avec pellicule de calcite. Ecoulement temporaire devant contre la paroi opposée
+MEDU27BIS_3            MEDU27BIS_4         3.320  47.5     7.13    1.4    3.8    0.6    0.0    sommet dune d'argile, écoulement temporaire contre paroi droite où la hauteur est d'environ 1 à 1.5 m
+MEDU27BIS_4            MEDU27BIS_5         6.012  45.0   -10.80    0.0    0.0    0.2    0.26   point sur la voûte
+MEDU27BIS_5            MEDU27BIS_6         0.262 162.9   -85.10    2.0    2.5    0.0    0.26   retour au sol d'argile devant suite impénétrable par colmatage, à 0.4 m à droite surcreusement du remplissage actif temporairement, rigole de 30 cm de large et H 0.40
+MEDU27BIS_6            MEDU27BIS_7         4.949  21.2    -4.90    0.0    0.0    0.0    0.0    visée dans la suite aspirante
+MEDU28                 MEDU28_1           14.790 227.0   -45.27    1.14   0.6    3.5    0.0    départ sommet fermé par coulée et concrétions (0.5 x 0.5). Ressaut glissant sur visée et arrivée contre grande coulée stalagmitique 60 cm à gauche
+MEDU28_1               MEDU28_2            4.549 230.0   -34.30    0.0    0.0    0.0    0.0    descente ressaut peu large haut de 1 m après 3 m de parcours. Arrivée sur sol de calcite
+MEDU28_2               MEDU27              8.300 259.0    -7.00    0.0    0.0    0.0    0.0    raccord sur pierre blanche
+
+endcenterline
+
+
+
+centerline
+  
+    team "Jacques Nant"
+    team "Charlie Guichebaron"
+
+    date 2024.09.18
+    #tpst 6h30
+    
+    data normal from to length compass clino left right up down ignoreall 
+    units compass clino degrees
+    units length meter
+
+
+jonction_FE-LITORNE FE26_0           2.120   296.8   42.5    0.5    0.5    0.5    0.5    Vers P35 - en paroi gauche dans fracture. Paroi droite en coulée stalagmitique fermée
+FE26_0              FE26_1           2.760    64.8   -2.2    0      0      1      0      Paroi droite en coulée stalagmitique et fin fermées
+FE26_0              FE26_2           2.230   299.2    7.4    1      1.7    2.6    0      sol éboulis actif. Voûte inclinée vers puits
+FE26_2              FE26BIS_0        2.220   295.3   15.2    0      0      0      0      base puits sur éboulis? Arrivée d'eau à droite derrière une lame
+FE26BIS_0           FE26BIS_1        5.610   325.5   74.5    0      0      0      0      paroi dans puits vers les amarrages
+FE26BIS_1           FE27_0           1.880    17.3    9.1    1.7   21.3    1.6    0      sommet puits sur palier et sommet stalagmite en poire. Arrivées actifs à droite et devant (imp)
+FE27_0              FE28             6.070   259.0    3.4    0      0      0      0      VERS COLMATAGE - traversée puits occupé par une grande coulée stalagmitique, arrivée sur concrétion. suite à faire
+FE27_0              FE27_5           5.660    60.5   46.4    1.9    0      0      0      sur paroi droite, sommet ressaut
+FE27_5              FE27_6           2.150   350.4   23.3    0.4    0.4    0.5    0      boyau actif aspirant, flaque devant
+FE27_6              FE27BIS_0        3.871   349.1   19.6    0.7    0.3    1.5    1      sortie boyau actif qui arrive du dessus impénétrable
+FE27BIS_0           FE27BIS_1        2.074   191.5   56.2    0.5    2.6    0      0      remontée entre blocs
+FE27BIS_1           FE27BIS_2        2.815     5.0   55.9    1      1.4    0      0.6    remontée entre blocs, point au plafond en sortie à la base du P 35
+FE27BIS_2           FE21             2.202     9.4    8.8    0      0      0      0      raccord sur point topo base P 35
+FE26BIS_0           15               2.100   271.1    0.56   0      0      0      0      PUITS DE LA DOUCHE visée sur départ étroit plongeant relié le 7/12/2025 avec le réseau de la Méduse
+
+endcenterline
+
+centerline
+  
+    team "Jacques Nant"
+    team "Patrick Guichebaron"
+
+    date 2025.12.07
+    
+    data normal from to length compass clino left right up down ignoreall 
+    units compass clino degrees
+    units length meter
+
+
+FE28     1       2.137   308.0   22.4   0.80   1.10   1.50   0.00   VERS LE HAUT A DROITE : départ de la petite stalagmite après traversée puits de la douche. Vide environ 3m avant. H=2/01 x l =1.9/4.1. De ce point sur la droite arrivée d'eau sous méduse et à 5.7 m de haut bouchon plat de cailloutis (diamètre env. 0.7). En fin de visée sur stalagm haute de 10 cm
+1        2       1.640   300.5    3.6   1.17   1.87   1.46   0.00
+2        FE50    1.328   312.0   14.9   2.13   1.17   2.20   0.00   sur bloc et glaise
+FE50     4       2.000   260.0   -1.7   0.00   0.00   0.00   0.20   suite sous le bloc à creuser ?
+FE50     5       2.503   334.1   32.8   0.60   0.60   0.20   0.00   D =colmatage d'argile et conglomérat
+FE50     7       2.229   263.0  -19.9   1.10   1.10   0.68   0.00   A GAUCHE : argile
+7        8       2.040   252.6    1.07  0.35   0.35   0.25   0.00   colmatage argile et blocs
+FE28     9       1.321   184.5  -27.2   0.00   0.00   1.60   0.10   VERS LE BAS A GAUCHE : paroi à 1.9 par -41.5 soit 1.42 en plan devant. Toboggan glissant
+9        10      3.691   240.9  -19.0   0.70   1.00   0.80   0.00   éboulis
+10       FE51    1.760   270.8  -11.9   1.10   1.40   1.50   0.00
+FE51     12      1.473   326.3    1.1   0.50   1.00   1.00   0.00   D=éboulis et colmatage blocs
+FE51     13      1.452   254.0   21.8   0.60   0.30   0.45   1.20   G=sommet gros bloc haut de 1.2 m formant étroiture. Fracture
+13       14      2.019   274.9    8.9   0.20   0.20   0.20   0.00   colmatage de blocs
+
+endcenterline
+
+
+endsurvey

@@ -1,0 +1,22 @@
+encoding  utf-8
+
+survey entree-jonction_tot -title "entree-jonction"
+
+input entree-jonction_map.th
+
+
+    input datas/entree-jonction.th    
+
+    
+
+
+#####   PLAN    #####
+    input datas/entree-jonction_P.th2
+
+
+##### COUPE EXTENTED #####   
+    input datas/entree-jonction_C.th2
+
+
+
+endsurvey

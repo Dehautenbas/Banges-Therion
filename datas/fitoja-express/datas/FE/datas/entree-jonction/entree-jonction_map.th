@@ -1,0 +1,15 @@
+encoding  utf-8
+map MP_entree-jonction -title "entree-jonction"
+  SP2_entree-jonction
+  break
+  SP1_entree-jonction
+  break
+  SP3_entree-jonction
+endmap
+
+
+map MC_entree-jonction -title "entree-jonction"
+  SC1_entree-jonction
+  break
+  SC2_entree-jonction
+endmap

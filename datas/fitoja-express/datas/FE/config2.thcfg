@@ -40,7 +40,7 @@ layout plan
   colour map-fg [96 96 86]   ###Couleur Galeries #Gris[80 80 80]#
   #color map-bg 96            ### couleur du fond (80% blanc / 20% gris => 80)
 
-  scale 1  500                    
+  scale 1  200                    
   #base-scale 1 300                
 
   cs UTM32
@@ -101,14 +101,15 @@ layout comment
       %\legendtextcolor={\color[0 0 110]}      %# RGB values 0--100
    endcode
 
-map-comment "<br>\
-Localisation :Montagny (Savoie - Bauges)<br>Banges - Prépoulain <br>\
-Coordonnées : 45.721343N 6.06738E (WGS84)<br>\
-                   271.786N 5067.271E (UTM32T)<br>\
-                   Alt : 900 m<br>\
-                    <br>\
- Synthèse et dessin : Yann Gardère - Martin Kern <br>\ 
-"
+# map-comment "<br>\
+# Localisation :Montagny (Savoie - Bauges)<br>Banges - Prépoulain <br>\
+# Coordonnées : 45.721343N 6.06738E (WGS84)<br>\
+#                    271.786N 5067.271E (UTM32T)<br>\
+#                    Alt : 900 m<br>\
+#                     <br>\
+# "
+# # Synthèse et dessin : Yann Gardère - Martin Kern <br>\ 
+
 
 
 endlayout

@@ -1,0 +1,30 @@
+survey pts-douche -title "pts de la douche" 
+  
+centerline
+  
+    team "Jacques Nant"
+    team "Patrick Guichebaron"
+
+    date 2025.12.07
+    
+    data normal from to length compass clino left right up down ignoreall 
+    units compass clino degrees
+    units length meter
+
+
+FE28	1	2.137	308	22.4	0.8	1.1	1.5	0	VERS LE HAUT A DROITE : départ de la petite stalagmite après traversée puits de la douche. Vide environ 3m avant. H=2/01 x l =1.9/4.1. De ce point sur la droite arrivée d'eau sous méduse et à 5.7 m de haut bouchon plat de cailloutis (diamètre env. 0.7). En fin de visée sur stalagm haute de 10 cm
+1	2	1.64	300.5	3.6	1.17	1.87	1.46	0	
+2	FE50	1.328	312	14.9	2.13	1.17	2.2	0	sur bloc et glaise
+FE50	4	2	260	-1.7	0 0		0.2	0	suite sous le bloc à creuser ?
+FE50	5	2.503	334.1	32.8	0.6	0.6	0.2	0	D =colmatage d'argile et conglomérat
+FE50	7	2.229	263	-19.9	1.1	1.1	0.68	0	A GAUCHE : argile
+7	8	2.04	252.6	1.07	0.35	0.35	0.25	0	colmatage argile et blocs
+FE28	9	1.321	184.5	-27.2	0	0	1.6	0.1	VERS LE BAS A GAUCHE : paroi à 1.9 par -41.5 soit 1.42 en plan devant. Toboggan glissant
+9	10	3.691	240.9	-19	0.7	1	0.8	0	éboulis
+10	FE51	1.76	270.8	-11.9	1.1	1.4	1.5	0	
+FE51	12	1.473	326.3	1.1	0.5	1	1	0	D=éboulis et colmatage blocs
+FE51	13	1.452	254	21.8	0.6	0.3	0.45	1.2	G=sommet gros bloc haut de 1.2 m formant étroiture. Fracture
+13	14	2.019	274.9	8.9	0.2	0.2	0.2	0	colmatage de blocs
+
+endcenterline
+endsurvey

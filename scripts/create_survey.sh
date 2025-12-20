@@ -21,7 +21,7 @@ mkdir datas
 
 sed "s/<CAVENAME>/$S/g" ${PATH_TEMPLATE}/Therion_files_pattern/CAVENAME_map.th > ${S}_map.th
 sed "s/<CAVENAME>/$S/g" ${PATH_TEMPLATE}/Therion_files_pattern/CAVENAME_tot.th > ${S}_tot.th
-sed "s/<CAVENAME>/$S/g" ${PATH_TEMPLATE}/Therion_files_pattern/CAVENAME_CONFIG.thconfig > ${S}_CONFIG.thconfig
+sed "s/<CAVENAME>/$S/g" ${PATH_TEMPLATE}/Therion_files_pattern/CAVENAME_CONFIG.thcfg > ${S}_CONFIG.thcfg
 sed "s/<CAVENAME>/$S/g" ${PATH_TEMPLATE}/Therion_files_pattern/config-xvi.thcfg > config-xvi.thcfg
 
 cd datas

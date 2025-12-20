@@ -1,0 +1,90 @@
+survey entree-jonction -title "FE de l'entrée à la jonction" 
+  
+centerline
+  
+    team "Jacques Nant"
+    team "Charlie Guichebaron"
+
+    date 2024.01.04
+    #tpst 2h30
+
+    data normal from to length compass clino ignoreall 
+    units compass clino degrees
+    units length meter
+
+
+BECQUET-ENTREE   ENTREE        1.13    173.4   -56.5   0.6    0.8    0.4     0.36    départ becquet voûte entrée avec 2 spits à gauche. Arrivée sur sur bord bloc haut de 36 cm (point zéro entrée trou F.E.)
+ENTREE           ENTREE_1      2       242.6   -35.3   0.7    0.7    0.6     0       sur blocs coincés sommet puits long de 60 cm. Ct d'air rentrant. Deux spits à droite devant
+ENTREE_1         ENTREE_2      2.39    194.1   -70.7   0.5    0.5    1.1     0       base premier puits
+ENTREE_2         ENTREE_3      2.33    121.1   -8.1    0      0.9    0       0       paroi sommet deuxieme puits, 3 spits
+ENTREE_3         FE1           3.95    133.3   -88.1   1      1      2.8     0       palier base 2ème puits
+FE1              FE1_1         1.43    240     0                                       m   fin palier
+FE1              FE1_1a        2.1     66.7    0                                       m   paroi bout du puits
+FE1              FE1_1b         1.43    45.2    21.1                                    m   contre paroi 2 spits l'un sur l'autre sommet 3ème puits
+FE1_1b            FE2           6.46    169.8   -74.1   1      0.7    0       m       base 3ème puits
+FE2              FE2_1a        1.74    72      0                                       m   fond fracture
+FE2              FE2_1b        2.83    271.4   39.2                                    m   fracture fermée
+FE2              FE2_1         0.69    177.9   0.9            2.4     m       décalage sur bord bloc. 4ème puits profond de 2, 4 dessous
+FE2_1            FE3           4.63    142.1   -60.9           1.42    0.9     sommet 5ème puits sur gros bloc haut de 90 cm. Enorme bloc séparant le sommet du puits en deux devant. 3 spits à gauche à + 2 m et idem en arrière  inutilisé
+FE3              FE3_1a        3       120.7   0       0.4    0.4            m   détail en largeur fracture
+FE3              FE3_1b        2.1     235     0                                       m   détail sommet puits, blocs
+FE3              FE3_1         1.27    109     -14.9                                    m   arête gauche du gros bloc en travers sommet 5 ème puits
+FE3_1            FE3_2         2.76    137.6   -82.6                                    m   base 5ème et dernier puits d'entrée
+FE3_2            FE4           1.23    160.2   5.3             2.5/0   m       sur bloc  dans salle. L= 3,1 devant
+FE4              FE4_1a        2.69    153.4   12                                      m   bord petite vasque à 1,2 m du sol contre paroi
+FE4_1a           FE4_2a        5.81    290.9   70.1                                    m   cheminée en fracture 0,6 x 0,8 avec suite imp arrivée petit actif en crue
+FE4              FE4_1         1.62    240.4   22.74   1.7    2.5    2/0.5   m       bloc sommet R-2,4
+FE4_1            FE5           4.58    249.5   -32.8   1.6    0.9    3.5/1.3 m       sur lame plantée haute de 1,3 m. base P+ actif coulée stalagmitiqyue en paroi droite
+FE5              FE5_1a        2.59    252.7   -43.52  1.5    1      ?/0.3   m       bout vasque longue de 40 cm et profonde de 30 cm, arrivée actif du puits
+FE5              FE5_1         9.173   21.9    89.3                                    0/9.17 m   visée au sommet P + fermé mais suite sur la gauche invisible. Puits grimpé en artificielle
+FE4              FE7           3.08    105.4   -24.3   2.2    1.7    2.87/0  m       sur bord blocs. Coulée stlagmitique en paroi droite
+FE7              FE7_1a        7.3     71.2    14.9    0.75   0.75   1.8/0   m       fond fracture ébouleuse fermée
+FE7              FE7_1         2.99    148.2   -36.2   ?      0      7.2/1.1 m       paroi droite décollement sur 1,3 m. Point à 1,1 m du sol. Petite echelle 1 m à droite. Eboulis
+FE7_1            FE7_2         1.42    57.4    -40.2                                    /0      m   sommet ressaut équipé de fer à béton formant échellon
+FE7_2            FE9           2.36    80.3    -39.1   1.3    0.6            /0      m   énorme bloc coincé à gauche
+FE9              FE9_1a        4.16    74.9    5.4     0.4    0.4    0/0     m       voûte s'abaisse jusqu'au sol. Fond fermé
+FE9              FE9_1         4.11    294.6   -35.5   0.9    2.1    5.9/0.1 m       grillage et echelle sur visée
+FE9_1            FE10          0.1     0       -90     0.9    2.1    6/0     m       abaisement du point, sol éboulis. Voùte à gauche formant une lame séparatrice de 2 fractures ascendantes fermées
+FE10             FE10_1a       3.21    285.5   38.46                                   m   base fracture ascendante de droite, active
+FE10_1a          FE10_2a       4.2     0       90                                      m   sommet imp actif
+FE10             FE10_1        4.78    92      -46.47  0.5    0      2/0     m       échelle sur visée
+FE10_1           FE10_2        1.11    79.6    -14.2   0.3    0.3    0.6/0   m       début boyau et flaque devant
+FE10_2           FE10_3        2.93    74.3    5.6     0.7    0.2    2.5/0   m
+FE10_3           FE10_4        1.14    65      -5.3    0      0.6    2/0     m       sommet ressaut étroit
+FE10_4           FE10_5        1       122.3   -19.2   0.7    0              m       en paroi avec 2 spits à droite avant
+FE10_5           FE11          4.19    90      -56.8   0.5    0.2    1.5/0   m       fin étroiture devant puits
+FE11             FE13          1.3     53.1    -2.6                                    m       paroi gauche dans puits
+FE13             FE13_1        6.55    336.4   66.4    0.5    0.7    /0      m       dans escalade
+FE13_1           FE13_2        2.88    347.4   40.9    2.3    1.3    3.36/0  m       hauteur plafond prise à 65° de pente.
+FE13_2           FE13_3        1.97    15.9    73.7                                    m       décalage en l'air
+FE13_3           FE13_4        5.89    67.1    38.5            0.3/0  m       visée latérale sur fin visible sur imp et blocs dans fracture derrière passage étroit non franchit. Pas de courant d'air
+FE13             FE15          4.26    140     -63.8   1.58   0.6            /0      m   base puits
+FE15             FE15_1a       2.44    63.8    34.98                                   /0      m   fond fermé
+FE15             FE15_1        2.29    230.2   -14.6   0      1.3    /1.01   m       poche à droite fermée. Point sur voûte départ boyau désobstrué
+FE15_1           FE15_2        1.01    52.2    -73     0.3    0.3    0.8/0   m       sol devant boyau désobstrué. Ct d'air aspirant
+FE15_2           FE15_3        3.53    241.6   -14.1   0      0.6    0.75/0.1 m       paroi gauche sortie boyau désobstrué juste avant grand puits
+FE15_3           FE15_4        0.8     308.8   9.9     0.8    0      ?/?            m   paroi droite dans grand puits, 3 spits + 1 spit et 1  lunule non équipées
+FE15_4           FE16          8.2     265.5   -64.6   2      1.5    4.5/0   m       base premier puits, point en bord massif calcite bord puits suivant. Sur la gauche avant, grande lunule à + 2 m et sur la droite 2 lunules et 1 spit
+FE16             FE1_16a       3.35    239.2   0                                       m   autre paroi du puits
+FE16             FE16_1        2.59    193.3   -55                                     m   dans puits paroi gauche à gauche d'un amarrage pour une déviation
+FE16_1           FE17          9.07    280.8   -77.8   2.8    0.5            m       point dans puits sur pointe lame rocheuse. A droite paroi avec 2 spits
+FE17             FE17_1a       4.69    243     0                                       m   autre paroi du puits
+FE17             FE18          11.72   216.5   -67.7   3.2    2.5    /0      m       pieds sur petit palier avec fractionnement à droite. Points en hauteur sur mamelon. Actif coulant en paroi sur la gauche
+FE18             FE18_1a       3       180     0                                       m   autre paroi du puits
+FE18             FE19          3.69    206.9   -44.7   1      1      ?/0     m       après petit pendule, point en bord départ galerie dans fracture en paroi grand puits. Eboulis calciflé
+
+FE19             FE22          2.84    234      5.95    1      1.2            /0      m   éboulis
+
+FE22             FE22_1a       5.33    296.5   59.08                                   m   arrivée d'eau en fracture imp par blocs. P+ étroit en fissure à droite
+FE22             FE20          7.31    248.6   -12.93  2      2.5    3/0     m       passage étroit en fissure et  mouillant (2ème arrivée d'eau) sur visée. Arrivée dans petite salleavec champ de fistuleuses et sol argile calcifié.
+FE20             FE20_1c       3.59    278.8   31.63   1.25   1.25   2.8/0   m       fond salle fermée avec cloche en voûte. Sol argile calcifiée.
+FE20             FE20_1b       3.33    37      14.02   ?      1      10 ?/0  m       sur palier base P + très mouillant ce joiur estimé rapidement à + 10 m environ 1,5 de diamètre.
+FE20_1b          FE20_2b       10      310     85      0.75   0.75   ?/10    m       P+ 10 actif à voir
+FE20             FE20_1a       1.95    45.1    -20.51  0.5    0.7    ?/0     m       sur pointe bloc en travers au-dessus puits actif estimé à - 10 maxi avec corde en place sur AN
+FE20_1a          FE20_2a       10      310     -85                                     m   P10 non descendu ?
+FE20             FE20_1        2.89    142.8   -6.74   0.2    0.8    0.5/0   m       en paroi gauche sommet ressaut soutiré dans argile. Sur la droite avant, talus d'argile varvée.
+FE20_1           FE20_2        1.47    0       -90     0.5    3      2/0     m       R- 1,47 et sol argile décanté dans poche soutirée et sans suite dans le remplissage. Paroi 1 m devant
+FE19             FE21          4.18    128.8   -61.4                                    m       croix gravée sur mamelon stalagmitique en bas grand puits.
+
+endcenterline
+endsurvey

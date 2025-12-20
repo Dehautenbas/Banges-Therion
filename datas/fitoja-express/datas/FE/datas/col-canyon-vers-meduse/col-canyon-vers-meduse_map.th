@@ -1,0 +1,13 @@
+encoding  utf-8
+map MP_col-canyon-vers-meduse -title "col-canyon-vers-meduse"
+  SP1_col-canyon-vers-meduse
+  break
+  SP2_col-canyon-vers-meduse
+endmap
+
+
+map MC_col-canyon-vers-meduse -title "col-canyon-vers-meduse"
+  SC1_col-canyon-vers-meduse
+  break
+  SC2_col-canyon-vers-meduse
+endmap

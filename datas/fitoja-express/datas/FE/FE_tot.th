@@ -1,21 +1,16 @@
 encoding  utf-8
 
-survey FE_tot -title "FE"
-
+survey FE_tot -title "Gouffre du Fitoja-Express"
 input FE_map.th
 
-
-    input datas/FE.th    
-
+    #input datas/FE.th    
+    input datas/entree-jonction/entree-jonction_tot.th
+    input datas/jonction-meduse-haute/jonction-meduse-haute_tot.th
+        equate FE21@entree-jonction.entree-jonction_tot FE21@jonction-meduse-haute.jonction-meduse-haute_tot
+    input datas/boyau-rd-jonction/boyau-rd-jonction_tot.th
+        equate 0@boyau-rd-jonction.boyau-rd-jonction_tot MEDU24@jonction-meduse-haute.jonction-meduse-haute_tot
+            join SP1_jonction-meduse-haute@jonction-meduse-haute_tot SP1_boyau-rd-jonction@boyau-rd-jonction_tot
     
-
-
-#####   PLAN    #####
-    input datas/FE_P.th2
-
-
-##### COUPE EXTENTED #####   
-    input datas/FE_C.th2
 
 
 

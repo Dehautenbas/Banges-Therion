@@ -113,21 +113,21 @@ Coordonnées : 45.721343N 6.06738E (WGS84)<br>\
 
 endlayout
 
-layout images
+# layout images
 
-    map-image 42 27 center datas/FE/datas/img/5.jpg
-    map-image 57 25 center datas/FE/datas/img/4.jpg
-    map-image 55 57 center datas/FE/datas/img/3.jpg
-    map-image 71 30 center datas/FE/datas/img/1.jpg
-    map-image 34 71 center datas/FE/datas/img/cas.jpg
-    map-image 20 64 center datas/FE/datas/img/lac.jpg
-    map-image 42 54 center datas/FE/datas/img/col.jpg
-    map-image 68 60 center datas/FE/datas/img/fit2.jpg
-    map-image 81 55 center datas/FE/datas/img/fit.jpg
-    map-image 18 47 center datas/FE/datas/img/p41.jpg
-    #map-image 21 32 center datas/FE/datas/img/fe.jpg
-    map-image 30 19 center datas/FE/datas/img/med.jpg
-endlayout
+#     map-image 42 27 center datas/FE/datas/img/5.jpg
+#     map-image 57 25 center datas/FE/datas/img/4.jpg
+#     map-image 55 57 center datas/FE/datas/img/3.jpg
+#     map-image 71 30 center datas/FE/datas/img/1.jpg
+#     map-image 34 71 center datas/FE/datas/img/cas.jpg
+#     map-image 20 64 center datas/FE/datas/img/lac.jpg
+#     map-image 42 54 center datas/FE/datas/img/col.jpg
+#     map-image 68 60 center datas/FE/datas/img/fit2.jpg
+#     map-image 81 55 center datas/FE/datas/img/fit.jpg
+#     map-image 18 47 center datas/FE/datas/img/p41.jpg
+#     #map-image 21 32 center datas/FE/datas/img/fe.jpg
+#     map-image 30 19 center datas/FE/datas/img/med.jpg
+# endlayout
 
 
 layout centerline
