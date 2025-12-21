@@ -6,7 +6,7 @@ source jonction-meduse-haute_tot.th
 ###################################################################################################
 ################################## Selection de la map à exporter #################################
 ###################################################################################################
-select MP_jonction-meduse-haute@jonction-meduse-haute-tot       #uncomment ONLY one
+select MP_jonction-meduse-haute@jonction-meduse-haute_tot       #uncomment ONLY one
 #select MC_jonction-meduse-haute@jonction-meduse-haute-tot      #uncomment ONLY one
 
 

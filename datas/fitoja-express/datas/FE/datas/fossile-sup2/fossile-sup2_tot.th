@@ -1,0 +1,22 @@
+encoding  utf-8
+
+survey fossile-sup2_tot -title "fossile-sup2"
+
+input fossile-sup2_map.th
+
+
+    input datas/fossile-sup2.th    
+
+    
+
+
+#####   PLAN    #####
+    input datas/fossile-sup2_P.th2
+
+
+##### COUPE EXTENTED #####   
+    input datas/fossile-sup2_C.th2
+
+
+
+endsurvey

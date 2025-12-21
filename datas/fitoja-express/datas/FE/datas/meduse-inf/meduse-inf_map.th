@@ -1,0 +1,13 @@
+encoding  utf-8
+map MP_meduse-inf -title "meduse-inf"
+  SP1_meduse-inf
+  break
+  SP2_meduse-inf
+endmap
+
+
+map MC_meduse-inf -title "meduse-inf"
+  SC1_meduse-inf
+  break
+  SC2_meduse-inf
+endmap

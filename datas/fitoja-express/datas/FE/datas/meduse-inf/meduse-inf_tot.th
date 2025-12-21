@@ -1,0 +1,22 @@
+encoding  utf-8
+
+survey meduse-inf_tot -title "meduse-inf"
+
+input meduse-inf_map.th
+
+
+    input datas/meduse-inf.th    
+
+    
+
+
+#####   PLAN    #####
+    input datas/meduse-inf_P.th2
+
+
+##### COUPE EXTENTED #####   
+    input datas/meduse-inf_C.th2
+
+
+
+endsurvey

@@ -1,0 +1,92 @@
+survey meduse-inf -title "meduse inf" 
+  
+centerline
+  
+    team "Jacques Nant"
+    team "Charlie Guichebaron"
+
+    date 2024.09.18
+    #tpst 6h25
+    
+    data normal from to length compass clino left right ignoreall 
+    units compass clino degrees
+    units length meter
+
+
+DOME1           DOME1_1        1.000     172.6    -19.5    0      0      10/0       départ sur dôme stalagmitique en bord vide sur collecteur (H= 8.9/- 0.4 x l= 20.3 az 1.6° et 2.1 az 165.9°). Arrivée sous amarrage de la descente au collecteur. à 0.25 de la paroi faille
+DOME1_1         MEDU1          3.21      284.1    -7.8     2.7    15.9   10/0.1     sur bouton stalagmite sombre et sur coulée stalagmitique
+MEDU1           MEDU1_d        5.293     339.3    6        0      0      /0         sommet stalagmite sur dôme stalagmitique long de 2.5 m  en bord vide sur collecteur
+MEDU1           MEDU2          8.94      316.9    -3       9.9    7.78   17.23/0    gours profond sur visée. Arrivée sur arête côté gauche  massif stalagmitique avec flaque
+MEDU2           MEDU3          3.11      273.1     -15.94   0      0              visée entre sommet R 11 méduse de 1980 et point MEDU 2
+MEDU3          SOL-VERS-MEDUSE 11.97     300.8    -60.35   0      0      /0         sol en bas de la méduse
+MEDU1           MEDU1_1d       2.176     265.2    35.9     2.2    16.7   9.6/0.5    sur bite haute de 50 cm
+MEDU1_1d        MEDU1_2d       8.265     283.1    17.4     3.5    1.6    15.4/0     bord massif stalagmitique. grosses concrétions à gauche
+MEDU1_2d        MEDU1_3d       6.9       286.3    28.4     3.5    15     10.1/0     sur bite massif stalagmitique
+MEDU1_3d        MEDU4          8.1       313.1    20.2     7.8    6.4    10.5/0.2   sur petite bite haute de 20 cm. Bord coulée stalagmitique. Paroi 8.2 m devant
+MEDU4           MEDU4_1a       4.167     351.4    -13.4    4.04   0      3.4/0.5    paroi 2.3 m devant. Suite par la gauche avec ressaut
+MEDU4_1a        MEDU5          5.62      5.2      -32.3    5.2    0      1.9/0      secteur avec nombreuses stalactites. fistuleuses. excentriques etc...
+MEDU5           MEDU5_1b       8.124     77.1     10.8     0      0      2/0        bord droit  galerie donnant sur collecteur
+MEDU5           MEDU5_1       3.86      354.9    0        0      0      /0         angle paroi
+MEDU5           MEDU5_2        3.61      329.1    16       4.1    0      1.3/1.6    sur paroi au-dessus ressaut
+MEDU5_2         MEDU5_3        2.93      344.6    -72.4    5.6    0.9    0.5/0.3    base ressaut sur massif haut de 30 cm. Zone chaotique de blocs concrétionné
+MEDU5_3         MEDU5_4        4.84      14.9     -18      7.9    0      1.7/0.3    sur bite haute de 30 cm. Eboulis chaotique (startes effondrées. galets etc...)
+MEDU5_4         MEDU6          6.89      99.8     -13      6.7    3.7    2.5/0.5    éboulis et concrétions
+MEDU6           MEDU6_1        1.344     203.1    25       0      0      2.5/0.6    sur bite haute de 50 cm. Eboulis
+MEDU6_1         MEDU6_2        3.97      167.4    -8.1     2      1.1    0.5/0      fenétre sur collecteur de Fitoja. 
+MEDU6_2         MEDU6_3        3.5       150      -45      0      0      /0         vide
+MEDU6           MEDU6_1a       6.6       333.2    12.7     0      3.1    1.3/1.7    zone plane avec graviers et galets puis blocs
+MEDU6_1a        MEDU6_2a       5.00      282.1    -9.9     7      5      2.4/0.8    longueur estimée à revoir. Fin galerie supérieure sur collecteur. Voûte plane et strate détachée en équilibre sous la voûte
+MEDU6_2a        MEDU6_3a       4.79      306.1    -46.8    1.75   1.75   /0         pente raide puis vide sur collecteur coulant environ 15 m au-dessous. 
+MEDU4           MEDU4_1        3.35      270.9    8.7      6.5    6.2    3.9/0      sur bite sommet dôme stalagmitique. Enorme bloc faisant paroi à 5.2 m devant
+MEDU4_1         MEDU4_2        3.023     189.1    21.9     0      0      5.6/0      paroi 4.9 m devant. Sur sommet bloc en arête vers col. Hauteur 10.2 m à gauche. arrivée collecteur fossile supérieur
+MEDU4_2         MEDU4_3        8.73      265.4    -9.3     1.35   4.3    4.9/0      gours par - 0.7 avant fin visée. Fin gros bloc à droite
+MEDU4_3         MEDU4_4        3.51      250.7    -11.8    1.1    1.6    15/0       flaques. Méandre reprend de la hauteur avec suite sup.
+MEDU4_4         MEDU4_5        4.68      260.7    7        1      2.3    11.1/0     coulée stalagmitique. Méandre retrouve une voûte à 5.5 m. Suite au-dessus
+MEDU4_5         MEDU4_6        1.37      303.5    -12.5    0.75   0.75   6/0        coulée stalagmitique à gauche. R+ avec flaque après 2 m sur la visée
+MEDU4_6         MEDU4_7        4.09      258.7    17.6     1.8    2.1    4.8/0      coulée stalagmitique
+MEDU4_7         MEDU4_8        2.46      287.5    15.6     2.5    2.3    4/0        sur bite
+MEDU4_8         MEDU7          2.30      341.5    1.93     2.4    2.2    4.9/0      base puits accès étage méduse sup. Sur massif stalagmitique actif. 
+MEDU7           MEDU7_1        4.61      336.6    -29.5    2.7    2.4    3.7/0      grosse marmite d eparoi à gauche. Galets et petit  actif
+MEDU7_1         MEDU7_2        3.52      354.4    23.1     3.2    2      8.2/0      sur dôme stalagmitique
+MEDU7_2         MEDU7_3        2.774     344.5    -13.5    1.8    1.6    8.5/0      
+MEDU7_3         MEDU7_4        2.78      306      12.5     2.6    3.7    8.3/0      grosse marmite de paroi à droite
+MEDU7_4         MEDU8          3.35      335.3    -5.6     1.6    2.2    12.8/0     flaque. petit actif. Arrivée actif en hauteur paroi gauche. Cairn petits blocs
+MEDU8           MEDU8_1        4.81      306.8    23.5     2      2      10.9/0     
+MEDU8_1         MEDU8_2        4.7       333.1    20.8     3      3      9.6/0      descente de - 1 devant. Départ galerie à droite en hauteur vers étage supérieur
+MEDU8_2         MEDU9          4.46      339.1    15.3     1.3    4.1    7.1/0      sommet R 2 étroit
+MEDU9           MEDU9_1        3.57      9.8      22.1     1      3      1.5/0      sommet R 1.1
+MEDU9_1         MEDU10         7.86      291.1    -1.4     3.6    6      1.2/0.5    sur sommet monticule effilé d'argile calcifiée dans petite salle carrefour
+MEDU10          MEDU10_1a      6.12      23.9     -19.5    1      1.5    0.4/0      départ galerie basse sol argile
+MEDU10_1a       MEDU10_2a      5.89      59.9     -3.9     2.1    1.1    0.6/0.2    galerie basse sol argile. Départ galerie basse en retour boucle sur salle en hauteur à droite
+MEDU10_2a       MEDU10BIS      2.17      13.4     -3.6     2      2.8    1.25/0.2  
+MEDU10BIS       MEDU10BIS_1    6.58      44.8     -14.4    2.2    3.4    1.7/0.2    marmite sur sol calcifié salie d'argile. Eau
+MEDU10BIS_1     MEDU11         10.62     87.6     -14.2    6.8    3      0.3/0.9    carrefour. point sur bord redans de la voûte. Sol argile sur calcite
+MEDU11          MEDU11_1a      3.58      126.2    -16.22   0.75   0.75   0.5/0      sol argile départ galerie avec passage bas ponctuel
+MEDU11_1a       MEDU11_2a      7.33      115.3    -17.3    2      2      0.5/0.5    point sur bloc dans laminoir se jetant en paroi dans le colletceur large de 8 m
+MEDU11          MEDU11_1       4.41      44.3     -25.8    7.6    2.4    0.5/0      dans laminoir se jetant 1 m devant en paroi dans le colletceur
+MEDU11_1        MEDU11_2       4.81      334.7    -1.8     3.3    4.9    0.9/0      visée latérale dans le laminoir bordant le collecteur puis début galerie
+MEDU11_2        MEDU11_3       4.69      16.7     -8.9     0.6    0.4    0.3/0.5    point sur voûte. Juste avant gour avec reste peu de calcite. calcite flottante et stries verticales (?)
+MEDU11_3        MEDU11_4       1.85      16.7     -2.4     0.55   0.55   0.6/0      
+MEDU11_4        MEDU11_5       2.33      49.4     0.9      2      3      0/1        sur voûte dans laminoir bordant en hauteur le collecteur
+MEDU10          MEDU10_1       8.5       61.3     -8.5     0.75   0.75   0.5/0      départ galerie basse supérieure et parallèle à la précédente
+MEDU10_1        MEDU10_2       3.5       15       -14      0      0              galerie basse
+MEDU10_2        MEDU10_3       1.1       319      -19      0      0              raccord sur autre galerie basse
+MEDU10          MEDU12         5.212     3.5      -8.9     4      1.8    1.1/1      en paroi droite petite salle carrefour de 2 départs
+MEDU12          MEDU13         10.78     262.9    17.8     0      0      5.5/0      paroi 2.4 devant dans petite salle sup. sol argile. A 3 m derrière sortie de la galerie de 3 x 1.4 m de large. Point sur dôme argile
+MEDU12          MEDU12_1       3.34      328.3    2.8      1.4    0.7    1.2/0.4    sur bloc haut de 40 cm. Sol argile
+MEDU12_1        MEDU12_2       2.44      335.9    -0.3     2.6    0      1.2/0      paroi 60 cm devant sol argile
+MEDU12_2        MEDU12_3       4.71      255.4    26.1     1      1.6    1.56/0     sommet remontée sur argile
+MEDU12_3        MEDU14         3.79      217.4    9.7      2.4    2.4    6.2/0      dans petite salle sup. Départ en arrière par ressaut ascendant dans méandre avec bloc coincé. Cairn sur dôme argile
+MEDU14          MEDU13         3.044     202.9    -4.3     3      2.4    5.5/0      raccord sur dôme argile
+MEDU13          MEDU13_1       3.84      178.5    3.4      3.9    1.5    6.8/0      galerie avec sol argile
+MEDU13_1        MEDU15         6.87      147.3    0.9      2.5    3.45   4.6/0      à droite paroi à 0.75 m. en hauteur pour suite largeur. Base remontée argileuse
+MEDU15          MEDU15_1       6.27      100.8    28       1.25   1.25   1.6/0      sol argile remontant jusqu'à un col
+MEDU15_1        MEDU16         5.4       95       -16      1.9    1.3    3/0        fin galerie 1 m devant sur vide redonnant dans méandre
+MEDU16          MEDU9BIS       6.76      62.7     -53.62   0      0      /0         visée de raccord vers point 9 mais celui-ci non visible
+MEDU16          MEDU16_1a      9.08      75.4     1.91     0      0      /0         visée au-dessus méandre  sur départ galerie étage sup.
+MEDU15          MEDU15_1a      3.76      359.9    -18.1    2.5    2.2    0.8/0      la largeur gauche az 3.6°
+MEDU15_1a       MEDU10         7.79      66.8     -17      0      0      0.9/0      descente par galerie large de 2.5 m. Raccord sur point 10
+endcenterline
+
+
+endsurvey

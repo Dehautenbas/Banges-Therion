@@ -1,0 +1,22 @@
+encoding  utf-8
+
+survey fossile-aval_tot -title "fossile-aval"
+
+input fossile-aval_map.th
+
+
+    input datas/fossile-aval.th    
+
+    
+
+
+#####   PLAN    #####
+    input datas/fossile-aval_P.th2
+
+
+##### COUPE EXTENTED #####   
+    input datas/fossile-aval_C.th2
+
+
+
+endsurvey

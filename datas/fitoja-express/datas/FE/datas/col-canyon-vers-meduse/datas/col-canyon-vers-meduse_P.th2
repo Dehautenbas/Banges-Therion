@@ -1,6 +1,6 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -128.0 -128.0 1053.195 580.755
-##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_area_zoom_to 100
 ##XTHERION## xth_me_image_insert {255.908 1 1.0} {334.646 0} col-canyon-vers-meduse_P.xvi 0 {}
 
 
@@ -12,8 +12,6 @@ point 678.9780000000001 228.306 station -name 3
 point 492.478 254.856 station -name 2
 
 point 408.45799999999997 279.426 station -name 1
-
-point 255.908 334.646 station -name 0
 
 area u:galerie
   l22-878-200
@@ -55,35 +53,9 @@ line contour -reverse on
   smooth off
 endline
 
-point 219.5 277.5 label -text "col"
-
-line contour
-  165.5 324.5
-  165.5 324.5 241.0 395.0 268.0 397.5
-  smooth off
-endline
-
-line contour
-  206.0 313.5
-  206.0 313.5 259.0 355.0 266.5 364.5
-  smooth off
-endline
-
 line contour
   403.0 327.0
   403.0 327.0 358.0 266.0 358.5 247.5
-  smooth off
-endline
-
-line contour
-  340.0 345.5
-  323.5 332.5 289.0 270.0 292.5 258.5
-  smooth off
-endline
-
-line contour
-  278.5 356.0
-  270.0 347.0 243.0 317.0 236.5 303.5
   smooth off
 endline
 
@@ -151,14 +123,13 @@ point 510.0 278.5 label -text R3
 line pit
   503.0 265.5
   503.0 265.5 498.5 236.0 494.0 229.5
+  smooth off
 endline
 
 line wall -reverse on
-  300.5 477.5
-  300.5 477.5 259.5 413.0 261.0 394.5
-  262.5 376.0 245.0 354.0 270.0 349.0
+  367.0 332.0
   altitude .
-  295.0 344.0 409.5 327.5 419.5 320.0
+  392.0 327.0 409.5 327.5 419.5 320.0
   429.5 312.5 480.5 266.0 498.5 263.5
   516.5 261.0 611.5 270.0 624.0 270.0
   636.5 270.0 692.5 254.5 704.5 252.0
@@ -169,91 +140,8 @@ line wall -reverse on
   680.0 102.5 573.5 116.0 555.5 146.5
   537.5 177.0 527.0 225.0 499.5 232.5
   472.0 240.0 426.5 262.0 398.5 261.5
-  370.5 261.0 325.0 258.0 303.0 266.0
-  281.0 274.0 255.5 306.0 225.0 314.5
-  194.5 323.0 105.0 349.5 91.0 351.0
-  smooth off
+  370.5 261.0 341.0 256.0 319.0 264.0
 endline
-
-line wall -reverse on
-  136.5 462.5
-  136.5 462.5 218.5 363.5 235.0 433.0
-  251.5 502.5 243.0 495.5 244.0 500.5
-  smooth off
-endline
-
-endscrap
-
-
-
-scrap SP2_col-canyon-vers-meduse -projection plan -station-names "" "@col-canyon-vers-meduse" -scale [0 0 78.7402 0 0 0 1 0 m]
-
-point 772.5 119.0 stalagmite
-
-point 649.5 157.0 blocks
-
-line arrow
-  661.0 137.5
-  751.5 127.0
-endline
-
-line arrow
-  649.5 138.5
-  594.5 140.5
-endline
-
-line border
-  606.0 201.5
-  606.5 189.5 613.5 150.5 619.5 140.5
-  625.5 130.5 622.0 100.5 614.5 89.0
-  smooth off
-endline
-
-line border
-  627.0 197.5
-  630.0 180.5 635.0 165.0 640.5 144.5
-  646.0 124.0 625.5 84.0 628.5 81.5
-  smooth off
-endline
-
-line border
-  750.5 173.0
-  750.5 173.0 766.5 104.5 758.5 90.5
-  smooth off
-endline
-
-line border
-  718.0 185.0
-  718.0 185.0 726.5 99.0 719.0 83.0
-  smooth off
-endline
-
-line border
-  672.0 192.5
-  672.0 192.5 672.0 105.5 663.0 85.0
-  smooth off
-endline
-
-line wall
-  487.5 112.0
-  516.5 109.0 689.0 79.0 731.0 90.5
-  altitude .
-  773.0 102.0 884.5 91.0 908.0 87.5
-  931.5 84.0 978.0 77.0 995.5 73.5
-  smooth off
-endline
-
-line wall
-  490.5 210.5
-  532.5 206.5 643.0 196.0 675.0 186.0
-  707.0 176.0 823.5 150.0 851.0 153.0
-  878.5 156.0 967.5 180.5 998.0 188.5
-  smooth off
-endline
-
-point 649.818 171.786 station -name 5
-
-point 768.548 124.536 station -name 4
 
 endscrap
 

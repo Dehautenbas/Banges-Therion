@@ -1,6 +1,6 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -128.0 -1120.08 2466.0 789.92
-##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_area_zoom_to 200
 ##XTHERION## xth_me_image_insert {0.0 1 1.0} {661.92 {}} P500_Fe-et-meduse-etage-inter.png 0 {}
 ##XTHERION## xth_me_image_insert {520.669 0 1.0} {84.36699999999999 BECQUET-ENTREE} entree-jonction_P.xvi 0 {}
 
@@ -71,6 +71,7 @@ endline
 line pit -reverse on
   557.75 -94.0
   568.0 -94.25 602.25 -94.5 599.5 -73.75
+  smooth off
 endline
 
 line pit
@@ -209,15 +210,21 @@ line pit -reverse on
 endline
 
 line flowstone
-  615.0 -59.0
-  607.5 -68.0 592.5 -77.0 596.0 -89.0
-  599.5 -101.0 599.0 -113.5 598.0 -118.0
-  smooth off
+  599.0 -67.5
+  608.5 -66.5 612.0 -61.5 618.5 -78.0
+  625.0 -94.5 625.0 -102.0 631.0 -103.0
+endline
+
+line flowstone
+  601.0 -49.5
+  612.5 -46.0 628.0 -42.0 629.5 -55.0
+  631.0 -68.0 634.0 -69.5 634.5 -72.5
 endline
 
 line flowstone
   629.5 7.0
   638.5 5.5 657.0 -8.0 655.0 16.5
+  smooth off
 endline
 
 line flowstone
@@ -227,14 +234,18 @@ line flowstone
 endline
 
 line label -text "boyau"
-  741.5 -17.0
-  759.5 -6.0 788.0 10.5 795.0 14.0
+  743.0 -3.75
+  761.0 7.25 785.0 14.5 792.0 18.0
   smooth off
 endline
 
-line wall
+line wall -subtype presumed
   835.5 187.0
   818.0 183.5 782.5 175.5 767.5 167.5
+endline
+
+line wall
+  767.5 167.5
   752.5 159.5 727.0 153.5 724.0 149.5
   721.0 145.5 715.5 130.0 723.0 130.0
   730.5 130.0 739.0 141.0 746.5 128.5
@@ -258,10 +269,16 @@ line water-flow
   smooth off
 endline
 
-line pit
-  609.5 -178.0
-  601.0 -172.5 591.5 -157.5 577.5 -168.5
-  smooth off
+area u:galerie
+  l156-604--185
+endarea
+
+line pit -id l156-604--185 -close on
+  569.5 -174.0
+  569.0 -180.5 567.5 -191.5 579.0 -191.5
+  590.5 -191.5 604.0 -187.5 608.5 -180.5
+  613.0 -173.5 604.5 -158.5 597.5 -160.0
+  590.5 -161.5 570.0 -167.5 569.5 -174.0
 endline
 
 line wall
@@ -278,6 +295,10 @@ line wall
   829.5 65.0 819.0 61.5 810.5 64.5
   802.0 67.5 792.0 66.0 787.0 80.5
   782.0 95.0 763.5 136.0 773.5 141.0
+endline
+
+line wall -subtype presumed
+  773.5 141.0
   783.5 146.0 806.5 150.5 815.5 154.5
   altitude .
   824.5 158.5 821.5 170.0 842.5 176.0
@@ -320,8 +341,6 @@ endline
 
 point 420.5 -164.0 label -text "P10?"
 
-point 707.0 -70.5 label -text "<it>Puits de la disconcorde"
-
 point 418.5 -99.0 label -text "E10?"
 
 line water-flow
@@ -332,13 +351,25 @@ endline
 
 point 849.5 187.5 label -text ?
 
-point 667.5 -168.0 label -text "<it>etr. de la douche"
+line arrow
+  553.5 -177.0
+  585.0 -177.5
+endline
 
-point 675.0 -93.0 label -text P35
+line label -text "<it>etr. de la douche" -scale l
+  491.0 -181.5
+  508.0 -180.0 534.5 -178.5 540.0 -178.5
+endline
+
+line label -text "<it>La disconcorde - P35"
+  580.5 -35.5
+  613.0 -24.5 645.0 -22.5 653.0 -36.5
+endline
 
 line label -text "<it>la mine"
-  684.0 73.5
-  694.5 76.5 730.0 87.0 739.0 80.5
+  702.0 77.25
+  712.5 80.25 738.0 81.25 747.0 74.75
+  smooth off
 endline
 
 line wall
@@ -361,9 +392,9 @@ line wall
   551.0 -109.5 537.5 -121.5 529.5 -122.0
   521.5 -122.5 504.0 -113.5 504.0 -121.5
   504.0 -129.5 510.5 -129.5 514.0 -133.5
-  517.5 -137.5 518.5 -138.5 508.0 -141.5
+  517.5 -137.5 506.5 -142.0 496.0 -145.0
   altitude .
-  497.5 -144.5 473.0 -153.0 477.5 -145.5
+  485.5 -148.0 473.0 -153.0 477.5 -145.5
   482.0 -138.0 480.0 -140.5 473.5 -135.0
   467.0 -129.5 452.0 -110.0 449.0 -106.5
   smooth off
@@ -585,8 +616,8 @@ line water-flow
 endline
 
 line water-flow
-  670.5 38.5
-  644.5 18.5 620.5 40.0 618.0 41.0
+  672.0 32.5
+  646.0 12.5 620.5 40.0 618.0 41.0
   smooth off
 endline
 
@@ -607,6 +638,20 @@ line pit
   612.0 24.5
   627.5 27.0 639.0 38.5 645.5 40.0
   smooth off
+endline
+
+area u:galerie
+  l147-622-34
+endarea
+
+line pit -id l147-622-34 -close on -reverse on
+  639.0 38.5
+  631.0 35.75 604.75 30.25 606.25 40.5
+  607.75 50.75 607.75 59.0 616.75 58.5
+  625.75 58.0 633.5 54.5 637.25 51.75
+  641.0 49.0 641.0 46.25 641.0 46.25
+  smooth off
+  641.0 46.25 647.0 41.25 639.0 38.5
 endline
 
 line wall

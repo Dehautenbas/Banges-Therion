@@ -40,7 +40,7 @@ layout plan
   colour map-fg [96 96 86]   ###Couleur Galeries #Gris[80 80 80]#
   #color map-bg 96            ### couleur du fond (80% blanc / 20% gris => 80)
 
-  scale 1  500                    
+  scale 1  200                    
   #base-scale 1 300                
 
   cs UTM32

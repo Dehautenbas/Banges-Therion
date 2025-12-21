@@ -1,0 +1,282 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128.0 -128.0 974.4549999999999 738.235
+##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_image_insert {728.343 1 1.0} {177.164 1} fossile-sup2_P.xvi 0 {}
+
+
+
+scrap SP1_fossile-sup2 -projection plan -station-names "" "@fossile-sup2" -scale [0 0 78.7402 0 0 0 1 0 m]
+
+line floor-step
+  767.0 185.0
+  753.0 210.0 752.0 205.5 744.0 246.5
+  736.0 287.5 720.0 334.0 722.0 345.0
+  724.0 356.0 725.0 362.0 739.0 371.0
+  smooth off
+endline
+
+line floor-step
+  634.0 352.0
+  658.0 327.0 733.0 259.0 694.0 194.0
+  smooth off
+endline
+
+point 703.0 36.5 label -text "imp. ponct." -scale xs
+
+line wall -subtype presumed
+  732.0 43.0
+  735.0 58.0 733.0 72.0 736.0 97.0
+endline
+
+line wall
+  736.0 97.0
+  739.0 122.0 741.0 162.0 746.0 182.0
+  751.0 202.0 760.0 209.0 765.0 230.0
+  770.0 251.0 748.5 346.5 734.5 363.5
+  smooth off
+endline
+
+point 753.5 58.5 air-draught -orientation 0.0 -subtype winter
+
+line wall
+  638.0 364.0
+  645.0 345.0 660.0 300.0 672.0 270.0
+  684.0 240.0 700.0 207.0 706.0 181.0
+  altitude .
+  712.0 155.0 702.0 109.0 701.0 99.0
+endline
+
+line wall -subtype presumed
+  701.0 99.0
+  700.0 89.0 692.0 59.0 691.0 46.0
+  smooth off
+endline
+
+area clay
+  l13-780-276
+endarea
+
+line label
+endline
+
+area water
+endarea
+
+line label -id l13-780-276 -close on
+  762.0 363.0
+  731.0 353.0 633.0 376.0 622.0 360.0
+  611.0 344.0 681.0 191.0 690.0 168.0
+  699.0 145.0 731.0 108.0 755.0 134.0
+  779.0 160.0 793.0 373.0 762.0 363.0
+endline
+
+point 675.2629999999999 407.544 station -name 3
+
+point 704.2629999999999 276.734 station -name 2
+
+point 728.343 177.164 station -name 1
+
+point 717.0029999999999 101.244 station -name 0
+
+endscrap
+
+
+
+scrap SP2_fossile-sup2 -projection plan -station-names "" "@fossile-sup2" -scale [0 0 78.7402 0 0 0 1 0 m]
+
+point 464.22299999999996 183.974 station -name 7
+
+point 458.243 239.07399999999998 station -name 6
+
+point 497.703 362.004 station -name 5
+
+point 83.59299999999996 409.084 station -name 12
+
+point 191.96299999999997 412.674 station -name 11
+
+point 209.56299999999996 409.06399999999996 station -name 10
+
+point 271.043 404.44399999999996 station -name 9
+
+point 431.183 314.574 station -name 8
+
+line contour
+  227.5 493.0
+  212.5 493.5 201.0 497.0 196.0 490.5
+  smooth off
+endline
+
+point 161.25 408.75 label -text "etr." -scale xs
+
+point 286.5 400.0 label -text "etr." -scale xs
+
+line floor-step
+  479.75 263.5
+  477.75 268.75 472.25 277.25 462.0 268.25
+  smooth off
+endline
+
+line floor-step
+  482.25 293.25
+  478.25 296.75 475.75 304.75 466.0 296.5
+  smooth off
+endline
+
+line floor-step
+  489.25 320.0
+  486.25 325.0 475.25 329.5 465.25 325.0
+  smooth off
+endline
+
+area clay
+  l50-508-372
+endarea
+
+line label -id l50-508-372 -close on
+  480.0 383.25
+  480.0 383.25 507.25 378.5 519.5 360.5
+  531.75 342.5 486.75 241.0 486.75 241.0
+  smooth off
+  486.75 241.0 461.5 227.75 452.75 264.25
+  444.0 300.75 455.25 302.5 455.25 302.5
+  smooth off
+  480.0 383.25
+endline
+
+line floor-step -close off
+  487.0 352.25
+endline
+
+line floor-step -reverse on
+  469.5 344.75
+  474.0 344.5 488.75 350.25 495.5 338.75
+  smooth off
+endline
+
+line pit
+  474.5 220.25
+  474.5 220.25 453.25 247.25 453.25 260.0
+  smooth off
+endline
+
+area u:galerie
+  l39-84-415
+endarea
+
+line pit -id l39-84-415 -close on
+  85.0 389.5
+  85.0 397.75 84.75 417.5 83.25 423.0
+  81.75 428.5 58.25 431.0 58.25 431.0
+  smooth off
+  52.75 403.0
+  56.0 376.25
+  56.0 376.25 85.0 381.25 85.0 389.5
+endline
+
+area clay
+  l36-280-516
+endarea
+
+line label -id l36-280-516 -close on
+  172.5 548.5
+  92.5 425.0
+  96.5 392.0
+  214.5 372.0
+  362.5 323.0
+  414.0 261.0
+  449.5 298.5
+  425.5 400.0
+  226.0 559.5
+  172.5 548.5
+endline
+
+line contour -reverse on
+  278.5 417.0
+  274.5 410.5 271.0 409.5 271.0 399.0
+  smooth off
+endline
+
+line contour
+  205.0 395.0
+  214.0 400.5 252.5 409.0 268.0 398.5
+  smooth off
+endline
+
+line contour
+  217.5 412.0
+  209.0 424.0 202.5 433.5 195.0 432.5
+  smooth off
+endline
+
+line contour
+  272.0 425.5
+  255.5 428.0 239.5 429.0 237.0 445.0
+  smooth off
+endline
+
+line contour
+  232.5 461.5
+  213.0 457.5 203.5 466.0 196.5 453.0
+  smooth off
+endline
+
+line contour
+  224.5 521.5
+  214.0 522.0 195.5 526.5 191.0 517.5
+  smooth off
+endline
+
+line wall
+endline
+
+line wall
+  439.0 317.0
+  426.0 326.0 409.0 352.0 391.0 363.0
+  altitude .
+  373.0 374.0 340.0 371.0 326.0 391.0
+  312.0 411.0 297.75 409.0 291.25 408.0
+  284.75 407.0 279.5 400.5 281.0 409.25
+  282.5 418.0 292.0 423.75 281.25 428.5
+  270.5 433.25 266.25 432.0 257.75 437.0
+  249.25 442.0 236.75 445.5 238.75 459.75
+  240.75 474.0 233.25 547.5 222.0 548.5
+  210.75 549.5 193.0 545.5 187.25 535.25
+  181.5 525.0 192.0 463.75 190.25 452.75
+  188.5 441.75 195.0 433.25 183.75 429.75
+  172.5 426.25 85.5 419.75 81.5 419.5
+  altitude .
+  77.5 419.25 63.0 429.5 61.0 419.5
+  59.0 409.5 56.5 388.0 63.0 385.0
+  69.5 382.0 69.5 396.75 87.75 395.5
+  106.0 394.25 186.0 390.75 192.5 392.5
+  199.0 394.25 249.0 376.25 258.0 374.0
+  267.0 371.75 271.0 399.0 278.25 395.75
+  285.5 392.5 281.75 376.25 295.25 367.75
+  308.75 359.25 400.0 316.75 406.75 307.5
+  413.5 298.25 438.0 259.25 439.25 242.0
+  440.5 224.75 454.5 191.0 453.75 186.75
+  453.0 182.5 440.25 180.5 453.0 173.75
+  465.75 167.0 483.25 158.5 491.0 157.5
+  smooth off
+endline
+
+point 491.5 242.0 label -text "R4" -scale s
+
+line wall -id L2_SP2_fossile-sup2
+  501.0 171.0
+  481.0 190.0 483.12 200.18 472.75 214.0
+  470.5 217.0 472.95 228.83 478.0 246.0
+  488.0 280.0 490.5 348.0 518.5 367.0
+  smooth off
+endline
+
+line wall -id L1_SP2_fossile-sup2
+  495.0 394.5
+  466.0 370.5 457.0 244.0 452.0 251.0
+  447.0 258.0 445.0 305.0 439.0 317.0
+  smooth off
+endline
+
+endscrap
+
+

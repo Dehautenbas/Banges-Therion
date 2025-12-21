@@ -6,19 +6,44 @@ layout custom_lines
 
     ### redefinitions of existing points
 
-def l_contour(expr P)(text txt) =
-  T:=identity;
-  pickup PenD;
-  thdraw P withpen pencircle scaled 0.5 withcolor (0.62, 0.62, 0.62);
-  for pnt=txt:
-    if (pnt=-2) or (pnt=-1):
-      mark_(P,arctime(arclength(P)/2) of P, 0.2u);
-    elseif pnt>=0:
-      mark_(P,pnt,0.2*u);
-    fi;
-    exitif pnt<0;
-  endfor;
-enddef;
+
+
+# Modifier la ligne floorstep (escarpement) par la ligne pit mais avec le trait plus clair
+
+          def l_floorstep (expr P) =
+            T:=identity;
+            drawoptions(withcolor (0.62, 0.62, 0.62));  % modif pour couleur
+            cas := 0;
+            dlzka := arclength P;
+            mojkrok:=adjust_step(dlzka, 0.25u);
+            pickup PenD;
+            forever:
+              t := arctime cas of P;
+              mark_ (P,t,0.2u);
+              cas := cas + mojkrok;
+              exitif cas > dlzka + (mojkrok / 3); % for rounding errors
+            endfor;
+            pickup PenC;
+            thdraw P;
+          enddef;
+
+
+
+# Modifier la ligne contour (courbe de niveau) 
+              def l_contour(expr P)(text txt) =
+                T:=identity;
+                  drawoptions(withcolor (0.62, 0.62, 0.62));  % modif pour couleur
+                pickup PenD;
+                thdraw P withpen pencircle scaled 0.5;
+                for pnt=txt:
+                  if (pnt=-2) or (pnt=-1):
+                    mark_(P,arctime(arclength(P)/2) of P, 0.2u);
+                  elseif pnt>=0:
+                    mark_(P,pnt,0.2*u);
+                  fi;
+                  exitif pnt<0;
+                endfor;
+              enddef;
 
 
                def l_gradient(expr P) =

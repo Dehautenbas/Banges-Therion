@@ -1,0 +1,13 @@
+encoding  utf-8
+map MP_fossile-aval -title "fossile-aval"
+  SP1_fossile-aval
+  break
+  SP2_fossile-aval
+endmap
+
+
+map MC_fossile-aval -title "fossile-aval"
+  SC1_fossile-aval
+  break
+  SC2_fossile-aval
+endmap

@@ -1,0 +1,16 @@
+encoding  utf-8
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {0} {0} datas/meduse-inf_C.xvi 0 {}
+
+
+
+scrap SC1_meduse-inf -projection plan -station-names "" "@meduse-inf"
+
+endscrap
+
+scrap SC2_meduse-inf -projection plan -station-names "" "@meduse-inf"
+
+endscrap
+
+
+

@@ -1,0 +1,73 @@
+
+
+
+survey fossile-aval -title "collecteur fossile aval" 
+  
+
+
+centerline
+  
+    team "Guichebaron Patrick"
+    team "Nant Jacques"
+
+    date 2025.12.07
+    
+    data normal from to length compass clino ignoreall 
+    units compass clino degrees
+    units length meter
+
+
+
+COFO1      COFO1_1a    2.532     160.3    -6.9     0.015   0.015   0.1/0    départ sol argile et calcite H =0.57 x 0.84/2.1. Visée sur fond aval perte petit actif imp sans ct d'air
+COFO1      COFO1_1     5.71      296      5.4      1.9     2.4     0.7/0    fin passage bas. sol argile calcifié. Actif sur la droite formant une faible travée large de 1.5 m qui repart à gauche (l= 1 m)
+COFO1_1    COFO1_2     3.39      290      -0.83    3.7     2.6     1.9/0    sur calcite et actif sans bruit occupant toute la largeur
+COFO1_2    COFO1_3     7.446     292      21.2     6.5     1.6     2.2/0    argile. actif arrivant de la gauche sous faible hauteur et qui serait à désobstruer
+COFO1_3    COFO2       8.01      294.5    21.8     6.5     3       3.3/0    rupture 3 m avant (toboggan glissant). Gros coups de gouge en voûte. Bouquet de grosses stalagmites à droite. Gros paquet de glaise posé ensuite pour marquer le point au sol. Largeur à droite sur angle galerie à 73°
+COFO2      COFO2_1a    2.3       178.8    0                                 angle galerie
+COFO2      COFO3       4.09      223      16.73    1.8     2.15    0.8/0    sur crête argile. Concrétionnement à droite
+COFO3      COFO3_1a    4.472     218      -6.9     1.1     1.7     0.4/0.24 sur stalagmite haute de 24 cm
+COFO3_1a   COFO3_2a    0.848     195.5    -28.1            0.5/0            suite plongeante à gauche. Ct d'air soufflant ?
+COFO3_2a   COFO3_3a    3.996     164.3    -21.7    0.4     0.4     0.3/0    visée dans la suite très étroite
+COFO3      COFO3_1     1.85      207.1    -8.67            /0
+COFO3_1    COFO3_2     0.972     159.5    -23.4    0.5     0.5     0.4/0.4  sur voûte. départ boucle
+COFO3_2    COFO3_3     3.899     101.6    -29.6    ?       ?       0.4/0    visée dans descente basse rejoignant l'arrivée de l'actif en paroi galerie
+COFO3_3    COFO3_4     3         65       -1               0.3/0
+COFO2      COFO4       3.7       301.5    42.52    2.7     3.1     1.1/0    sur bloc sommet ressaut incliné et glissant
+COFO4      COFO4_1a    3.1       30       21       0.7     0.7     0.5/0    arrivée boucle basse
+COFO4      COFO4_1     6.857     301      35.9     0.5     0.7     0.46/0   fracture. argile et blocs
+COFO4_1    COFO4_2     2.216     292      21.2     0.4     0.4     0.6/0    gros bloc formant étroiture. à pèter ?
+COFO4_2    COFO4_3     2.3       245.4    3.2      0.4     0.5     0.6/0    visée dans la suite pénétrable. bel écho en avant ?
+COFO2      COFO2_1     3.625     17.5     30       2.1     2       1.4/0    bouquet grosses concrétions à droite.
+COFO2_1    COFO5       4.559     36       12.5     2.2     2.2     1.1/0    argile et concrétions. Largeur à droite diminue ensuite
+COFO5      COFO5_1a    4.214     34       8.4             /0.5    début départ argileux et temporairement actif
+COFO5      COFO5_1     3.621     310      12.2     2.7     2.7     1.8/0    départ sur la gauche (0.5 x 1) un peu en hauteur. formant une boucle basse descendante à gauche
+COFO5_1    COFO5_2     4         310      12.2     3       3.7     1.8/0    sommet petite marche. concrétions et gours cristalisés. Graviers en paroi gauche
+COFO5_2    COFO5_3     7.036     342      6.7      2.8     1.9     2/0      un peu de sable sur petite banquette à droite
+COFO5_3    COFO5_4     12.263    357      2.2      0.9     2.1     1.25/0   sol calcifié avec petits gours cristalisés et concrétionnement sur visée. hauteur environ 1m sur toute la visée
+COFO5_4    COFO6       2.169     31       17.1     1.8     1.5     3.5/0.3  sur dalle rocheuse haute de 30 cm. Zone d'éboulis
+COFO6      COFO6_1     4.94      99.5     -0.17           visée de détail en long contre paroi drote
+COFO6      COFO7       9.588     62.5     19.5            2.6/0    remontée sur éboulis et argile
+COFO7      COFO7_1a    3.27      109.5    4.58     0       0       3/0      extrémité fermée miroir de faille incliné vers le sud
+COFO7_1a   COFO7_2a    13.86     253.6    -3.75    0       0       3/0      autre extrémité fermée miroir de faille (sans doute faille Fitoja)
+COFO7      COFO7_1     3.621     322      -14.1    1.6     2.4     4.1/0    éboulis puis début galerie concrétionnée (concrétions et cristaux) descendante. voûte grosses cupules. Sous fracture perpendiculaire pincée
+COFO7_1    COFO8       6.204     10.5     -41.9    4.6     4.6     4.1/0    descente resssaut incliné. arrivée zone concrétionnée fracture à droite az 102.8° avec très beau bouquet de concrétions très blanches
+COFO8      COFO8_1a    4.6       102.8    0               3/0      fracture fermée avec très beau bouquet de concrétions très blanches
+COFO8      COFO8_1     3.631     340      -8.4     1.5     0.7     3.2/0    calcite. Gros coups de gouge en voûte
+COFO8_1    COFO8_2     6.639     345      -41.5    2.3     0.75    4.5/0    toboggan descendant
+COFO8_2    COFO9       4.722     318.5    -21.4    0.8     2.6     3.1/0    calcite
+COFO9      COFO9_1a    5         41.5     1.49     0.75    1.3     0.7/0    départ contre paroi droite
+COFO9_1a   COFO9_2a    1.22      80.4     15.85    0.3     0.6     0.43/0.3 sommet bord plancher stalagmitique. plafond écaillé à désobstruer.
+COFO9_2a   COFO9_3a    4.19      93.2     14.8             visée dans la suite pénétrable et concrétionnée
+COFO9      COFO9_1     2.34      296.1    -3.79    1.8     2       0.6/0    début galerie basse sol argile et calcite et petites concrétions
+COFO9_1    COFO9_2     4.554     266.9    -3.4     3.2     0.8     0.7/0    galerie basse sol argile et calcite et petites concrétions
+COFO9_2    COFO9_3     3.95      255      -5.66    3.2     1       0.4/0.3  galerie basse sol argile et calcite et petites concrétions; Point sur petite stalagmite sur dalle
+COFO9_3    COFO9_4     8.409     254.3    -1.9     3.2     1       0.5/0    galerie basse sol argile et calcite et petites concrétions; Point sur mini stalagmite
+COFO9_4    COFO9_5     3.359     236.3    -0.4     2.2     2.5     0.6/0.2  galerie basse sol argile et calcite et petites concrétions
+COFO9_5    COF10       8.179     233      -9               /0       arête point bas col argile dans grosse galerie. Point topo Martin du même jour. Départ grosse galerie vers aval et accès méduse salle Fitoja
+COF10      MEDU18      4.9       274      -25.08           /0       raccord sur sommet coulée stalagmitique en base petit ressau d'accès. Point topo de 2024.
+
+
+endcenterline
+
+
+endsurvey

@@ -3,8 +3,13 @@ encoding  utf-8
 
 map MP_FE_tot -projection plan
   MP_entree-jonction@entree-jonction_tot
+  MP_fossile-sup@fossile-sup_tot
+  MP_fossile-sup2@fossile-sup2_tot
   MP_jonction-meduse-haute@jonction-meduse-haute_tot
   MP_boyau-rd-jonction@boyau-rd-jonction_tot
+  MP_fossile-aval@fossile-aval_tot
+  MP_col-canyon-vers-meduse@col-canyon-vers-meduse_tot
+  MP_meduse-inf@meduse-inf_tot
   #MP_salle-fitoja
   #MP_fitoja-express
   #MP_collecteur
