@@ -1,0 +1,58 @@
+<html>
+<head>
+<title>FE_stats.html</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script language="javascript">
+function xTree(node)
+{
+  var fsub = true;
+  var show = false;
+  var last = node.length;
+  var all = document.getElementsByTagName("tr");
+  for(i = 1; i < all.length; i++) {
+    if ((all[i].id.length > node.length) && (all[i].id.substr(0, node.length) == node)) {
+      if (fsub) {
+        fsub = false;
+        show = (all[i].style.display == "none");
+        last = all[i].id.lastIndexOf(".");
+      }
+      if (show) {
+        if (all[i].id.lastIndexOf(".") == last)
+        all[i].style.display = "";
+      } else {
+        all[i].style.display = "none";
+      }
+    }
+  }
+}
+</script>
+<style type="text/css">
+body {font-family: Verdana, Helvetica, Arial, sans-serif; line-height: 1.5;}
+table {font-size:80%; border-spacing: 0px;}
+th {border-bottom:2px solid #a7a9aa; padding-left:8px; padding-right:8px; padding-top:0px; padding-bottom:1px;}
+td {border-bottom:1px solid #a7a9aa; padding-left:8px; padding-right:8px; padding-top:0px; padding-bottom:0px;}
+</style>
+</head>
+<body>
+<table>
+<tr><th align="left">Title</th><th align="right">Length</th><th align="right">Depth</th><th align="right">Explored</th><th align="right">Approx.</th><th align="right">Duplicate</th><th align="right">Surface</th><th align="right">Shots</th><th align="right">Stations</th></tr>
+<tr id="FE_tot"><td align="left" style="padding-left: 0px"><a href="javascript:xTree('FE_tot')">Gouffre de Fitoja-Express</a></td><td align="right">1496</td><td align="right">156</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">613</td><td align="right">620</td></tr>
+<tr id="FE_tot.entree-jonction_tot"><td align="left" style="padding-left: 12px"><a href="javascript:xTree('FE_tot.entree-jonction_tot')">entree-jonction</a></td><td align="right">250</td><td align="right">87</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">70</td><td align="right">71</td></tr>
+<tr id="FE_tot.entree-jonction_tot.entree-jonction"><td align="left" style="padding-left: 24px">FE de l'entrée à la jonction</td><td align="right">250</td><td align="right">87</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">70</td><td align="right">71</td></tr>
+<tr id="FE_tot.jonction-meduse-haute_tot"><td align="left" style="padding-left: 12px"><a href="javascript:xTree('FE_tot.jonction-meduse-haute_tot')">jonction-meduse-haute</a></td><td align="right">372</td><td align="right">56</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">91</td><td align="right">93</td></tr>
+<tr id="FE_tot.jonction-meduse-haute_tot.jonction-meduse-haute"><td align="left" style="padding-left: 24px">de la jonction à l'étage haut de la méduse</td><td align="right">372</td><td align="right">56</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">91</td><td align="right">93</td></tr>
+<tr id="FE_tot.boyau-rd-jonction_tot"><td align="left" style="padding-left: 12px"><a href="javascript:xTree('FE_tot.boyau-rd-jonction_tot')">boyau-rd-jonction</a></td><td align="right">122</td><td align="right">39</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">215</td><td align="right">216</td></tr>
+<tr id="FE_tot.boyau-rd-jonction_tot.boyau-rd-jonction"><td align="left" style="padding-left: 24px">boyau-rd-jonction</td><td align="right">122</td><td align="right">39</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">215</td><td align="right">216</td></tr>
+<tr id="FE_tot.meduse-inf_tot"><td align="left" style="padding-left: 12px"><a href="javascript:xTree('FE_tot.meduse-inf_tot')">meduse-inf</a></td><td align="right">357</td><td align="right">34</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">73</td><td align="right">72</td></tr>
+<tr id="FE_tot.meduse-inf_tot.meduse-inf"><td align="left" style="padding-left: 24px">meduse inf</td><td align="right">357</td><td align="right">34</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">73</td><td align="right">72</td></tr>
+<tr id="FE_tot.fossile-sup_tot"><td align="left" style="padding-left: 12px"><a href="javascript:xTree('FE_tot.fossile-sup_tot')">fossile-sup</a></td><td align="right">65</td><td align="right">16</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">9</td><td align="right">10</td></tr>
+<tr id="FE_tot.fossile-sup_tot.fossile-sup"><td align="left" style="padding-left: 24px">de la jonction à l'étage haut de la méduse</td><td align="right">65</td><td align="right">16</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">9</td><td align="right">10</td></tr>
+<tr id="FE_tot.fossile-sup2_tot"><td align="left" style="padding-left: 12px"><a href="javascript:xTree('FE_tot.fossile-sup2_tot')">fossile-sup2</a></td><td align="right">65</td><td align="right">9</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">66</td><td align="right">67</td></tr>
+<tr id="FE_tot.fossile-sup2_tot.fossile-sup2"><td align="left" style="padding-left: 24px">fossile-sup2</td><td align="right">65</td><td align="right">9</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">66</td><td align="right">67</td></tr>
+<tr id="FE_tot.fossile-aval_tot"><td align="left" style="padding-left: 12px"><a href="javascript:xTree('FE_tot.fossile-aval_tot')">fossile-aval</a></td><td align="right">219</td><td align="right">16</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">47</td><td align="right">48</td></tr>
+<tr id="FE_tot.fossile-aval_tot.fossile-aval"><td align="left" style="padding-left: 24px">collecteur fossile aval</td><td align="right">219</td><td align="right">16</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">47</td><td align="right">48</td></tr>
+<tr id="FE_tot.col-canyon-vers-meduse_tot"><td align="left" style="padding-left: 12px"><a href="javascript:xTree('FE_tot.col-canyon-vers-meduse_tot')">col-canyon-vers-meduse</a></td><td align="right">45</td><td align="right">19</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">42</td><td align="right">43</td></tr>
+<tr id="FE_tot.col-canyon-vers-meduse_tot.col-canyon-vers-meduse"><td align="left" style="padding-left: 24px">col-canyon-vers-meduse</td><td align="right">45</td><td align="right">19</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">42</td><td align="right">43</td></tr>
+</table>
+</body>
+</html>

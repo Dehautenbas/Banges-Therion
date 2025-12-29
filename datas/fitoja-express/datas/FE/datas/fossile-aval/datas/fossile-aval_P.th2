@@ -1,6 +1,6 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -128 -1782 2466 1911.965
-##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_area_zoom_to 100
 ##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} fossile-aval.png 0 {}
 ##XTHERION## xth_me_image_insert {1837.2090000000003 0 1.0} {-1369.779 COFO1} fossile-aval_P.xvi 0 {}
 
@@ -74,11 +74,13 @@ line wall
   1659.0 -244.0 1647.0 -199.0 1643.0 -185.0
   1639.0 -171.0 1625.0 -140.0 1641.0 -117.0
   1657.0 -94.0 1654.0 -90.0 1666.0 -90.0
+  smooth off
 endline
 
 line wall -subtype presumed
   1666.0 -90.0
   1678.0 -90.0 1716.0 -95.0 1724.0 -95.0
+  smooth off
 endline
 
 point 2028.5 -1186.5 label -text "imp."
@@ -88,6 +90,7 @@ point 1765.5 -846.0 label -text "imp. argile" -scale xs
 line water-flow
   1716.5 -792.5
   1720.5 -802.0 1729.5 -840.0 1730.5 -843.5
+  smooth off
 endline
 
 point 1677.5 -1027.5 stalagmite
@@ -107,12 +110,14 @@ line wall
   1710.0 -944.0 1730.0 -911.0 1721.0 -911.0
   1712.0 -911.0 1708.0 -907.0 1720.0 -887.0
   1732.0 -867.0 1742.0 -847.0 1735.0 -835.0
+  smooth off
   altitude .
 endline
 
 line wall -subtype presumed
   1618.0 -1148.0
   1629.0 -1144.0 1635.0 -1135.0 1649.0 -1135.0
+  smooth off
 endline
 
 line wall
@@ -120,17 +125,20 @@ line wall
   1663.0 -1135.0 1711.0 -1153.0 1742.0 -1152.0
   1773.0 -1151.0 1865.0 -1139.0 1886.0 -1142.0
   1907.0 -1145.0 1971.0 -1181.0 1991.0 -1189.0
+  smooth off
 endline
 
 line wall -subtype presumed
   1580.0 -1173.0
   1573.0 -1156.0 1565.0 -1141.0 1566.0 -1133.0
+  smooth off
 endline
 
 line wall
   1566.0 -1133.0
   1567.0 -1125.0 1561.0 -1100.0 1589.0 -1100.0
   1617.0 -1100.0 1671.0 -1111.0 1646.0 -1119.0
+  smooth off
 endline
 
 line wall -subtype presumed
@@ -156,16 +164,19 @@ point 1667.0 -375.5 label -text R4
 line floor-step
   1157.5 -334.5
   1160.0 -322.5 1151.5 -260.5 1145.5 -261.5
+  smooth off
 endline
 
 line floor-step
   1157.5 -256.5
   1153.5 -269.0 1163.0 -320.0 1169.5 -331.5
+  smooth off
 endline
 
 line floor-step
   1254.5 -285.0
   1230.0 -308.0 1211.5 -304.0 1203.0 -335.5
+  smooth off
 endline
 
 line floor-step -reverse on
@@ -173,15 +184,19 @@ line floor-step -reverse on
   1121.0 -259.5 1114.5 -272.5 1139.5 -264.0
   1164.5 -255.5 1163.5 -246.0 1188.0 -255.0
   1212.5 -264.0 1239.5 -265.0 1250.5 -278.5
+  smooth off
 endline
 
 point 1483.5 -170.0 stalactite
 
 point 1415.5 -188.0 stalagmite
 
-line label -text "galerie basse - argile calcifiée"
+point 1305.0 -216.5 wall-calcite
+
+line label -text "galerie basse - argile calcifiée" -scale s
   1252.0 -216.0
   1293.5 -192.5 1472.0 -132.5 1496.0 -130.0
+  smooth off
 endline
 
 point 1755.5 -79.5 air-draught -orientation 99.7 -subtype winter
@@ -189,41 +204,49 @@ point 1755.5 -79.5 air-draught -orientation 99.7 -subtype winter
 line label -text "plancher stalag. - désob"
   1652.5 -63.5
   1668.0 -64.0 1714.0 -56.5 1719.0 -57.0
+  smooth off
 endline
 
 line flowstone
   1672.5 -81.5
   1690.0 -82.0 1707.5 -84.0 1709.5 -84.5
+  smooth off
 endline
 
 line floor-step
   1594.5 -191.0
   1602.5 -184.0 1631.0 -165.0 1642.5 -169.0
+  smooth off
 endline
 
 line floor-step
   1607.0 -218.5
   1620.5 -211.5 1628.0 -198.0 1652.0 -199.0
+  smooth off
 endline
 
 line floor-step
   1613.5 -239.0
   1623.0 -229.0 1631.0 -214.5 1656.5 -214.5
+  smooth off
 endline
 
 line floor-step
   1617.0 -256.5
   1640.0 -247.0 1630.5 -236.0 1665.5 -237.0
+  smooth off
 endline
 
 line floor-step
   1625.5 -273.0
   1634.5 -263.5 1658.0 -250.5 1673.0 -253.5
+  smooth off
 endline
 
 line label -text "toboggan 5m"
   1651.5 -164.5
   1656.0 -178.5 1673.0 -233.0 1677.0 -238.0
+  smooth off
 endline
 
 point 1677.5 -288.5 scallop
@@ -235,11 +258,13 @@ point 1710.0 -332.0 soda-straw
 line pit
   1639.0 -378.0
   1657.0 -383.0 1676.0 -396.5 1710.0 -377.0
+  smooth off
 endline
 
 line floor-step
   1638.0 -359.5
   1654.0 -364.0 1690.0 -377.0 1719.0 -362.0
+  smooth off
 endline
 
 line floor-step
@@ -247,16 +272,19 @@ line floor-step
   1700.5 -450.5 1628.0 -455.5 1628.0 -441.5
   1628.0 -427.5 1629.5 -424.5 1649.0 -419.5
   1668.5 -414.5 1693.0 -412.5 1695.5 -412.5
+  smooth off
 endline
 
 line floor-step
   1713.0 -462.5
   1685.5 -466.0 1633.5 -469.5 1606.5 -452.0
+  smooth off
 endline
 
 line floor-step
   1678.5 -476.0
   1653.0 -480.0 1588.5 -482.0 1575.0 -477.0
+  smooth off
 endline
 
 line border
@@ -300,6 +328,7 @@ endline
 line label -text "galerie basse - plancher stalg."
   1612.0 -554.0
   1612.0 -554.0 1629.0 -694.0 1634.0 -714.0
+  smooth off
 endline
 
 line label
@@ -321,11 +350,13 @@ endline
 line pit
   1579.0 -937.5
   1576.0 -951.0 1566.5 -975.5 1558.5 -984.0
+  smooth off
 endline
 
 line floor-step
   1547.5 -926.5
   1545.0 -945.5 1543.0 -957.0 1536.5 -965.0
+  smooth off
 endline
 
 point 1510.5 -933.0 blocks
@@ -333,12 +364,14 @@ point 1510.5 -933.0 blocks
 line label -text "? bloc"
   1397.5 -937.5
   1412.0 -935.5 1473.0 -913.0 1480.0 -911.5
+  smooth off
 endline
 
 line wall -subtype presumed
   1547.0 -1138.0
   altitude .
   1550.0 -1151.0 1558.0 -1164.0 1558.0 -1179.0
+  smooth off
 endline
 
 line wall
@@ -347,22 +380,26 @@ line wall
   1579.0 -1025.0 1588.0 -1009.0 1576.0 -1031.0
   1564.0 -1053.0 1524.0 -1113.0 1532.0 -1118.0
   1540.0 -1123.0 1547.0 -1128.0 1547.0 -1138.0
+  smooth off
 endline
 
 line wall -subtype presumed
   1387.0 -969.0
   1414.0 -963.0 1478.0 -937.0 1488.0 -937.0
+  smooth off
 endline
 
 line wall -subtype presumed
   1489.0 -923.0
   1470.0 -935.0 1398.0 -951.0 1389.0 -952.0
+  smooth off
 endline
 
 line wall
   1594.0 -946.0
   1588.0 -955.0 1533.0 -932.0 1519.0 -927.0
   1505.0 -922.0 1496.0 -919.0 1489.0 -923.0
+  smooth off
 endline
 
 line border
@@ -370,6 +407,7 @@ line border
   1985.0 -1160.5 1990.0 -1170.5 1976.0 -1153.0
   1962.0 -1135.5 1952.5 -1135.0 1945.0 -1118.5
   1937.5 -1102.0 1936.5 -1087.5 1927.5 -1080.0
+  smooth off
 endline
 
 line border
@@ -378,28 +416,33 @@ line border
   1887.0 -1111.0 1902.5 -1091.5 1912.5 -1103.0
   1922.5 -1114.5 1927.5 -1133.0 1939.0 -1137.0
   1950.5 -1141.0 1988.0 -1184.5 1991.0 -1189.0
+  smooth off
 endline
 
 line water-flow
   1973.5 -1161.5
   1981.0 -1172.5 2002.5 -1193.0 2009.5 -1197.0
+  smooth off
 endline
 
 line water-flow
   1879.0 -1086.5
   1898.5 -1088.0 1924.5 -1094.5 1929.0 -1104.0
   1933.5 -1113.5 1935.5 -1120.5 1939.5 -1123.5
+  smooth off
 endline
 
 line water-flow
   1752.0 -1107.0
   1767.5 -1104.0 1799.5 -1096.0 1803.5 -1096.0
+  smooth off
 endline
 
 line water-flow
   1516.0 -1246.5
   1536.0 -1231.5 1596.5 -1145.0 1610.5 -1139.0
   1624.5 -1133.0 1647.0 -1124.0 1655.5 -1124.5
+  smooth off
 endline
 
 line wall -close on
@@ -415,72 +458,86 @@ line pit
   1714.0 -1018.5 1751.0 -1044.0 1737.0 -1046.5
   1723.0 -1049.0 1696.0 -1038.0 1688.5 -1045.0
   1681.0 -1052.0 1672.5 -1067.0 1668.5 -1072.0
+  smooth off
 endline
 
 line flowstone
   1748.0 -1084.0
   1743.0 -1096.5 1736.5 -1115.0 1725.5 -1124.5
+  smooth off
 endline
 
 line flowstone
   1812.0 -1054.0
   1813.5 -1078.5 1816.5 -1112.5 1805.5 -1129.5
+  smooth off
 endline
 
 line flowstone
   1859.5 -1065.5
   1859.5 -1088.0 1861.5 -1118.0 1856.0 -1126.5
+  smooth off
 endline
 
 line floor-step
   1887.5 -1071.0
   1886.0 -1085.0 1885.0 -1107.5 1878.5 -1112.0
+  smooth off
 endline
 
 line floor-step
   1837.5 -1064.0
   1838.0 -1085.5 1840.5 -1112.0 1830.0 -1126.0
+  smooth off
 endline
 
 line floor-step
   1773.5 -1063.0
   1775.0 -1079.5 1767.0 -1129.0 1751.0 -1141.0
+  smooth off
 endline
 
 line floor-step
   1765.5 -1030.5
   1769.0 -1038.5 1779.0 -1042.0 1763.5 -1052.0
   1748.0 -1062.0 1703.5 -1079.5 1697.0 -1079.5
+  smooth off
 endline
 
 line floor-step
   1640.0 -1085.0
   1637.5 -1096.0 1641.5 -1099.5 1633.5 -1107.0
+  smooth off
 endline
 
 line floor-step -reverse on
   1547.5 -1097.5
   1557.0 -1096.5 1568.5 -1096.0 1574.5 -1097.5
+  smooth off
 endline
 
 line floor-step
   1583.5 -1051.0
   1578.0 -1060.5 1560.0 -1079.5 1551.5 -1085.0
+  smooth off
 endline
 
 line floor-step -reverse on
   1641.5 -972.0
   1652.0 -978.5 1666.0 -990.0 1675.0 -989.5
+  smooth off
 endline
 
 line floor-step
   1587.0 -1033.5
   1595.5 -1038.0 1616.0 -1055.0 1619.5 -1057.5
+  smooth off
 endline
 
 line floor-step
   1618.0 -1064.0
   1618.0 -1064.0 1586.5 -1040.0 1584.0 -1036.0
+  smooth off
 endline
 
 line floor-step
@@ -493,21 +550,25 @@ endline
 line floor-step
   1589.0 -956.0
   1586.0 -969.0 1588.0 -978.0 1579.0 -988.0
+  smooth off
 endline
 
 line floor-step
   1697.0 -930.0
   1680.0 -925.0 1668.0 -923.0 1665.0 -920.0
+  smooth off
 endline
 
 line floor-step
   1694.0 -858.0
   1684.0 -875.0 1668.0 -891.0 1663.0 -896.0
+  smooth off
 endline
 
 line floor-step
   1604.0 -884.0
   1616.0 -892.0 1620.0 -887.0 1628.0 -901.0
+  smooth off
 endline
 
 line wall -close on -reverse on
@@ -517,9 +578,9 @@ line wall -close on -reverse on
   1639.0 -902.0 1629.0 -888.0 1628.0 -901.0
 endline
 
-line wall
-  1298.5 -317.5
-  1263.5 -298.5 1243.0 -297.0 1245.0 -284.0
+line wall -id L1_SP1_fossile-aval
+  1259.0 -298.0
+  1255.5 -295.5 1243.0 -297.0 1245.0 -284.0
   1247.0 -271.0 1243.0 -250.0 1274.0 -242.0
   1305.0 -234.0 1478.0 -190.0 1497.0 -182.0
   altitude .
@@ -536,20 +597,22 @@ line wall
   1549.0 -821.0 1536.0 -831.0 1557.0 -844.0
   1578.0 -857.0 1623.0 -885.0 1613.0 -902.0
   1603.0 -919.0 1616.0 -932.0 1594.0 -946.0
+  smooth off
 endline
 
 point 1174.0 -292.0 label -text "col"
 
-line wall
+line wall -id L2_SP1_fossile-aval
   1133.0 -342.0
   1146.0 -331.0 1187.0 -321.0 1211.0 -335.0
+  smooth off
   altitude .
-  1235.0 -349.0 1243.5 -360.5 1269.5 -365.0
 endline
 
 line wall -subtype presumed
   1726.0 -70.0
   1707.0 -72.0 1677.0 -76.0 1661.0 -75.0
+  smooth off
 endline
 
 line wall
@@ -559,6 +622,7 @@ line wall
   1520.0 -108.0 1391.0 -136.0 1368.0 -144.0
   1345.0 -152.0 1183.0 -217.0 1167.0 -228.0
   1151.0 -239.0 1114.0 -256.0 1109.0 -258.0
+  smooth off
 endline
 
 point 1301.969 -182.82900000000006 station -name COFO9_4

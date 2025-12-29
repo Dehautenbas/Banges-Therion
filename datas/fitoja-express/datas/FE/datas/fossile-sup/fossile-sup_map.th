@@ -2,7 +2,7 @@ encoding  utf-8
 map MP_fossile-sup -title "fossile-sup"
   SP1_fossile-sup
   break
-  SP2_fossile-sup
+  #SP2_fossile-sup
 endmap
 
 

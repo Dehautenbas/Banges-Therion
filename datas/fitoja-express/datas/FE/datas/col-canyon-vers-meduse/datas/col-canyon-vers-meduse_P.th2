@@ -11,6 +11,8 @@ point 678.9780000000001 228.306 station -name 3
 
 point 492.478 254.856 station -name 2
 
+point 255.908 334.646 station -name 0
+
 point 408.45799999999997 279.426 station -name 1
 
 area u:galerie
@@ -53,7 +55,7 @@ line contour -reverse on
   smooth off
 endline
 
-line contour
+line floor-step
   403.0 327.0
   403.0 327.0 358.0 266.0 358.5 247.5
   smooth off
@@ -114,7 +116,10 @@ line pit
   smooth off
 endline
 
-point 836.0 277.5 label -text "P10 - jonction méduse"
+line label -text "P10 - jonction méduse"
+  712.0 170.0
+  733.0 178.0 777.0 213.0 780.0 240.0
+endline
 
 point 710.5 274.5 label -text R2
 
@@ -126,10 +131,9 @@ line pit
   smooth off
 endline
 
-line wall -reverse on
-  367.0 332.0
-  altitude .
-  392.0 327.0 409.5 327.5 419.5 320.0
+line wall -id L1_SP1_col-canyon-vers-meduse -reverse on
+  380.0 333.0
+  405.0 328.0 409.5 327.5 419.5 320.0
   429.5 312.5 480.5 266.0 498.5 263.5
   516.5 261.0 611.5 270.0 624.0 270.0
   636.5 270.0 692.5 254.5 704.5 252.0
@@ -140,7 +144,7 @@ line wall -reverse on
   680.0 102.5 573.5 116.0 555.5 146.5
   537.5 177.0 527.0 225.0 499.5 232.5
   472.0 240.0 426.5 262.0 398.5 261.5
-  370.5 261.0 341.0 256.0 319.0 264.0
+  370.5 261.0 358.0 254.0 336.0 262.0
 endline
 
 endscrap

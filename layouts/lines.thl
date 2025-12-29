@@ -12,7 +12,7 @@ layout custom_lines
 
           def l_floorstep (expr P) =
             T:=identity;
-            drawoptions(withcolor (0.62, 0.62, 0.62));  % modif pour couleur
+            drawoptions(withcolor (0.5, 0.5, 0.5));  % modif pour couleur
             cas := 0;
             dlzka := arclength P;
             mojkrok:=adjust_step(dlzka, 0.25u);

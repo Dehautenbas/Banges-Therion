@@ -1,11 +1,27 @@
 encoding  utf-8
-map MP_jonction-meduse-haute -title "jonction-meduse-haute"
-  SP1_jonction-meduse-haute
-  break
-  SP2_jonction-meduse-haute
-  break
-  SP3_jonction-meduse-haute
-endmap
+    # map MP_jonction-meduse-haute -title "jonction-meduse-haute"
+    #   jonction-meduse-haute
+    #   break
+    #   etage-intermediaire
+    # endmap
+   
+   
+    map MP_jonction -title "jonction"
+      SP1_jonction-meduse-haute
+    endmap
+
+    map MP_etage-sup -title "etage-supérieur"
+      SP1_fossile-sup
+    endmap
+
+    map MP_etage-intermediaire -title "etage-intermediaire"
+      SP1_etage-intermediaire
+      SP3_etage-intermediaire
+      SP3_etage-intermediaire
+      break
+      SP4_etage-intermediaire
+    endmap
+
 
 
 map MC_jonction-meduse-haute -title "jonction-meduse-haute"

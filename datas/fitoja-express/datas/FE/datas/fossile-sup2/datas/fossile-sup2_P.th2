@@ -1,6 +1,6 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -128.0 -128.0 974.4549999999999 738.235
-##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_area_zoom_to 100
 ##XTHERION## xth_me_image_insert {728.343 1 1.0} {177.164 1} fossile-sup2_P.xvi 0 {}
 
 
@@ -26,6 +26,7 @@ point 703.0 36.5 label -text "imp. ponct." -scale xs
 line wall -subtype presumed
   732.0 43.0
   735.0 58.0 733.0 72.0 736.0 97.0
+  smooth off
 endline
 
 line wall
@@ -44,6 +45,7 @@ line wall
   684.0 240.0 700.0 207.0 706.0 181.0
   altitude .
   712.0 155.0 702.0 109.0 701.0 99.0
+  smooth off
 endline
 
 line wall -subtype presumed
@@ -271,8 +273,8 @@ line wall -id L2_SP2_fossile-sup2
 endline
 
 line wall -id L1_SP2_fossile-sup2
-  495.0 394.5
-  466.0 370.5 457.0 244.0 452.0 251.0
+  496.0 393.0
+  467.0 369.0 457.0 244.0 452.0 251.0
   447.0 258.0 445.0 305.0 439.0 317.0
   smooth off
 endline

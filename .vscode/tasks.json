@@ -13,15 +13,15 @@
         {
             "label": "compile-th-tot",
             "type": "shell",
-            
-              "command": "therion ${workspaceFolder}/datas/fitoja-express/datas/FE/FE_CONFIG.thconfig" // \u000Dexit\u000D run and close this new terminal  -> Only for keybindings.json 
+            "command": "therion ${workspaceFolder}/datas/fitoja-express/datas/FE/FE_CONFIG.thconfig && therion ${workspaceFolder}/datas/fitoja-express/datas/FE/FE_CONFIG_offset.thconfig" // exécute les deux commandes séquentiellement
         },
         {
-            "label": "compile-th-tot_1",
+            "label": "compile-th-tot_2",
             "type": "shell",
             
-              "command": "therion ${workspaceFolder}/datas/fitoja-express/datas/FE/datas/meduse-inf/meduse-inf_CONFIG.thcfg" // \u000Dexit\u000D run and close this new terminal  -> Only for keybindings.json 
+              "command": "therion ${workspaceFolder}/datas/fitoja-express/datas/FE/FE_CONFIG_decoupes.thconfig" // \u000Dexit\u000D run and close this new terminal  -> Only for keybindings.json 
         }
+
     ]
 
 

@@ -101,14 +101,15 @@ layout comment
       %\legendtextcolor={\color[0 0 110]}      %# RGB values 0--100
    endcode
 
-# map-comment "<br>\
-# Localisation :Montagny (Savoie - Bauges)<br>Banges - Prépoulain <br>\
-# Coordonnées : 45.721343N 6.06738E (WGS84)<br>\
-#                    271.786N 5067.271E (UTM32T)<br>\
-#                    Alt : 900 m<br>\
-#                     <br>\
-# "
-# # Synthèse et dessin : Yann Gardère - Martin Kern <br>\ 
+map-comment "<br>\
+Localisation :Montagny (Savoie - Bauges)<br>Banges - Prépoulain <br>\
+Coordonnées : 45.721343N 6.06738E (WGS84)<br>\
+                   271.786N 5067.271E (UTM32T)<br>\
+                   Alt : 900 m<br>\
+                    <br>\
+Synthèse : Jacques Nant et Martin Kern <br>\ 
+Dessin gouffre FE : Jacques Nant <br>\
+"
 
 
 
@@ -159,9 +160,16 @@ lookup explo-date    #Pour l'export année par année
   [2025.1.1 2025.12.31] [] "2025"
 endlookup
 
-# lookup map -title "Couleurs par réseaux"
-#       MP_serpent_tot@serpent-tot.E9-tot [73 83 93] "Réseau du Serpent"
-#       MP-principale@principale-tot.E9-tot [96 96 86] "Autres réseaux"
-#       MP_pts-borgne-fond@2025-08-26_glaciere_fond-pts-borgne.E9-tot [96 96 86] " "
-# endlookup
+lookup map -title "Couleurs par réseaux"
+    MP_entree-jonction@entree-jonction_tot.FE_tot [96 96 86] " "
+    MP_fossile-sup@fossile-sup_tot.FE_tot [96 96 86] " "
+    MP_etage-sup@jonction-meduse-haute_tot.FE_tot [96 96 86] " "
+    MP_fossile-sup2@fossile-sup2_tot.FE_tot [73 83 93] " "
+    MP_jonction@jonction-meduse-haute_tot.FE_tot [96 96 86] " "
+    MP_etage-intermediaire@jonction-meduse-haute_tot.FE_tot [73 83 93] " "
+    MP_boyau-rd-jonction@boyau-rd-jonction_tot.FE_tot [96 96 86] " "
+    MP_fossile-aval@fossile-aval_tot.FE_tot [73 83 93] " "
+    MP_col-canyon-vers-meduse@col-canyon-vers-meduse_tot.FE_tot [73 83 93] " "
+    MP_meduse-inf@meduse-inf_tot.FE_tot [71 69 66] "Réseau du Serpent"
+endlookup
 

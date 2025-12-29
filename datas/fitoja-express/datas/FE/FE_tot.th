@@ -1,35 +1,49 @@
 encoding  utf-8
 
-survey FE_tot -title "Gouffre du Fitoja-Express"
+survey FE_tot -title "Gouffre de Fitoja-Express"
 input FE_map.th
 
     #input datas/FE.th    
     input datas/entree-jonction/entree-jonction_tot.th
     input datas/jonction-meduse-haute/jonction-meduse-haute_tot.th
         equate FE21@entree-jonction.entree-jonction_tot FE21@jonction-meduse-haute.jonction-meduse-haute_tot
-            join SP1_jonction-meduse-haute@jonction-meduse-haute_tot SP3_jonction-meduse-haute@jonction-meduse-haute_tot
+            join SP1_etage-intermediaire@jonction-meduse-haute_tot SP3_etage-intermediaire@jonction-meduse-haute_tot
+            join L1_SP1_etage-intermediaire@jonction-meduse-haute_tot:end L1_SP2_fossile-sup2@fossile-sup2_tot:0
+            join L2_SP1_etage-intermediaire@jonction-meduse-haute_tot:0 L2_SP2_fossile-sup2@fossile-sup2_tot:end
+            join SP2_fossile-sup2@fossile-sup2_tot SP3_etage-intermediaire@jonction-meduse-haute_tot
+            join SP3_etage-intermediaire@jonction-meduse-haute_tot SP1_fossile-aval@fossile-aval_tot
+            join ligne1@jonction-meduse-haute_tot:end l1@jonction-meduse-haute_tot:0
+           # join L1_SP3_etage-intermediaire@jonction-meduse-haute_tot:end L1_SP1_fossile-sup@jonction-meduse-haute_tot:end
+
+
+
     input datas/boyau-rd-jonction/boyau-rd-jonction_tot.th
         equate 0@boyau-rd-jonction.boyau-rd-jonction_tot MEDU24@jonction-meduse-haute.jonction-meduse-haute_tot
         equate MEDU8@meduse-inf.meduse-inf_tot 222@boyau-rd-jonction.boyau-rd-jonction_tot
         equate FE52@jonction-meduse-haute.jonction-meduse-haute_tot 42@boyau-rd-jonction.boyau-rd-jonction_tot
             join SP1_jonction-meduse-haute@jonction-meduse-haute_tot SP1_boyau-rd-jonction@boyau-rd-jonction_tot
+
     input datas/meduse-inf/meduse-inf_tot.th
         equate MEDU7@jonction-meduse-haute.jonction-meduse-haute_tot MEDU7@meduse-inf.meduse-inf_tot
+
     input datas/fossile-sup/fossile-sup_tot.th
         equate MEDU23@fossile-sup.fossile-sup_tot MEDU23@jonction-meduse-haute.jonction-meduse-haute_tot
-        equate MEDU26@fossile-sup.fossile-sup_tot MEDU26@jonction-meduse-haute.jonction-meduse-haute_tot
+
     input datas/fossile-sup2/fossile-sup2_tot.th
         equate 4@fossile-sup2.fossile-sup2_tot COFO11_6@fossile-sup.fossile-sup_tot
              #join SP1_fossile-sup2@fossile-sup2_tot SP1_fossile-sup@fossile-sup_tot    #3visées Martin qui ne tombent pas en face
-             join SP2_fossile-sup2@fossile-sup2_tot SP1_jonction-meduse-haute@jonction-meduse-haute_tot
-             join L1_SP2_jonction-meduse-haute@jonction-meduse-haute_tot:end L1_SP2_fossile-sup2@fossile-sup2_tot:0
-             join L2_SP2_jonction-meduse-haute@jonction-meduse-haute_tot:0 L2_SP2_fossile-sup2@fossile-sup2_tot:end
+
+
     input datas/fossile-aval/fossile-aval_tot.th
         equate MEDU18@fossile-aval.fossile-aval_tot MEDU18@jonction-meduse-haute.jonction-meduse-haute_tot
             join SP1_fossile-aval@fossile-aval_tot SP1_jonction-meduse-haute@jonction-meduse-haute_tot
+
     input datas/col-canyon-vers-meduse/col-canyon-vers-meduse_tot.th
         equate COF10@fossile-aval.fossile-aval_tot 0@col-canyon-vers-meduse.col-canyon-vers-meduse_tot
+        equate MEDU4_2@meduse-inf.meduse-inf_tot 5@col-canyon-vers-meduse.col-canyon-vers-meduse_tot
             join SP1_col-canyon-vers-meduse@col-canyon-vers-meduse_tot SP1_fossile-aval@fossile-aval_tot
+            join L1_SP1_fossile-aval@fossile-aval_tot:0 L1_SP1_col-canyon-vers-meduse@col-canyon-vers-meduse_tot:0
+            join L2_SP1_fossile-aval@fossile-aval_tot:end L1_SP1_col-canyon-vers-meduse@col-canyon-vers-meduse_tot:end
 
 
 

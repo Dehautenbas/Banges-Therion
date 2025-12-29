@@ -7,11 +7,14 @@ input jonction-meduse-haute_map.th
 
     input datas/jonction-meduse-haute.th    
 
+
+
     
 
 
 #####   PLAN    #####
     input datas/jonction-meduse-haute_P.th2
+    input datas/etage-intermediaire_P.th2
 
 
 ##### COUPE EXTENTED #####   

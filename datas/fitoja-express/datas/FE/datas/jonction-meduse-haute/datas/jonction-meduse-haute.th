@@ -1,6 +1,6 @@
 survey jonction-meduse-haute -title "de la jonction à l'étage haut de la méduse" 
   
-centerline
+centerline -title "titre1" 
   
     team "Jacques Nant"
     team "Charlie Guichebaron"
@@ -73,7 +73,7 @@ endcenterline
 
 
 
-centerline
+centerline -title "titre2" 
   
     team "Jacques Nant"
     team "Charlie Guichebaron"
@@ -102,6 +102,37 @@ FE27BIS_2           FE21             2.202     9.4    8.8    0      0      0    
 FE26BIS_0           15               2.100   271.1    0.56   0      0      0      0      PUITS DE LA DOUCHE visée sur départ étroit plongeant relié le 7/12/2025 avec le réseau de la Méduse
 
 endcenterline
+
+centerline
+  
+    team "Jacques Nant"
+    team "Patrick Guichebaron"
+
+    date 2025.12.07
+    #tpst 7h30
+    
+    data normal from to length compass clino left right up down ignoreall 
+    units compass clino degrees
+    units length meter
+
+MEDU26                 MEDU26_1            1.670  79.0    -0.79    3.0    3.8    2.4    0.0    milieu toboggan argileux
+MEDU26_1               MEDU27              7.055  78.0   -40.20    2.0   14.7    7.4    0.0    descente ressaut sur visée. En fin de visée, largeur droite au plus loin az 163°. Point sur petite pierre blanche. Largeur gauche sous plafond sinon 1 m au sol. A droite juste avant fin grand bloc rocheux en triangle à 1 m à droite.
+MEDU27                 MEDU27_1           14.700 163.0     0.00    0.0    0.0    0.0    0.0    détail largueur à droite vers puits de la déviation
+MEDU27                 MEDU27BIS           4.533  85.0     4.30    2.2    6.8    5.3    0.0    coulée stalag en paroi gauche. Sol calcite
+MEDU27BIS              MEDU27BIS_1a        4.610 135.5    16.41    0.0    0.0    0.0    0.0    visée sur fracture fermée. Plancher stalagmitique sur visée
+MEDU27BIS              MEDU27BIS_1         3.439   0.0    25.60    0.6    0.6    3.2    0.0    petit ressaut en calcite pour passer dans la grande coulée qui est développée sur la droite
+MEDU27BIS_1            MEDU27BIS_2         1.461  31.5   -12.30    0.8    0.8    3.8    0.0    sommet R 1.8. Voûte parée de cloches et cupules
+MEDU27BIS_2            MEDU27BIS_3         2.933  32.0   -35.30    2.1    3.5    2.0    0.0    dans galerie sur sol argile avec pellicule de calcite. Ecoulement temporaire devant contre la paroi opposée
+MEDU27BIS_3            MEDU27BIS_4         3.320  47.5     7.13    1.4    3.8    0.6    0.0    sommet dune d'argile, écoulement temporaire contre paroi droite où la hauteur est d'environ 1 à 1.5 m
+MEDU27BIS_4            MEDU27BIS_5         6.012  45.0   -10.80    0.0    0.0    0.2    0.26   point sur la voûte
+MEDU27BIS_5            MEDU27BIS_6         0.262 162.9   -85.10    2.0    2.5    0.0    0.26   retour au sol d'argile devant suite impénétrable par colmatage, à 0.4 m à droite surcreusement du remplissage actif temporairement, rigole de 30 cm de large et H 0.40
+MEDU27BIS_6            MEDU27BIS_7         4.949  21.2    -4.90    0.0    0.0    0.0    0.0    visée dans la suite aspirante
+MEDU28                 MEDU28_1           14.790 227.0   -45.27    1.14   0.6    3.5    0.0    départ sommet fermé par coulée et concrétions (0.5 x 0.5). Ressaut glissant sur visée et arrivée contre grande coulée stalagmitique 60 cm à gauche
+MEDU28_1               MEDU28_2            4.549 230.0   -34.30    0.0    0.0    0.0    0.0    descente ressaut peu large haut de 1 m après 3 m de parcours. Arrivée sur sol de calcite
+MEDU28_2               MEDU27              8.300 259.0    -7.00    0.0    0.0    0.0    0.0    raccord sur pierre blanche
+
+endcenterline
+
 
 centerline
   
