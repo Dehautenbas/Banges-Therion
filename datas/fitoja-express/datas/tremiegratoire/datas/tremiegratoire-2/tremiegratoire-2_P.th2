@@ -1,6 +1,6 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -561.25 224.0 1149.25 1090.2350000000001
-##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_area_adjust -521.882 87.0 1175.0 1070.55
+##XTHERION## xth_me_area_zoom_to 100
 ##XTHERION## xth_me_image_insert {275.408 1 1.0} {489.794 N00} tremiegratoire-2_P.xvi 0 {}
 
 
@@ -11,15 +11,84 @@ point 229.75 589.75 blocks -scale m
 
 point 353.25 596.5 blocks -scale m
 
-line gradient
+point -15.0 220.0 label -scale m -text [Dessin: Martin Kern - Yann Gardère<br>Topographes: Paul Bailleul - Charlie Guichebaron - Martin Kern - Yann Gardère<br>2025]
+
+point -239.0 317.5 label -scale xl -text Trémie-Grattoire
+
+point -193.5 553.0 label -scale xs -text [(Vu mousse de crue)]
+
+line arrow
+  -198.5 592.0
+  -204.0 634.0
+endline
+
+point -193.75 576.5 label -text [La Chicane] -scale m
+
+point -137.25 623.5 label -text Etroitures -scale xs
+
+point -98.5 600.5 label -text R2
+
+point -41.25 574.0 label -text R1.2
+
+line pit -reverse on
+  91.25 598.25
+  136.25 603.25
+endline
+
+line arrow
+endline
+
+line arrow
+endline
+
+line arrow
+  -17.5 594.5
+  -7.0 603.0
+endline
+
+point -140.25 673.5 air-draught -orientation 98.2
+
+line arrow
+  18.5 549.0
+  98.75 595.25
+endline
+
+line arrow
+  41.5 523.0
+  96.0 557.5
+endline
+
+point -16.0 542.0 label -text R3.5
+
+point 14.75 504.0 label -text R1.7
+
+point 202.0 659.5 label -text R4
+
+line pit -reverse on
+  232.0 612.0
+  442.0 615.5
+endline
+
+point 330.75 563.75 label -text R?
+
+line arrow
+  516.5 432.0
+  599.0 432.0
+endline
+
+point 895.0 404.5 label -text [(Obstrué)]
+
+point 896.0 454.5 label -text [Vers Salle de L'Olympe] -scale l
+
+line pit
   405.75 582.5
   373.5 574.0
 endline
 
-line gradient
-  257.0 578.25
-  257.0 578.25 210.0 584.0 196.5 581.25
-  183.0 578.5 134.5 562.0 121.5 562.25
+line pit
+  259.0 575.0
+  259.0 575.0 221.5 566.5 196.5 580.0
+  184.4 586.53 134.5 562.0 121.5 562.25
   108.5 562.5 84.75 564.25 84.75 564.25
   smooth off
 endline
@@ -47,7 +116,32 @@ line wall -subtype unsurveyed
   smooth off
 endline
 
-line gradient
+point 875.5 863.0 label -text Trémies -scale m
+
+point 1042.0 843.5 label -text [?]
+
+point 851.5 747.5 label -text [?]
+
+point 839.5 808.0 label -text [?]
+
+point 717.75 605.25 label -text Etroiture -scale xs
+
+line arrow
+  703.5 616.5
+  685.5 629.0
+endline
+
+point 704.0 697.0 label -text Coulées -scale s
+
+point 639.0 705.5 label -text Imp. -scale s
+
+point 523.0 502.5 label -text Calcite
+
+point 458.5 587.0 label -text Coulées -scale s
+
+point 402.5 503.0 label -text R2.5
+
+line pit
   396.25 534.25
   376.5 558.25
 endline
@@ -96,7 +190,7 @@ endline
 
 line water-flow
   307.25 501.5
-  306.75 497.25 296.25 484.25 303.5 477.75
+  306.75 497.25 298.25 483.5 305.5 477.0
   smooth off
 endline
 
@@ -117,7 +211,7 @@ line water-flow
   smooth off
 endline
 
-line gradient -reverse on
+line pit -reverse on
   353.0 542.75
   353.0 539.75 358.75 524.0 369.25 521.75
   smooth off
@@ -125,9 +219,9 @@ endline
 
 point 365.25 540.5 blocks -scale xs
 
-point 298.75 484.0 blocks -scale xs
+point 294.25 481.5 blocks -scale xs
 
-line gradient -reverse on
+line pit -reverse on
   281.5 511.25
   283.5 504.75 292.0 487.5 292.0 487.5
   smooth off
@@ -219,12 +313,12 @@ line wall -subtype unsurveyed
   smooth off
 endline
 
-line gradient
+line pit
   798.75 756.75
   787.0 762.75
 endline
 
-line gradient
+line pit
   788.75 727.25
   778.0 727.0
 endline
@@ -418,7 +512,7 @@ line wall
   smooth off
 endline
 
-line gradient
+line pit
   7.75 625.25
   6.5 621.75 2.5 612.75 1.5 611.25
   smooth off
@@ -439,8 +533,8 @@ endline
 point 642.5 667.0 blocks -scale xs
 
 line water-flow
-  131.5 657.25
-  133.75 652.25 141.25 610.5 168.25 593.5
+  134.0 657.5
+  136.25 652.5 145.5 612.0 172.5 595.0
   smooth off
 endline
 
@@ -458,25 +552,25 @@ line wall -subtype unsurveyed
   smooth off
 endline
 
-line gradient
+line pit
   -24.75 633.75
   -24.5 631.25 -23.5 623.5 -23.5 623.5
   smooth off
 endline
 
-line gradient -reverse on
+line pit -reverse on
   -109.0 635.75
   -106.25 640.5 -94.0 658.5 -94.0 658.5
   smooth off
 endline
 
-line gradient -reverse on
+line pit -reverse on
   -80.0 622.0
   -76.25 627.75 -64.25 644.5 -64.25 644.5
   smooth off
 endline
 
-point -204.0 659.5 blocks -scale m
+point -204.0 659.5 blocks -scale s
 
 line wall -reverse on
   -266.75 681.5
@@ -633,6 +727,19 @@ line wall
   70.5 706.5 82.25 699.75 89.5 691.75
   smooth off
 endline
+
+point -225.5 856.5 label -text [Roche très noire] -scale xs
+
+line arrow
+  -82.5 757.0
+  -47.5 765.25
+endline
+
+point 181.5 715.5 label -scale m -text Siphon
+
+point -113.25 754.25 label -text Etroit -scale s
+
+point 236.75 816.5 label -scale l -text Collecteur
 
 line wall
   -83.25 789.75

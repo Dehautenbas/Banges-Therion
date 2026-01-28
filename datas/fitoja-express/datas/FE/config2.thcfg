@@ -8,8 +8,8 @@ layout general
     copy legend
     copy comment
 
-    doc-title "Gouffre de Fe"
-    doc-author "Martin Kern - Yann Gardère"
+    doc-title "Gouffre FE"
+    doc-author "Yann Gardère - Martin Kern"
 
     transparency on         ### vue en transparence des galeries qui se superposent...
     opacity 80              ### ... avec une opacité de 80%
@@ -24,9 +24,6 @@ layout general
   symbol-hide line survey
   symbol-hide line u:images
   
-
-
-
 
 endlayout
 
