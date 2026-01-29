@@ -1,4 +1,4 @@
-Base de données Topographiques du sytème karstique du massif de Bange (Savoie, 73, France)
+Base de données Topographiques du sytème karstique du massif de Bange (Massif des Bauges, Savoie, 73, France)
 ===============================================================================================
 
 Overview
@@ -16,7 +16,7 @@ Uniquement les fichiers sources sont sauvegardés pour des raisons de taille
 	* .thc, .th, .th2 et .thconfig pour le logiciel Therion
     * .zip pour les exports des séances de l'appli Topodroid
 	
-Pour obtenir les topographies en plan, coupe et/ou 3D, il faut compiler les fichiers Therion.
+Pour obtenir les topographies en plan, coupe et/ou 3D, il faut compiler les fichiers Therion, bien que certains exports de pdf soient présents à des fin de travail.
 
 
 Une convention a été mise en place pour la gestion des points d'interrogation, avec la définition de différents champs.
