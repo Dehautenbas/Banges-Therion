@@ -1,0 +1,13 @@
+encoding  utf-8
+map MP_corneilles -title "corneilles"
+  SP1_corneilles
+  break
+  SP2_corneilles
+endmap
+
+
+map MC_corneilles -title "corneilles"
+  SC1_corneilles
+  break
+  SC2_corneilles
+endmap

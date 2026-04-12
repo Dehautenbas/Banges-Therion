@@ -1,0 +1,13 @@
+encoding  utf-8
+map MP_etr-du-sbib -title "etr-du-sbib"
+  SP1_etr-du-sbib
+  break
+  SP2_etr-du-sbib
+endmap
+
+
+map MC_etr-du-sbib -title "etr-du-sbib"
+  SC1_etr-du-sbib
+  break
+  SC2_etr-du-sbib
+endmap

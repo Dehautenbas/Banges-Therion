@@ -8,8 +8,8 @@ layout general
     copy legend
     copy comment
 
-    doc-title "Gouffre FE"
-    doc-author "Yann Gardère - Martin Kern"
+    doc-title "Gouffre des Corneilles"
+    doc-author "Martin Kern"
 
     transparency on         ### vue en transparence des galeries qui se superposent...
     opacity 80              ### ... avec une opacité de 80%
@@ -22,7 +22,6 @@ layout general
     
   symbol-hide point station        
   symbol-hide line survey
-  symbol-hide line u:images
   
 
 endlayout
@@ -100,34 +99,20 @@ layout comment
    endcode
 
 map-comment "<br>\
-Localisation :Montagny (Savoie - Bauges)<br>Banges - Prépoulain <br>\
-Coordonnées : 45.721343N 6.06738E (WGS84)<br>\
-                   271.786N 5067.271E (UTM32T)<br>\
-                   Alt : 900 m<br>\
+Localisation : <br>\
+Coordonnées : N E (WGS84)<br>\
+                   N E (UTM32T)<br>\
+                   Alt :  m<br>\
                     <br>\
-Synthèse : Jacques Nant et Martin Kern <br>\ 
-Dessin gouffre FE : Jacques Nant <br>\
+Synthèse : Martin Kern <br>\ 
+Dessins : Charlie Guichebaron , Martin Kern, Jacques Nant  <br>\
 "
 
 
 
 endlayout
 
-# layout images
 
-#     map-image 42 27 center datas/img/5.jpg
-#     map-image 57 25 center datas/img/4.jpg
-#     map-image 55 57 center datas/img/3.jpg
-#     map-image 71 30 center datas/img/1.jpg
-#     map-image 34 71 center datas/img/cas.jpg
-#     map-image 20 64 center datas/img/lac.jpg
-#     map-image 42 54 center datas/img/col.jpg
-#     map-image 68 60 center datas/img/fit2.jpg
-#     map-image 81 55 center datas/img/fit.jpg
-#     map-image 18 47 center datas/img/p41.jpg
-#     #map-image 21 32 center datas/img/fe.jpg
-#     map-image 30 19 center datas/img/med.jpg
-# endlayout
 
 
 layout centerline

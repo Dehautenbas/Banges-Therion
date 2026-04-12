@@ -1,12 +1,5 @@
 layout custom_lines
-
-# text fr "line u:images" ""
-
     code metapost
-
-    ### redefinitions of existing points
-
-
 
 # Modifier la ligne floorstep (escarpement) par la ligne pit mais avec le trait plus clair
 
@@ -26,45 +19,6 @@ layout custom_lines
             pickup PenC;
             thdraw P;
           enddef;
-
-
-
-# Modifier la ligne contour (courbe de niveau) 
-              def l_contour(expr P)(text txt) =
-                T:=identity;
-                  drawoptions(withcolor (0.62, 0.62, 0.62));  % modif pour couleur
-                pickup PenD;
-                thdraw P withpen pencircle scaled 0.5;
-                for pnt=txt:
-                  if (pnt=-2) or (pnt=-1):
-                    mark_(P,arctime(arclength(P)/2) of P, 0.2u);
-                  elseif pnt>=0:
-                    mark_(P,pnt,0.2*u);
-                  fi;
-                  exitif pnt<0;
-                endfor;
-              enddef;
-
-
-               def l_gradient(expr P) =
-               T:=identity;
-               pickup PenD;
-               thdraw P withpen pencircle scaled 0.5 withcolor (0.62, 0.62, 0.62);
-               enddef;
-               
-
-               def l_dripline (expr P) =
-               pickup PenD;
-               draw P withpen pencircle scaled 0.3 dashed evenly withcolor (0.52, 0.52, 0.41);;
-               enddef;
-
-               def l_rockedge (expr P) =
-               pickup PenD;
-               draw P withpen pencircle scaled 0.3 withcolor (0.5, 0.5, 0.5);;
-               enddef;
-
-
-         
 
                # Modifier la ligne wall_pit par la ligne pit mais avec le trait ext épais comme celui des walls
                def l_wall_pit (expr P) =
@@ -221,21 +175,10 @@ layout custom_lines
     ### new definitions
 
          ## add legend names for each new symbol definition
-         ## initialise and define the symbols here
 
+         ## initialise the symbols here
 
-     # Arrow line symbol for images 
-         def l_u_images (expr P) =
-                    T:=identity;
-                    pickup PenD;
-                    thdraw P withpen pencircle scaled 0.5 withcolor (0.62, 0.62, 0.62);
-                    draw p rotated (angle(thdir(P,length P))-90) 
-                    shifted (point infinity of P) withcolor (0.62, 0.62, 0.62); 
-
-          enddef;
-          initsymbol("l_u_images");
- 
-
+         ## define the symbols here
 
                # Deviation line (by Tarquin 2019)
                     def l_u_deviation (expr P) =

@@ -1,0 +1,22 @@
+encoding  utf-8
+
+survey corneilles_tot -title "corneilles"
+
+input corneilles_map.th
+
+
+    input datas/corneilles.th    
+
+    
+
+
+#####   PLAN    #####
+    input datas/corneilles_P.th2
+
+
+##### COUPE EXTENTED #####   
+    input datas/corneilles_C.th2
+
+
+
+endsurvey

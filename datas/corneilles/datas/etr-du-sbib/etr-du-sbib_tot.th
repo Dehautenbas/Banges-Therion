@@ -1,0 +1,22 @@
+encoding  utf-8
+
+survey etr-du-sbib_tot -title "etr-du-sbib"
+
+input etr-du-sbib_map.th
+
+
+    input datas/etr-du-sbib.th    
+
+    
+
+
+#####   PLAN    #####
+    input datas/etr-du-sbib_P.th2
+
+
+##### COUPE EXTENTED #####   
+    input datas/etr-du-sbib_C.th2
+
+
+
+endsurvey
