@@ -1,16 +1,109 @@
 encoding  utf-8
-##XTHERION## xth_me_area_zoom_to 400
-##XTHERION## xth_me_image_insert {0} {0} datas/etr-du-sbib_C.xvi 0 {}
+##XTHERION## xth_me_area_adjust -128.0 -128.0 4183.11 1289.415
+##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_image_insert {3685.48 1 1.0} {807.086 0} etr-du-sbib_C.xvi 0 {}
 
 
 
-scrap SC1_etr-du-sbib -projection plan -station-names "" "@etr-du-sbib"
+scrap SC1_etr-du-sbib -projection extended -station-names "" "@etr-du-sbib" -scale [-128.0 -128.0 1190.99 -128.0 0.0 0.0 33.502345999999996 0.0 m]
+
+line wall
+  3731.0 795.0
+  3721.5 797.0 3711.5 796.5 3707.0 800.5
+  3702.5 804.5 3703.0 829.5 3696.0 830.5
+  3689.0 831.5 3686.5 830.0 3676.5 827.0
+  3666.5 824.0 3622.5 808.5 3622.5 803.5
+  3622.5 798.5 3614.5 800.0 3608.0 805.0
+  3601.5 810.0 3570.0 822.5 3560.0 824.5
+  3550.0 826.5 3537.5 834.0 3524.0 828.0
+  3510.5 822.0 3484.0 805.0 3474.5 804.0
+  3465.0 803.0 3446.5 801.5 3437.5 798.5
+  3428.5 795.5 3396.0 786.5 3389.0 786.5
+  3382.0 786.5 3366.0 798.0 3353.0 799.5
+  3340.0 801.0 3309.0 805.5 3291.5 804.0
+  3274.0 802.5 3185.0 802.0 3165.0 800.5
+  3145.0 799.0 3097.0 801.5 3080.5 802.0
+  3064.0 802.5 3014.5 806.5 3005.0 804.0
+  2995.5 801.5 2969.5 796.0 2956.5 796.5
+  2943.5 797.0 2922.5 805.5 2906.5 802.5
+  2890.5 799.5 2807.0 811.5 2782.5 804.5
+  2758.0 797.5 2699.5 786.5 2672.0 780.0
+  2644.5 773.5 2570.5 760.0 2549.0 755.0
+  2527.5 750.0 2490.0 758.5 2457.5 756.5
+  2425.0 754.5 2220.0 754.5 2198.0 752.5
+  2176.0 750.5 2093.0 745.5 2081.5 745.0
+  2070.0 744.5 1996.0 711.0 1969.0 714.5
+  1942.0 718.0 1813.0 723.5 1801.5 723.0
+endline
+
+point 2298.0 685.286 station -name 25
+
+point 2233.38 702.716 station -name 26
+
+point 2183.19 703.336 station -name 27
+
+point 2138.0 677.6659999999999 station -name 28
+
+point 2096.76 648.026 station -name 29
+
+point 2054.18 639.136 station -name 30
+
+point 2561.7 668.406 station -name 22
+
+point 2530.16 596.906 station -name 23
+
+point 2479.5 617.0659999999999 station -name 24
+
+point 2850.5299999999997 661.6759999999999 station -name 16
+
+point 2813.6800000000003 670.0459999999999 station -name 17
+
+point 2721.99 667.1659999999999 station -name 18
+
+point 2673.1 663.6659999999999 station -name 19
+
+point 2624.9 665.4259999999999 station -name 20
+
+point 2590.79 652.6759999999999 station -name 21
+
+point 2911.9 793.5459999999999 station -name 14
+
+point 2861.92 791.886 station -name 15
+
+point 3169.02 793.896 station -name 10
+
+point 3091.71 790.9259999999999 station -name 11
+
+point 3005.62 798.466 station -name 12
+
+point 2961.57 789.896 station -name 13
+
+point 3293.1400000000003 785.4359999999999 station -name 9
+
+point 3346.75 777.906 station -name 8
+
+point 3391.8199999999997 777.4359999999999 station -name 7
+
+point 3437.13 793.386 station -name 6
+
+point 3475.19 800.786 station -name 5
+
+point 3562.99 809.086 station -name 4
+
+point 3617.46 797.406 station -name 3
+
+point 3685.48 807.086 station -name 0
+
+point 3704.34 791.596 station -name 1
+
+point 3726.49 789.576 station -name 2
 
 endscrap
 
-scrap SC2_etr-du-sbib -projection plan -station-names "" "@etr-du-sbib"
+
+
+scrap SC2_etr-du-sbib -projection extended -station-names "" "@etr-du-sbib" -scale [-128.0 -128.0 1190.99 -128.0 0.0 0.0 33.502345999999996 0.0 m]
 
 endscrap
-
 
 

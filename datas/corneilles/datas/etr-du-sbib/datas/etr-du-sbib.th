@@ -18,12 +18,12 @@ survey etr-du-sbib -title "Etroiture du Sbib"
     0 . 0.16 209.6 1.1
     0 . 1.18 71.8 83.9
     0 . 0.79 104.9 -71.1
-    extend left
+    extend right
     0 1 1.24 219.2 -39.4
     # extend auto
     1 . 0.68 242.9 -4.6
-    extend left
     1 2 1.13 243.2 -5.2
+    extend left
   # 0 stat raccord début etroiture 
     0 3 3.49 105.3 -8.1
     # extend auto
@@ -237,9 +237,10 @@ survey etr-du-sbib -title "Etroiture du Sbib"
     31 . 0.46 260.9 1.5
     31 . 2.72 328.2 77.0
     31 . 0.33 334.8 -75.7
-    extend left
+    extend right
   # 32 Point topo vernis rouge 
     31 32 1.87 342.2 19.2
+    extend left
     31 33 2.82 44.4 0.9
     33 34 6.02 181.5 -0.2
     # extend auto
@@ -338,7 +339,7 @@ survey etr-du-sbib -title "Etroiture du Sbib"
     47 . 3.69 159.1 -1.8
     47 . 3.78 159.9 -1.9
     47 . 3.97 161.0 -1.2
-    extend left
+    extend right
     47 48 4.91 159.7 -0.5
     # extend auto
     47 . 0.67 183.1 0.2

@@ -1,12 +1,12 @@
 encoding  utf-8
-map MP_surcreusement-meandre -title "surcreusement-meandre"
+map MP_surcreusement-meandre -proj plan -title "surcreusement-meandre"
   SP1_surcreusement-meandre
   break
   SP2_surcreusement-meandre
 endmap
 
 
-map MC_surcreusement-meandre -title "surcreusement-meandre"
+map MC_surcreusement-meandre -proj extended -title "surcreusement-meandre"
   SC1_surcreusement-meandre
   break
   SC2_surcreusement-meandre

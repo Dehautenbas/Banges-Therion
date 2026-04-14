@@ -1,0 +1,15 @@
+encoding  utf-8
+map MP_entree -proj plan -title "entree"
+  SP1_entree
+  break
+  SP2_entree
+  break
+  SP3_entree
+endmap
+
+
+map MC_entree -proj extended -title "entree"
+  SC1_entree
+  break
+  SC2_entree
+endmap

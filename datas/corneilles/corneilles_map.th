@@ -1,13 +1,23 @@
 encoding  utf-8
-map MP_corneilles -title "corneilles"
-  SP1_corneilles
-  break
-  SP2_corneilles
+map MP_corneilles -proj plan -title "Creux de la Corneille - N°84"  
+   MP_entree@entree_tot
+   break
+   MP_etr-du-sbib@etr-du-sbib_tot
+   break
+   MP_surcreusement-meandre@surcreusement-meandre_tot
+   break
+   
 endmap
 
+            # map MP_sans-dessin -proj plan
+            #       entree@entree_tot
+            # endmap
 
-map MC_corneilles -title "corneilles"
-  SC1_corneilles
-  break
-  SC2_corneilles
+
+
+
+
+map MC_corneilles -proj extended -title "corneilles"
+   MC_etr-du-sbib@etr-du-sbib_tot
+   MC_surcreusement-meandre@surcreusement-meandre_tot
 endmap

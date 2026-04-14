@@ -4,11 +4,11 @@ encoding  utf-8
 
 
 
-scrap SC1_surcreusement-meandre -projection plan -station-names "" "@surcreusement-meandre"
+scrap SC1_surcreusement-meandre -projection extended -station-names "" "@surcreusement-meandre"
 
 endscrap
 
-scrap SC2_surcreusement-meandre -projection plan -station-names "" "@surcreusement-meandre"
+scrap SC2_surcreusement-meandre -projection extended -station-names "" "@surcreusement-meandre"
 
 endscrap
 

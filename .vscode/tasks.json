@@ -17,7 +17,9 @@
             "label": "compile-th-tot",
             "type": "shell",
             //"command": "therion ${workspaceFolder}/datas/fitoja-express/datas/FE/FE_CONFIG.thconfig && therion ${workspaceFolder}/datas/fitoja-express/datas/FE/FE_CONFIG_offset.thconfig" // exécute les deux commandes séquentiellement
-            "command": "therion ${workspaceFolder}/datas/corneilles/datas/etr-du-sbib/etr-du-sbib_CONFIG.thcfg" // \u000Dexit\u000D run and close this new terminal  -> Only for keybindings.json
+            //"command": "therion ${workspaceFolder}/datas/corneilles/datas/etr-du-sbib/etr-du-sbib_CONFIG.thcfg" // \u000Dexit\u000D run and close this new terminal  -> Only for keybindings.json
+            "command": "therion ${workspaceFolder}/datas/corneilles/corneilles_CONFIG.thcfg" // \u000Dexit\u000D run and close this new terminal  -> Only for keybindings.json
+
                     
                     //"command": "therion ${workspaceFolder}/A1_mega-perte/CONFIG1.thcfg" // \u000Dexit\u000D run and close this new terminal  -> Only for keybindings.json
                     // "command": "therion ${workspaceFolder}/A1_mega-perte/datas/entree-vers-trombe-a-eau/CONFIG1.thconfig" // \u000Dexit\u000D run and close this new terminal  -> Only for keybindings.json

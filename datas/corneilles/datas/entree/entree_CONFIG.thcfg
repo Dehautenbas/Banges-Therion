@@ -1,13 +1,13 @@
 encoding  utf-8
 input ../../config2.thcfg
 input ../../../../layouts/config3.thcfg
-source surcreusement-meandre_tot.th
+source entree_tot.th
 
 ###################################################################################################
 ################################## Selection de la map à exporter #################################
 ###################################################################################################
-select MP_surcreusement-meandre@surcreusement-meandre-tot       #uncomment ONLY one
-#select MC_surcreusement-meandre@surcreusement-meandre-tot      #uncomment ONLY one
+select MP_entree@entree-tot       #uncomment ONLY one
+#select MC_entree@entree-tot      #uncomment ONLY one
 
 
 
@@ -16,12 +16,12 @@ select MP_surcreusement-meandre@surcreusement-meandre-tot       #uncomment ONLY 
 export map \
      -projection plan \
      -layout plan \
-     -output exports/surcreusement-meandre_plan.pdf \
+     -output exports/entree_plan.pdf \
 
 #export map \
      -projection extended \
      -layout coupe \
-     -output exports/surcreusement-meandre_coupe.pdf \
+     -output exports/entree_coupe.pdf \
 
 
 ######################## STATIONS ########################
@@ -31,13 +31,13 @@ export map \
      -projection plan \
      -layout plan \
      -layout centerline \
-     -output exports/surcreusement-meandre_plan-travail.pdf \
+     -output exports/entree_plan-travail.pdf \
 
 #export map \
      -projection extended \
      -layout coupe \
      -layout centerline \
-     -output exports/surcreusement-meandre_coupe-travail.pdf \
+     -output exports/entree_coupe-travail.pdf \
 
 
 ######################### DEBUG ########################
@@ -45,13 +45,13 @@ export map \
      -projection plan \
      -layout plan   \
      -layout-debug all \
-     -output exports/surcreusement-meandre_DEBUG_plan.pdf
+     -output exports/entree_DEBUG_plan.pdf
 
 #export map \
      -projection extended \
      -layout coupe   \
      -layout-debug all \
-     -output exports/surcreusement-meandre_DEBUG_coupe.pdf
+     -output exports/entree_DEBUG_coupe.pdf
 
      
 ######################### SVG ########################
@@ -60,15 +60,15 @@ export map \
      -projection plan \
      -fmt svg   \
      -layout plan   \
-     -output exports/surcreusement-meandre_plan.svg \
+     -output exports/entree_plan.svg \
 
 #export map \
      -projection extended \
      -layout plan   \
-     -output exports/surcreusement-meandre_coupe.svg \
+     -output exports/entree_coupe.svg \
 
 #export model \
-     -output exports/surcreusement-meandre_coupe.dxf \
+     -output exports/entree_coupe.dxf \
 
 
 
@@ -77,7 +77,7 @@ export map \
 #export map \
      -projection plan \
      -layout walls   \
-     -output exports/surcreusement-meandre_walls.pdf \
+     -output exports/entree_walls.pdf \
      #-layout hide_point \
      #-layout-debug station-names \
      #-layout debug \
@@ -88,14 +88,14 @@ export map \
 #export atlas \
      -projection plan \
      -layout plan   \
-     -output exports/surcreusement-meandre_Atlas.pdf 
+     -output exports/entree_Atlas.pdf 
 
 
 
 ######################## MODELE 3D ########################
     export model \
      -format loch \
-     -o exports/surcreusement-meandre-3d.lox \
+     -o exports/entree-3d.lox \
      #-wall-source maps
 
 
@@ -103,15 +103,15 @@ export map \
 ######################## KML #######################
 #export map \
      -projection plan \
-     -output exports/surcreusement-meandre.kml  ###-> Pour murs
+     -output exports/entree.kml  ###-> Pour murs
 
 #export model \
-     -output exports/surcreusement-meandre-shots.kml  ###-> pour fil de fer sans station avec splays shots
+     -output exports/entree-shots.kml  ###-> pour fil de fer sans station avec splays shots
 
 
 ######################## LISTES ########################
 #export survey-list \
-     -o exports/surcreusement-meandre_stats.html
+     -o exports/entree_stats.html
 
 #export continuation-list \
-     -o exports/surcreusement-meandre_continuations.html
+     -o exports/entree_continuations.html

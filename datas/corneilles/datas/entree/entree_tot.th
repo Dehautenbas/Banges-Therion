@@ -1,0 +1,22 @@
+encoding  utf-8
+
+survey entree_tot -title "entree"
+
+input entree_map.th
+
+
+    input datas/entree.th    
+
+    
+
+
+#####   PLAN    #####
+    input datas/entree_P.th2
+
+
+##### COUPE EXTENTED #####   
+    input datas/entree_C.th2
+
+
+
+endsurvey

@@ -1,0 +1,82 @@
+   encoding utf-8
+
+survey entree -title "Entrée Corneilles jusqu à la jonction"
+
+	centerline
+
+		team "Charlie Guichebaron"
+		team "Jacques Nant"
+		date 2023.05.17
+
+		units length meters
+		units compass degrees
+		units clino degrees
+
+		cs UTM32
+    	fix 0 0271885 5068161 0 #1021
+
+   		station 0 "Corneilles" entrance
+
+
+		data normal from to length compass clino left right up down ignoreall
+
+				0    1    1.703   299.6   -47.3   0.7    0.2    0.6  0     bloc et terre. Ct d'air sortant (temps froid)
+				1    2    1.302   286.6   -54.7   0.4    0.15   0.96 0     terre
+				2    3    0.679   300.6   -45.3   0.3    0.3    0    0     éboulis terreux, fissure en voûte
+				3    4    1.429   248.5   39.8    0.3    0.15   0.5  0.5   début boyau dynamité. Deux goujons à gauche 20 cm avant, un sous la voûte et l'autre 10 cm plus bas.
+				4    4a   1.052   243.9   -38.2   0.22   0.23   1    0     DETAIL PASSAGE DESOB margelle de sortie méandre dynamité
+				4    5    1.766   249.5   -22.7   0.4    0.6    1.5  1.8   en paroi gauche puits, palier à + 1 avant. Sur la gauche méandre imp az 205°. Deux goujons en voùte
+				5    6    1.821   324.9   -79.1   0.5    0.5    0    0     bord palier 
+				6    7    1.89    300.2   -69.1   0.6    0.7    4.2  0     
+				7    8    2.773   283.5   -55.6   0.8    0.9    4.7  0     base des ressauts
+				8    8a   2.484   280.3   3.5     0.1    0.1    1    0.3   méandre imp. 
+				8a   8b   2.944   182.9   0       0.2    0.2    0.7  0     largeur sous plafond, méandre imp.
+				8    9    1.054   318.5   -7.7    0      0      0    0     sur noeud dynema dans lunule déviation 
+				9    10   4.574   28.8    -69.3   1.35   1.21   4.9  0.6   coulée calcifiée active temporaire à droite. Point sur gros bloc en travers
+				10   10a  2.51    101.5   5.5     0.1    0.1    4.7  0     méandre imp avec trémie en voùlte
+				10   11   2.343   283.3   -30.7   0.55   0.55   1    0     fin éboulis. Sur gros bloc devant surcreusement. AN à gauche, stalagmite à droite. Surcreusemnt profond 1,4 petit actif
+				11   12   2.838   251.5   15.4    0.45   0      0    0     sur noeud amarrage en Y sur 2 goujons. Passage étroit sur visée par colonne  sur la droite (à casser)
+				12   12a  0.901   347.2   26.6    0.3    0      1.1  0.6   méandre sup.
+				12a  12b  1.964   312.1   17.7    0.3    0      0.3  1.4   toiurne à gauche ? Visée en paroi droite à 0.3 m de la voûte
+				12   13   10.837  282.7   -86.4   1.4    0.7    0    0     base puits. Paroi 1,4 devant. En arrière prof - 2,08 puis margelle sur puits
+				13   14   2.761   119.1   -21.8   0.25   0.25   0    0     coulée stalagmitique active
+				14   15   7.33    152.5   79.28   0.1    0.1    0    0     sommet imp coulée stalagmitique
+				13   16   0.93    316.1   15.16   0.58   0.58   0    0     sur petit bloc (galet morainique à côté). 0,4 m devant 2 lunules l'une sur l'autre
+				16   17   1.735   342.6   1.16    0.2    0.2    1.5  0     sous vieux spit entre 2 goujons en Y
+				17   18   0.146   221.7   -19.2   0      0      0    0     noeud Y sur 2 goujons
+				18   19   10.675  336     -72.9   0      0      0    0     entre 2 goujons en pleine paroi. palier avant avec lames
+				19   20   0.729   226     -29.6   0      0.73   0    0     décalage dans puits plein vide
+				20   21   10.105  333.7   -80.5   2.4    0.8    0    0     base puits. Largeur à gauche az 181 ° limite puits / galerie. En arrière, L= 4,4 sur paroi après vasque boueuse
+				21   21a  3.3     290.1   7.4     0      0      0    0     détail paroi fermée
+				21   22   3.83    214     1.79    1.9    0.5    1.2  0     galerie basse sol argile décanté. Sur bloc vers paroi droite
+				22   23   4.241   148.2   1.6     1.2    1.1    0.6  0.7   galerie basse sol argile décanté. Base Ch 3 en diaclase.  Point sur lame en travers avec traces de remplissage feuilletée cailloutis et argile. Après 
+				23   24   5       142.4   -5.9    1.2    0.7    3.3  1.2   A 2 m début visée, début petit surcreusement 
+				24   25   3.566   133.4   -7.89   1.73   2.4    0.7  1.4   surcreusement encombré, fait boucle à gauche
+				25   26   3.901   92      -5.3    1.7    1.3    2.4  1.3   sur mini pont argile. Belle stalamite à gauche puis une autre 1,5 m devant
+				26   27   4.129   87.8    2.8     1.2    1.9    0.8  0     paroi 2,8 m devant. Point sur arête argile en bord galerie sup Petigniagniou Jonction LITORNE. AN sur arche juste avant. Diaclase haute de 2.7 en voute
+				27   JONCTION-LC   1.687   96.6    17.3    0      0.2    0    0     JONCTION LITORNE/CORNEILLE(1) Noeud amarrage Y sur 2 goujons en voûtre. point de jonction LITORNE / CORNEILLE
+
+			JONCTION-LC  GNAGNOU1      13.149  67.1    -89.4   0     0     0     0     arête fine entre deux diaclases parallèles formant benitier à l'ouest.
+			GNAGNOU1     30a           1.1     0       -90     1     1     0     0     vasque peu profonde et mondmilch
+			30a          30b           1.912   270.2   0       1     1     0     0     vasque peu profonde et mondmilch
+			GNAGNOU1     GN2           3.718   91.9    -71.8   0     0     0     0     sur paroi inclinée du puits méandre
+			GN2          GN3           0.592   138.7   7       0     0     0     0     décalage du point plein vide
+			GN3          RACCORD-BENITIER  9.472   111.6   -85.1   0.3   0.3   0     0     base méandre étroit du petit Gnagniou dans petit actif.
+			GAL-SUP-1    GAL-SUP-2     5.631   0.6     4       3.5   0.7   2     0     au départ dans galerie sup.  H = 1 x l = 2.1/1.5, surcreusement large de 65 cm. cheminée en diaclase perpendiculaire H 2.6. Visée en amont sur banquette argileuse de droite.
+			GAL-SUP-1    GS1_a         2.149   246.2   -6.4    2     1.2   1.1   0     sur stalagmite  bord banquette droite. Surcreusement large de 40 cm.
+			GS1_a        GS1_b         1.712   213.7   -3.1    1.8   1.9   1.2   0     bord gauche surcreusement, deux belles stalagmites. ? Cheminée 3.8 m devant en diaclase perpendiculaire
+			GS1_b        GAL-SUP-3     4.209   196.5   9.8     1.8   1.8   0.2   1.5   sur noeud amarrage goujon  plafond, surcreusement large 0.8 m
+			GAL-SUP-3    GS3_a         2.748   260.1   -12.7   0.94  1.4   3.4   0     argile
+			GS3_a        GS3_b         1.06    290.1   36.57   1.53  1.03  2.2   0.3   argile
+			GS3_b        GS3_c         3.07    312.6   25.12   0.4   0.4   0.5   0     grosse plaque de guano sur remplissage total d'argile. Champignons blancs filandreux
+			GAL-SUP-3    j1            2.282   162.2   -33.8   1.1   2.1   2.6   2.6   diaclase h 2.8 sur suite galerie
+			j1           j2            5.053   141.9   -3.3    1     2.8   0.8   0.8   belle concrétion. AN devant à gauche. Diaclase H 2.5 devant
+			j2           j3            5.436   188.3   -5.6    2.5   1.2   0.8   0.8   sur sommet belle stalagmite haute de 0.7 m en bord surcreusement côté droit. Bloc coincé à - 1.6 m. Visée coupe virage à gauche
+			j3           JONCTION-LC   4.193   194.9   -1.5    0     0     0     0     sur noeud Y jonction
+
+
+	endcenterline
+
+
+
+endsurvey
