@@ -6,19 +6,19 @@ source corneilles_tot.th
 ###################################################################################################
 ################################## Selection de la map à exporter #################################
 ###################################################################################################
-select MP_corneilles@corneilles_tot       #uncomment ONLY one
-#select MC_corneilles@corneilles_tot      #uncomment ONLY one
+#select MP_corneilles@corneilles_tot       #uncomment ONLY one
+select MC_corneilles@corneilles_tot      #uncomment ONLY one
 
 
 
 
 ######################## PDF ########################
-export map \
+#export map \
      -projection plan \
      -layout plan \
      -output exports/corneilles_plan.pdf \
 
-#export map \
+export map \
      -projection extended \
      -layout coupe \
      -output exports/corneilles_coupe.pdf \
@@ -27,13 +27,13 @@ export map \
 ######################## STATIONS ########################
 # l'ordre des layouts est importants !
 
-export map \
+#export map \
      -projection plan \
      -layout plan \
      -layout centerline \
      -output exports/corneilles_plan-travail.pdf \
 
-#export map \
+export map \
      -projection extended \
      -layout coupe \
      -layout centerline \

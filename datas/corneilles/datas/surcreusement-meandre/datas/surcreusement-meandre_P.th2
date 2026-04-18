@@ -1,6 +1,6 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -128.0 -128.0 856.3449999999999 2273.665
-##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_area_zoom_to 200
 ##XTHERION## xth_me_image_insert {669.9639999999999 1 1.0} {203.52999999999997 0} surcreusement-meandre_P.xvi 0 {}
 
 
@@ -91,6 +91,46 @@ point 536.0 1934.0 stalagmite -scale s
 point 493.0 1938.5 stalagmite -scale s
 
 point 508.0 292.5 label -text "Evolution dans le méandre surcreusé<br>Grandes mains-courantes<br>Talus d'argile glissants"
+
+line floor-step
+  439.0 1902.5
+  439.0 1902.5 405.5 1893.0 422.5 1847.5
+  439.5 1802.0 438.5 1795.0 437.5 1792.5
+endline
+
+line floor-step
+  345.5 1163.0
+  345.5 1163.0 361.5 1213.5 361.0 1228.0
+endline
+
+line floor-step
+  320.5 1288.5
+  320.5 1288.5 309.0 1227.0 307.5 1202.5
+endline
+
+area water
+endarea
+
+line floor-step
+  333.5 391.0
+  333.5 391.0 358.5 425.5 362.5 435.5
+  366.5 445.5 370.0 464.0 369.0 470.5
+endline
+
+line floor-step
+  288.0 402.0
+  288.0 402.0 272.0 363.5 271.5 347.0
+endline
+
+line floor-step
+  251.5 853.0
+  251.5 853.0 227.5 826.5 223.5 820.5
+endline
+
+line floor-step
+  308.0 872.0
+  308.0 872.0 327.0 921.0 323.0 932.0
+endline
 
 line pit -id l31-503-1579 -close on -reverse on
   579.0 1938.0

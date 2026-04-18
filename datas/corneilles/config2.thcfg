@@ -49,8 +49,8 @@ layout plan
   legend-columns 3
   #colour-legend off
 
-  # grid bottom                                ### positionnement de la grille
-  # grid-size 20 20 20 m                  ### dimension de la grille
+   grid bottom                                ### positionnement de la grille
+   grid-size 50 50 50 m                  ### dimension de la grille
   # grid-coords off                           ### border = sur les bords. off = pas de coordonnées. all = partout (horrible en plan)
 
 

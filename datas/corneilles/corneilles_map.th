@@ -17,7 +17,10 @@ endmap
 
 
 
-map MC_corneilles -proj extended -title "corneilles"
+map MC_corneilles -proj extended -title "Creux de la Corneille - N°84"
+   MC_entree@entree_tot
+   break
    MC_etr-du-sbib@etr-du-sbib_tot
+   break
    MC_surcreusement-meandre@surcreusement-meandre_tot
 endmap
