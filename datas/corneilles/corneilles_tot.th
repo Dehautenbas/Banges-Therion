@@ -9,9 +9,14 @@ input corneilles_map.th
     input datas/surcreusement-meandre/surcreusement-meandre_tot.th
         equate 20@surcreusement-meandre.surcreusement-meandre_tot 50@etr-du-sbib.etr-du-sbib_tot
             join SP2_etr-du-sbib@etr-du-sbib_tot SP1_surcreusement-meandre@surcreusement-meandre_tot
+            join SC1_etr-du-sbib@etr-du-sbib_tot SC1_surcreusement-meandre@surcreusement-meandre_tot
+
     input datas/entree/entree_tot.th
         equate GAL-SUP-2@entree.entree_tot 0@surcreusement-meandre.surcreusement-meandre_tot
             join SP3_entree@entree_tot SP1_surcreusement-meandre@surcreusement-meandre_tot
+            join SC1_entree@entree_tot SC1_surcreusement-meandre@surcreusement-meandre_tot
+
+
 
     
 

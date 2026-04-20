@@ -64,13 +64,17 @@ layout coupe
   colour map-fg [96 96 86]   ###Couleur Galeries #Gris[80 80 80]#
   color map-bg 96            ### couleur du fond (80% blanc / 20% gris => 80)
 
-  scale 1  500                    
+  scale 1  300                    
   #base-scale 1 150                
+
+   grid bottom                                ### positionnement de la grille
+   grid-size 50 50 50 m                  ### dimension de la grille
+  # grid-coords off                           ### border = sur les bords. off = pas de coordonnées. all = partout (horrible en plan)
 
 
   cs UTM32
  
-  map-header -90 0 sw             ### positionnement du cartouche  Lower-left corner of the map is 0 0, upper-right corner is 100 100
+  map-header -25 30 sw             ### positionnement du cartouche  Lower-left corner of the map is 0 0, upper-right corner is 100 100
   map-header-bg on                 ### pour enlever le carroyage ou l'image de l'arrière plan de la légende
   scale-bar 25 m
   #copy scalebar_horiz

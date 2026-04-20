@@ -1,16 +1,181 @@
 encoding  utf-8
-##XTHERION## xth_me_area_zoom_to 400
-##XTHERION## xth_me_image_insert {0} {0} datas/surcreusement-meandre_C.xvi 0 {}
+##XTHERION## xth_me_area_adjust 72.0 92.0 2611.46 1663.77
+##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_image_insert {1940.7399999999998 1 1.0} {508.127 0} surcreusement-meandre_C.xvi 0 {}
 
 
 
-scrap SC1_surcreusement-meandre -projection extended -station-names "" "@surcreusement-meandre"
+scrap SC1_surcreusement-meandre -projection extended -station-names "" "@surcreusement-meandre" -flip horizontal -scale [404.0 218.0 570.0 88.0 0.0 0.0 2 0.0 m]
+
+point 2237.26 514.552 station -name 1
+
+point 2139.07 511.812 station -name 0
+
+point 2040.88 514.552 station -name 1
+
+point 1972.77 515.2620000000001 station -name 2
+
+point 1873.48 528.692 station -name 3
+
+point 1743.71 538.222 station -name 4
+
+point 1631.73 549.992 station -name 5
+
+point 1483.99 540.602 station -name 7
+
+point 1554.65 541.342 station -name 6
+
+point 1417.0500000000002 550.852 station -name 8
+
+point 1327.14 553.832 station -name 9
+
+point 1226.0700000000002 568.7520000000001 station -name 10
+
+point 1125.99 589.302 station -name 11
+
+point 1010.3000000000001 596.982 station -name 12
+
+point 872.7500000000001 605.152 station -name 13
+
+point 806.1800000000001 609.812 station -name 14
+
+point 668.3800000000001 624.532 station -name 15
+
+point 571.2400000000001 634.402 station -name 16
+
+point 448.2400000000001 636.7620000000001 station -name 17
+
+point 299.7900000000001 644.022 station -name 18
+
+point 140.53999999999985 659.5070000000001 station -name 20
+
+point 216.54000000000008 654.1020000000001 station -name 19
+
+line rope
+  241.0 650.0
+  241.0 650.0 505.0 619.0 545.0 622.0
+  585.0 625.0 789.0 587.0 836.0 599.0
+  844.67 601.21 1001.0 571.0 1089.0 588.0
+  1099.11 589.95 1228.0 529.0 1295.0 554.0
+  smooth off
+  1312.0 551.0 1402.0 491.0 1608.0 540.0
+  1609.38 540.33 1797.0 513.0 1859.0 547.0
+  1860.75 547.96 2081.0 500.0 2157.0 536.0
+  smooth off
+endline
+
+point 2157.0 536.0 anchor -scale s
+
+point 1859.0 547.0 anchor -scale s
+
+point 1608.0 540.0 anchor -scale s
+
+point 1295.0 554.0 anchor -scale s
+
+point 1089.0 588.0 anchor -scale s
+
+point 836.0 599.0 anchor -scale s
+
+point 545.0 622.0 anchor -scale s
+
+point 241.0 650.0 anchor -scale s
+
+line border
+  288.0 625.0
+  306.0 628.0 363.0 624.0 383.0 621.0
+  403.0 618.0 497.0 602.0 530.0 605.0
+  563.0 608.0 645.0 598.0 681.0 580.0
+  717.0 562.0 756.0 579.0 797.0 583.0
+  838.0 587.0 852.0 585.0 882.0 573.0
+endline
+
+line border
+  1030.0 553.0
+  1060.0 541.0 1109.0 552.0 1144.0 543.0
+  1179.0 534.0 1206.0 521.0 1238.0 525.0
+  1270.0 529.0 1339.0 519.0 1361.0 514.0
+  1383.0 509.0 1497.0 511.0 1515.0 506.0
+  1533.0 501.0 1593.0 511.0 1618.0 515.0
+  1643.0 519.0 1697.0 507.0 1719.0 500.0
+  1741.0 493.0 1773.0 509.0 1798.0 510.0
+  1823.0 511.0 1902.0 518.0 1920.0 509.0
+  1938.0 500.0 1959.0 493.0 2006.0 495.0
+  2053.0 497.0 2105.0 500.0 2120.0 496.0
+endline
+
+line wall -subtype underlying
+  153.0 617.0
+  188.0 616.0 381.0 538.0 422.0 530.0
+  463.0 522.0 518.0 531.0 557.0 516.0
+  596.0 501.0 675.0 475.0 722.0 471.0
+  769.0 467.0 833.0 449.0 879.0 443.0
+  925.0 437.0 1082.0 445.0 1118.0 441.0
+  1154.0 437.0 1229.0 416.0 1252.0 416.0
+  1275.0 416.0 1353.0 422.0 1392.0 418.0
+  1431.0 414.0 1457.0 413.0 1525.0 395.0
+  1593.0 377.0 1730.0 382.0 1773.0 379.0
+  1816.0 376.0 1961.0 387.0 1999.0 364.0
+  2037.0 341.0 2072.0 377.0 2130.0 370.0
+  2188.0 363.0 2230.0 370.0 2242.0 370.0
+  smooth off
+endline
+
+line rock-border
+  959.0 556.0
+  903.0 548.0
+endline
+
+line rock-border
+  960.0 583.0
+  959.0 556.0
+  1007.0 536.0
+endline
+
+line rock-border
+  899.0 563.0
+  960.0 583.0
+  960.0 583.0 975.0 577.0 984.0 567.0
+  993.0 557.0 1007.41 549.45 1007.0 536.0
+  1006.55 521.14 997.0 539.0 983.0 534.0
+  969.0 529.0 948.0 541.0 948.0 541.0
+  smooth off
+  903.0 548.0
+  902.0 561.0
+endline
+
+point 1208.0 491.0 stalagmite
+
+point 1527.0 464.0 stalagmite
+
+point 1588.0 471.0 stalactite
+
+line wall -reverse on
+  160.0 684.0
+  altitude .
+  183.0 684.0 274.0 662.0 318.0 662.0
+  362.0 662.0 443.0 660.0 461.0 659.0
+  479.0 658.0 531.0 642.0 562.0 646.0
+  593.0 650.0 635.0 672.0 691.0 655.0
+  747.0 638.0 834.0 614.0 908.0 627.0
+  982.0 640.0 976.0 664.0 1083.0 638.0
+  1190.0 612.0 1240.0 578.0 1279.0 577.0
+  1318.0 576.0 1374.0 579.0 1397.0 579.0
+  1420.0 579.0 1440.0 574.0 1473.0 568.0
+  1506.0 562.0 1547.0 562.0 1604.0 567.0
+  1661.0 572.0 1735.0 587.0 1783.0 578.0
+  1831.0 569.0 1917.0 562.0 1947.0 566.0
+  1977.0 570.0 2058.0 565.0 2075.0 570.0
+  altitude .
+  2092.0 575.0 2180.0 569.0 2218.0 572.0
+  smooth off
+endline
 
 endscrap
 
-scrap SC2_surcreusement-meandre -projection extended -station-names "" "@surcreusement-meandre"
+
+
+scrap SC2_surcreusement-meandre -projection extended -station-names "" "@surcreusement-meandre" -scale [404.0 218.0 570.0 88.0 0.0 0.0 2 0.0 m]
 
 endscrap
-
 
 
