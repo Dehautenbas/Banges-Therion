@@ -1,0 +1,19 @@
+encoding  utf-8
+map MP_bange -proj plan -title "Massif de Bange - Plan"
+  MP_corneilles@corneilles_tot
+  break
+  MP_epervier@epervier_tot
+  break
+#  MP_fitoja-express@fitoja-express_tot
+  MP_FE_tot@FE_tot
+
+endmap
+
+
+map MC_bange -proj extended -title "Massif de Bange - Coupe développée"
+  MC_corneilles@corneilles_tot
+  break
+  MC_epervier@epervier_tot
+  break
+  #MC_fitoja-express@fitoja-express_tot
+endmap

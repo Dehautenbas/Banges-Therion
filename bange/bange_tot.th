@@ -1,0 +1,18 @@
+encoding  utf-8
+
+survey bange_tot -title "bange"
+
+input bange_map.th
+
+
+    input datas/corneilles/corneilles_tot.th
+    input datas/epervier/epervier_tot.th
+    #input datas/fitoja-express/fitoja-express_tot.th
+    input datas/fitoja-express/datas/FE/FE_tot.th
+    
+
+
+
+
+
+endsurvey

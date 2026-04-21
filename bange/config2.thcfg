@@ -1,0 +1,162 @@
+encoding  utf-8
+
+
+################################# Layout général #############################
+layout general
+    copy langue-fr          ### Change the language
+    copy drawingconfig      ### Set colors/size of symbols, define new symbols
+    copy legend
+    copy comment
+
+    doc-title "Gouffre des Corneilles"
+    doc-author "Martin Kern"
+
+    transparency on         ### vue en transparence des galeries qui se superposent...
+    opacity 80              ### ... avec une opacité de 80%
+    rotate 0                ### rotation du nord géographique (en degré)
+
+
+    #min-symbol-scale <scale>    ### define minimal <scale>, from which points and lines are displayed on the map. 
+                                 ### Ex: for min-symbol-scale M, no points or lines scaled S and XS will be shown on the map. <scale> has the same format, as scale option for points and lines.
+        
+    
+  symbol-hide point station        
+  symbol-hide line survey
+  
+
+endlayout
+
+
+
+layout plan
+  copy general
+
+  #color map-fg scrap             ### couleur des galeries selon altitude, map ou scrap
+  #color map-fg map
+  colour map-fg [96 96 86]   ###Couleur Galeries #Gris[80 80 80]#
+  #color map-bg 96            ### couleur du fond (80% blanc / 20% gris => 80)
+
+  scale 1  500                    
+  base-scale 1 200                
+
+  cs UTM32
+ 
+  map-header -100 90 sw
+  scale-bar 25 m
+  #copy scalebar_horiz
+  #copy scalebar_vert
+  legend on     
+  legend-columns 3
+  #colour-legend off
+
+   grid bottom                                ### positionnement de la grille
+   grid-size 50 50 50 m                  ### dimension de la grille
+  # grid-coords off                           ### border = sur les bords. off = pas de coordonnées. all = partout (horrible en plan)
+
+
+endlayout
+
+layout coupe
+  copy general
+
+  #color map-fg scrap             ### couleur des galeries selon altitude, map ou scrap
+  #color map-fg map
+  colour map-fg [96 96 86]   ###Couleur Galeries #Gris[80 80 80]#
+  color map-bg 96            ### couleur du fond (80% blanc / 20% gris => 80)
+
+  scale 1  300                    
+  #base-scale 1 150                
+
+   grid bottom                                ### positionnement de la grille
+   grid-size 50 50 50 m                  ### dimension de la grille
+  # grid-coords off                           ### border = sur les bords. off = pas de coordonnées. all = partout (horrible en plan)
+
+
+  cs UTM32
+ 
+  map-header 0 -30 sw             ### positionnement du cartouche  Lower-left corner of the map is 0 0, upper-right corner is 100 100
+  map-header-bg on                 ### pour enlever le carroyage ou l'image de l'arrière plan de la légende
+  scale-bar 25 m
+  #copy scalebar_horiz
+  #copy scalebar_vert
+  legend on     
+  legend-columns 3
+  #colour-legend off
+
+endlayout
+
+
+# layout plan-images
+#   copy plan
+#   copy images
+#   symbol-show line u:images
+# endlayout
+
+
+layout comment
+  code tex-map
+      \legendwidth=20cm
+      \legendtextsize={\size[13]}
+      \legendtextheadersize={\size[32]} 
+      \legendtextsectionsize={\size[22]}  %Taille mot "Légende"
+      %\legendtextcolor={\color[0 0 110]}      %# RGB values 0--100
+   endcode
+
+map-comment "<br>\
+Localisation : Massif des Bauges - Montagne de Bange - Commune d'Arith (Savoie 73) <br>\
+Coordonnées : 0271885N  5068161E  (UTM32T)<br>\
+                   Alt :  1021m<br>\
+                    <br>\
+Exploration : Spéléo club de savoie (SCS) 1984-2026 <br>\
+Synthèse : Martin Kern <br>\ 
+Dessins : Charlie Guichebaron , Martin Kern, Jacques Nant  <br>\
+"
+
+
+
+endlayout
+
+
+
+
+layout centerline
+    symbol-show point station        
+    #debug scrap-names
+    debug station-names
+    symbol-show line survey
+endlayout
+
+
+layout yearperyear ##Pour l'export année par année ; A besoin du lookup explo date
+    copy general
+    color map-bg 96
+    map-header 5 -5 nw                   ### positionnement du cartouche 5 15
+    statistics topo off
+    statistics carto off
+    scale 1 400                      ### echelle
+    symbol-hide group all
+    symbol-show line wall
+    legend off
+    colour map-fg explo-date
+endlayout
+
+
+lookup explo-date    #Pour l'export année par année
+  [2022.1.1 2022.12.31] [] "2022"
+  [2024.1.1 2024.12.31] [] "2024"
+  [2025.1.1 2025.12.31] [] "2025"
+endlookup
+
+lookup map -title "Couleurs par réseaux"
+    MP_entree-jonction@entree-jonction_tot.FE_tot [96 96 86] " "
+    MP_fossile-sup@fossile-sup_tot.FE_tot [96 96 86] " "
+    MP_etage-sup@jonction-meduse-haute_tot.FE_tot [96 96 86] " "
+    MP_fossile-sup2@fossile-sup2_tot.FE_tot [73 83 93] " "
+    MP_jonction@jonction-meduse-haute_tot.FE_tot [96 96 86] " "
+    MP_etage-intermediaire@jonction-meduse-haute_tot.FE_tot [73 83 93] " "
+    MP_boyau-rd-jonction@boyau-rd-jonction_tot.FE_tot [96 96 86] " "
+    MP_fossile-aval@fossile-aval_tot.FE_tot [73 83 93] " "
+    MP_col-canyon-vers-meduse@col-canyon-vers-meduse_tot.FE_tot [73 83 93] " "
+    MP_meduse-inf@meduse-inf_tot.FE_tot [71 69 66] "Réseau du Serpent"
+endlookup
+
