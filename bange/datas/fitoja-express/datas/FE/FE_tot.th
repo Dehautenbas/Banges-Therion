@@ -15,7 +15,8 @@ input FE_map.th
             join ligne1@jonction-meduse-haute_tot:end l1@jonction-meduse-haute_tot:0
            # join L1_SP3_etage-intermediaire@jonction-meduse-haute_tot:end L1_SP1_fossile-sup@jonction-meduse-haute_tot:end
 
-
+    input datas/p40bis/p40bis_tot.th
+        equate FE21@jonction-meduse-haute.jonction-meduse-haute_tot 9@p40bis.p40bis_tot
 
     input datas/boyau-rd-jonction/boyau-rd-jonction_tot.th
         equate 0@boyau-rd-jonction.boyau-rd-jonction_tot MEDU24@jonction-meduse-haute.jonction-meduse-haute_tot

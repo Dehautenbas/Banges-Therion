@@ -1,0 +1,119 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128.0 -128.0 777.6049999999999 502.015
+##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_image_insert {177.16899999999998 1 1.0} {216.53099999999998 0} p40bis_P.xvi 0 {}
+
+
+
+scrap p40bis_SP1 -projection plan -station-names "" "@p40bis" -scale [984.5 1437.0 1024.0 1437.0 0.0 0.0 2 0.0 m]
+
+line wall
+  134.75 297.75
+  140.25 280.5 160.0 216.5 166.0 210.5
+  172.0 204.5 196.5 190.0 185.5 185.0
+  smooth off
+endline
+
+point 120.75 289.0 label -text imp. -scale s
+
+line map-connection
+  263.75 151.0
+  277.75 115.0
+endline
+
+line wall
+  287.0 157.5
+  347.5 202.0 220.0 181.0 213.0 185.5
+  206.0 190.0 204.0 189.0 197.0 199.0
+  190.0 209.0 185.0 209.0 181.0 220.0
+  177.0 231.0 141.0 297.0 139.0 299.5
+  smooth off
+endline
+
+area u:galerie
+  l22-254-152
+endarea
+
+line pit -id l22-254-152 -close on
+  245.25 161.5
+  239.75 159.0 245.5 137.25 250.5 131.75
+  255.5 126.25 258.75 133.5 272.25 139.5
+  285.75 145.5 298.25 154.75 298.75 160.25
+  299.25 165.75 296.25 177.75 281.75 174.25
+  267.25 170.75 250.75 164.0 245.25 161.5
+endline
+
+area u:galerie
+  l20-154-182
+endarea
+
+point 255.75 152.25 label -text E5 -scale xs
+
+point 117.5 138.5 label -text P10 -scale xs -place bottom
+
+point 199.75 171.5 label -text E17 -scale s
+
+line pit -reverse on
+  176.5 185.0
+  176.5 185.0 194.5 183.5 206.0 195.5
+  smooth off
+endline
+
+line pit -id l20-154-182 -close on
+  91.25 123.5
+  100.25 114.0 102.5 114.5 122.5 119.5
+  142.5 124.5 136.0 117.0 140.5 125.5
+  145.0 134.0 143.0 148.75 130.5 151.25
+  118.0 153.75 82.25 133.0 91.25 123.5
+endline
+
+line wall
+  145.0 124.5
+  153.0 124.5 209.0 129.5 227.0 131.5
+  245.0 133.5 269.5 144.5 287.0 157.5
+  smooth off
+endline
+
+line wall
+  185.5 185.0
+  175.5 178.5 72.0 142.0 71.0 138.0
+  70.0 134.0 111.43 122.78 145.0 124.5
+  smooth off
+endline
+
+point 140.42899999999997 129.281 station -name 6.1
+
+point 138.879 296.101 station -name 0.1
+
+point 177.16899999999998 216.53099999999998 station -name 0
+
+line pit -reverse on
+  166.5 176.5
+  166.5 171.25 164.5 164.75 172.5 157.75
+  180.5 150.75 186.75 144.5 197.0 146.25
+  207.25 148.0 211.5 146.5 217.25 154.75
+  223.0 163.0 228.5 177.75 227.75 185.0
+  smooth off
+endline
+
+point 197.219 188.93099999999998 station -name 1
+
+point 211.47899999999998 172.911 station -name 3
+
+point 197.759 158.19099999999997 station -name 2
+
+point 224.0 145.0 station -name 6
+
+point 228.68899999999996 149.471 station -name 5
+
+point 259.549 158.74099999999999 station -name 4
+
+point 290.519 151.09099999999998 station -name 7
+
+point 305.19899999999996 127.871 station -name 8
+
+point 348.029 112.53099999999999 station -name 9
+
+endscrap
+
+

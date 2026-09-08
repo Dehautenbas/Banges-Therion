@@ -12,8 +12,6 @@ survey entree -title "Entrée Corneilles jusqu à la jonction"
 		units compass degrees
 		units clino degrees
 
-		cs UTM32
-    	fix 0 0271885 5068161 0 #1021
 
    		station 0 "Corneilles" entrance
 

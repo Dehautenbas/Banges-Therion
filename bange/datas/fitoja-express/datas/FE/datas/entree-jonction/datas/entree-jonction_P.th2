@@ -1,6 +1,6 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -128.0 -1120.08 2466.0 789.92
-##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {0.0 1 1.0} {661.92 {}} P500_Fe-et-meduse-etage-inter.png 0 {}
 ##XTHERION## xth_me_image_insert {520.669 0 1.0} {84.36699999999999 BECQUET-ENTREE} entree-jonction_P.xvi 0 {}
 
@@ -213,12 +213,14 @@ line flowstone
   599.0 -67.5
   608.5 -66.5 612.0 -61.5 618.5 -78.0
   625.0 -94.5 625.0 -102.0 631.0 -103.0
+  smooth off
 endline
 
 line flowstone
   601.0 -49.5
   612.5 -46.0 628.0 -42.0 629.5 -55.0
   631.0 -68.0 634.0 -69.5 634.5 -72.5
+  smooth off
 endline
 
 line flowstone
@@ -242,6 +244,7 @@ endline
 line wall -subtype presumed
   835.5 187.0
   818.0 183.5 782.5 175.5 767.5 167.5
+  smooth off
 endline
 
 line wall
@@ -295,6 +298,7 @@ line wall
   829.5 65.0 819.0 61.5 810.5 64.5
   802.0 67.5 792.0 66.0 787.0 80.5
   782.0 95.0 763.5 136.0 773.5 141.0
+  smooth off
 endline
 
 line wall -subtype presumed
@@ -303,6 +307,13 @@ line wall -subtype presumed
   altitude .
   824.5 158.5 821.5 170.0 842.5 176.0
   smooth off
+endline
+
+line wall -reverse on
+  435.0 -116.0
+  427.0 -112.75 423.75 -108.25 424.0 -104.0
+  424.25 -99.75 432.0 -89.75 438.0 -95.0
+  444.0 -100.25 446.5 -104.75 449.0 -106.5
 endline
 
 line wall
@@ -341,8 +352,6 @@ endline
 
 point 420.5 -164.0 label -text "P10?"
 
-point 418.5 -99.0 label -text "E10?"
-
 line water-flow
   455.5 9.0
   458.5 0.5 470.5 -87.0 515.5 -126.5
@@ -359,11 +368,13 @@ endline
 line label -text "<it>etr. de la douche" -scale l
   491.0 -181.5
   508.0 -180.0 534.5 -178.5 540.0 -178.5
+  smooth off
 endline
 
 line label -text "<it>La disconcorde - P35"
   580.5 -35.5
   613.0 -24.5 645.0 -22.5 653.0 -36.5
+  smooth off
 endline
 
 line label -text "<it>la mine"

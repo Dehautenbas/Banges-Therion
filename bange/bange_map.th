@@ -1,5 +1,7 @@
 encoding  utf-8
-map MP_bange -proj plan -title "Massif de Bange - Plan"
+map MP_bange -proj plan -title "<it><center>Synthèse des principaux gouffres du massif de Bange <br>\
+Plan" 
+
   MP_corneilles@corneilles_tot
   break
   MP_epervier@epervier_tot
@@ -10,7 +12,9 @@ map MP_bange -proj plan -title "Massif de Bange - Plan"
 endmap
 
 
-map MC_bange -proj extended -title "Massif de Bange - Coupe développée"
+map MC_bange -proj extended -title "<it><center>Synthèse des principaux gouffres du massif de Bange <br>\
+Coupe développée"
+
   MC_corneilles@corneilles_tot
   break
   MC_epervier@epervier_tot

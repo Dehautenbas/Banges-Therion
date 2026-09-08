@@ -337,7 +337,7 @@ line wall
   6454.0 2384.0
 endline
 
-point 6502.0 2994.0 label -text "Canyon" -scale xs
+point 6502.0 2994.0 label -text "Canyon" -scale s
 
 line wall
   7225.77 2305.6400000000012

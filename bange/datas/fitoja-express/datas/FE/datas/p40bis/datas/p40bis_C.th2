@@ -1,0 +1,8 @@
+encoding  utf-8
+
+scrap p40bis_SC1 -projection extended -station-names "" "@p40bis" -scale [984.5 1437.0 1024.0 1437.0 0.0 0.0 2 0.0 m]
+endscrap
+
+
+
+

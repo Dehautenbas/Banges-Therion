@@ -15,9 +15,7 @@ survey epervier -title "Epervier"
 		units length meters
 		units compass degrees
 		units clino degrees
-
-		cs UTM32
-    	fix 0 0271884 5068400 0 #1036
+		
 
    		station 0 "Epervier" entrance
 

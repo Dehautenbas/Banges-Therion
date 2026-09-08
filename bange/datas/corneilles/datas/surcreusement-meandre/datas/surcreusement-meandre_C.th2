@@ -64,21 +64,21 @@ line rope
   smooth off
 endline
 
-point 2157.0 536.0 anchor -scale s
+point 2157.0 536.0 anchor 
 
-point 1859.0 547.0 anchor -scale s
+point 1859.0 547.0 anchor 
 
-point 1608.0 540.0 anchor -scale s
+point 1608.0 540.0 anchor 
 
-point 1295.0 554.0 anchor -scale s
+point 1295.0 554.0 anchor 
 
-point 1089.0 588.0 anchor -scale s
+point 1089.0 588.0 anchor 
 
-point 836.0 599.0 anchor -scale s
+point 836.0 599.0 anchor 
 
-point 545.0 622.0 anchor -scale s
+point 545.0 622.0 anchor 
 
-point 241.0 650.0 anchor -scale s
+point 241.0 650.0 anchor 
 
 line border
   288.0 625.0

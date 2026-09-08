@@ -172,6 +172,33 @@ layout custom_lines
                     %for i=0 upto li: draw point i of P; endfor;
                enddef; 
 
+
+
+               #Ligne avec subtype coulée de calcite (Flowstone)
+               def l_wall_flowstone (expr P) =
+               T:=identity;
+               cas := 0;
+               dlzka := arclength P;
+               mojkrok:=adjust_step(dlzka, .7u);
+               if (cycle P) and (dlzka < 3.5u):   % make at least 5 curls on a cyclic path
+               mojkrok := dlzka/5;
+               fi;
+
+               pickup PenC;
+               #drawoptions(withcolor black);   % ajoute la couleur noire
+
+               t1:=0;
+               forever:
+               t2 := arctime (cas + mojkrok) of P;
+               thdraw (point t1 of P){dir (angle(thdir(P,t1)) + 60)} ..
+                         {dir (angle(thdir(P,t2)) - 60)}(point t2 of P);
+               cas := cas + mojkrok;
+               exitif cas > dlzka + (mojkrok / 3); % for rounding errors
+               t1:=t2;
+               endfor;
+               enddef;
+
+
     ### new definitions
 
          ## add legend names for each new symbol definition

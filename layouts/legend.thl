@@ -75,7 +75,7 @@ layout legend
       endgroup;
     enddef;
   endcode
-
+ 
 
 
 ### Utiliser la fonction vskip pour espacer les éléments du header
@@ -92,7 +92,7 @@ code tex-map
 
       
       %print northarrow
-      \ifnortharrow\vbox to 25pt{\line{\hfil\northarrow}\vss}
+      \ifnortharrow\vbox to 70pt{\line{\hfil\northarrow}\vss}
       
 
       \fi

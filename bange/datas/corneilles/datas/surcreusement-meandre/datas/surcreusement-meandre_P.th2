@@ -80,15 +80,15 @@ area clay
   l31-503-1579
 endarea
 
-point 206.0 807.0 stalagmite -scale s
+point 206.0 807.0 stalagmite 
 
-point 336.0 1119.0 stalagmite -scale s
+point 336.0 1119.0 stalagmite 
 
-point 468.5 1915.0 stalagmite -scale s
+point 468.5 1915.0 stalagmite 
 
-point 536.0 1934.0 stalagmite -scale s
+point 536.0 1934.0 stalagmite 
 
-point 493.0 1938.5 stalagmite -scale s
+point 493.0 1938.5 stalagmite 
 
 point 508.0 292.5 label -text "Evolution dans le méandre surcreusé<br>Grandes mains-courantes<br>Talus d'argile glissants"
 

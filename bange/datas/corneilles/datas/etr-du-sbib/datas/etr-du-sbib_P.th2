@@ -28,15 +28,15 @@ line floor-step -reverse on
   smooth off
 endline
 
-point 175.75 2091.25 air-draught -orientation 75.9 -subtype summer -scale xs
+point 175.75 2091.25 air-draught -orientation 75.9 -subtype summer -scale s
 
-point 221.0 2066.5 label -text "remplissage de sable - calcite<br>10 cm de revanche" -scale xs
+point 221.0 2066.5 label -text "remplissage de sable - calcite<br>10 cm de revanche" -scale s
 
-point 260.5 2100.0 dig -scale xs
+point 260.5 2100.0 dig -scale s
 
-point 326.25 2122.75 dig -scale xs
+point 326.25 2122.75 dig -scale s
 
-point 442.5 2016.75 stalagmite -scale s
+point 442.5 2016.75 stalagmite 
 
 line floor-step -reverse on
   467.25 2031.25
@@ -52,7 +52,7 @@ endline
 
 point 490.25 2049.0 label -text "étr. du Sbib"
 
-point 531.25 1983.5 stalagmite -scale xs
+point 531.25 1983.5 stalagmite -scale s
 
 line pit
   824.5 1743.25
@@ -107,7 +107,7 @@ line floor-step
   smooth off
 endline
 
-point 749.0 1858.75 label -text "méandre inf. non topo" -scale xs
+point 749.0 1858.75 label -text "méandre inf. non topo" -scale s
 
 line pit
 endline
@@ -146,7 +146,7 @@ line wall -reverse on
   smooth off
 endline
 
-point 831.75 1752.0 label -text "P6" -scale s
+point 831.75 1752.0 label -text "P6" 
 
 line pit -close on
   813.0 1727.75
@@ -161,7 +161,7 @@ line label -text "faille glissante"
   smooth off
 endline
 
-point 882.25 1546.0 label -text "P4" -scale s
+point 882.25 1546.0 label -text "P4" 
 
 line pit -reverse on
   888.0 1536.75
@@ -448,9 +448,9 @@ line wall -reverse on
   smooth off
 endline
 
-point 617.5 246.0 dig -scale xs
+point 617.5 246.0 dig -scale s
 
-point 610.25 203.75 label -text "imp. colmatage" -scale xs
+point 610.25 203.75 label -text "imp. colmatage" -scale s
 
 area clay
   l119-638-208
@@ -481,9 +481,9 @@ area clay
   l114-580-338
 endarea
 
-point 576.0 322.0 stalagmite -scale s
+point 576.0 322.0 stalagmite 
 
-point 550.0 336.0 stalagmite -scale s
+point 550.0 336.0 stalagmite 
 
 point 596.75 338.75 label -text P7
 

@@ -6,19 +6,19 @@ source epervier_tot.th
 ###################################################################################################
 ################################## Selection de la map à exporter #################################
 ###################################################################################################
-#select MP_epervier@epervier_tot       #uncomment ONLY one
-select MC_epervier@epervier_tot      #uncomment ONLY one
+select MP_epervier@epervier_tot       #uncomment ONLY one
+#select MC_epervier@epervier_tot      #uncomment ONLY one
 
 
 
 
 ######################## PDF ########################
-#export map \
+export map \
      -projection plan \
      -layout plan \
      -output exports/epervier_plan.pdf \
 
-export map \
+#export map \
      -projection extended \
      -layout coupe \
      -output exports/epervier_coupe.pdf \
@@ -33,7 +33,7 @@ export map \
      -layout centerline \
      -output exports/epervier_plan-travail.pdf \
 
-export map \
+#export map \
      -projection extended \
      -layout coupe \
      -layout centerline \

@@ -209,13 +209,13 @@ line wall
   168.0 1321.5 164.0 1304.5 131.0 1305.0
 endline
 
-point 459.0 1833.0 label -text "étr." -scale xs
+point 459.0 1833.0 label -text "étr." -scale s
 
 point 499.5 1940.5 entrance -orientation 182.6 -scale xl
 
 point 583.0 2020.5 label -text "<it>Creux de la Corneille<br><center>N°84" -scale xl
 
-point 169.5 1572.0 label -text "étr." -scale xs
+point 169.5 1572.0 label -text "étr." -scale s
 
 point 318.5 1444.0 label -text "P20"
 
@@ -241,17 +241,17 @@ point 449.0 1734.5 label -text "R4"
 
 point 478.5 1804.0 label -text "R6"
 
-point 529.0 1285.5 anchor -scale s
+point 529.0 1285.5 anchor 
 
-point 61.0 1303.5 label -text "colm. argile" -scale s
+point 61.0 1303.5 label -text "colm. argile" 
 
-point 522.0 1457.5 label -text "Jonction Litorne" -scale s
+point 522.0 1457.5 label -text "Jonction Litorne" 
 
-point 936.5 1335.0 anchor -scale s
+point 936.5 1335.0 anchor 
 
-point 847.5 1320.5 anchor -scale s
+point 847.5 1320.5 anchor 
 
-point 778.5 1316.0 anchor -scale s
+point 778.5 1316.0 anchor 
 
 point 771.5 972.0 label -text "80m non topo; p7 actif"
 
@@ -262,9 +262,9 @@ endline
 
 point 342.5 956.0 label -text "Vers Litorne"
 
-point 548.5 1092.5 anchor -scale s
+point 548.5 1092.5 anchor 
 
-line label -text "Opposition large dans surcreusement du méandre" -scale s
+line label -text "Opposition large dans surcreusement du méandre" 
   617.0 1237.5
   617.0 1237.5 727.5 1239.5 875.0 1252.5
 endline
@@ -299,11 +299,11 @@ line rope
   641.0 1300.5 686.5 1292.0 718.0 1314.0
 endline
 
-point 718.0 1314.0 anchor -scale s
+point 718.0 1314.0 anchor 
 
-point 641.0 1300.5 anchor -scale s
+point 641.0 1300.5 anchor 
 
-point 591.5 1290.0 anchor -scale s
+point 591.5 1290.0 anchor 
 
 line rope
   591.5 1290.0
@@ -376,9 +376,9 @@ line rock-border -close on
   smooth off
 endline
 
-point 186.0 1715.5 label -text "? méandre étroit" -scale xs
+point 186.0 1715.5 label -text "? méandre étroit" -scale s
 
-point 283.0 1780.0 label -text "imp." -scale xs
+point 283.0 1780.0 label -text "imp." -scale s
 
 line wall
   134.5 1292.0

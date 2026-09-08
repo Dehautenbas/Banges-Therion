@@ -15,7 +15,7 @@ point -15.0 220.0 label -scale m -text [Dessin: Martin Kern - Yann Gardère<br>T
 
 point -239.0 317.5 label -scale xl -text Trémie-Grattoire
 
-point -193.5 553.0 label -scale xs -text [(Vu mousse de crue)]
+point -193.5 553.0 label -scale s -text [(Vu mousse de crue)]
 
 line arrow
   -198.5 592.0
@@ -24,7 +24,7 @@ endline
 
 point -193.75 576.5 label -text [La Chicane] -scale m
 
-point -137.25 623.5 label -text Etroitures -scale xs
+point -137.25 623.5 label -text Etroitures -scale s
 
 point -98.5 600.5 label -text R2
 
@@ -124,20 +124,20 @@ point 851.5 747.5 label -text [?]
 
 point 839.5 808.0 label -text [?]
 
-point 717.75 605.25 label -text Etroiture -scale xs
+point 717.75 605.25 label -text Etroiture -scale s
 
 line arrow
   703.5 616.5
   685.5 629.0
 endline
 
-point 704.0 697.0 label -text Coulées -scale s
+point 704.0 697.0 label -text Coulées 
 
-point 639.0 705.5 label -text Imp. -scale s
+point 639.0 705.5 label -text Imp. 
 
 point 523.0 502.5 label -text Calcite
 
-point 458.5 587.0 label -text Coulées -scale s
+point 458.5 587.0 label -text Coulées 
 
 point 402.5 503.0 label -text R2.5
 
@@ -158,7 +158,7 @@ point 294.48800000000006 492.514 station -name N002
 
 point 354.98800000000006 519.834 station -name N003
 
-point 544.628 557.374 blocks -scale xs
+point 544.628 557.374 blocks -scale s
 
 line rock-edge
 endline
@@ -217,9 +217,9 @@ line pit -reverse on
   smooth off
 endline
 
-point 365.25 540.5 blocks -scale xs
+point 365.25 540.5 blocks -scale s
 
-point 294.25 481.5 blocks -scale xs
+point 294.25 481.5 blocks -scale s
 
 line pit -reverse on
   281.5 511.25
@@ -243,7 +243,7 @@ line wall -subtype unsurveyed
   smooth off
 endline
 
-point 485.5 432.0 blocks -scale xs
+point 485.5 432.0 blocks -scale s
 
 area water -clip off
   l48-410-442
@@ -383,7 +383,7 @@ line wall
   smooth off
 endline
 
-point 176.75 503.0 blocks -scale xs
+point 176.75 503.0 blocks -scale s
 
 line wall
   171.75 507.75
@@ -530,7 +530,7 @@ line gradient -reverse on
   smooth off
 endline
 
-point 642.5 667.0 blocks -scale xs
+point 642.5 667.0 blocks -scale s
 
 line water-flow
   134.0 657.5
@@ -570,7 +570,7 @@ line pit -reverse on
   smooth off
 endline
 
-point -204.0 659.5 blocks -scale s
+point -204.0 659.5 blocks 
 
 line wall -reverse on
   -266.75 681.5
@@ -728,7 +728,7 @@ line wall
   smooth off
 endline
 
-point -225.5 856.5 label -text [Roche très noire] -scale xs
+point -225.5 856.5 label -text [Roche très noire] -scale s
 
 line arrow
   -82.5 757.0
@@ -737,7 +737,7 @@ endline
 
 point 181.5 715.5 label -scale m -text Siphon
 
-point -113.25 754.25 label -text Etroit -scale s
+point -113.25 754.25 label -text Etroit 
 
 point 236.75 816.5 label -scale l -text Collecteur
 

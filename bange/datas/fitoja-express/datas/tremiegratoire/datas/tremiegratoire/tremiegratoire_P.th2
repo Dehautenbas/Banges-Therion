@@ -26,7 +26,7 @@ line pit
   smooth off
 endline
 
-point 1261.75 277.25 blocks -orientation 244.8 -scale s
+point 1261.75 277.25 blocks -orientation 244.8 
 
 line slope
   1248.75 265.75
@@ -60,7 +60,7 @@ line pit
   smooth off
 endline
 
-point 1110.75 238.0 label -text "étr. verticale" -scale xs
+point 1110.75 238.0 label -text "étr. verticale" -scale s
 
 line pit
   1117.75 276.75
@@ -68,7 +68,7 @@ line pit
   smooth off
 endline
 
-point 1063.0 249.75 dig -scale xs
+point 1063.0 249.75 dig -scale s
 
 line pit
   1060.75 279.5

@@ -22,6 +22,12 @@ layout general
     
   symbol-hide point station        
   symbol-hide line survey
+
+  code metapost
+     \fonts_setup( 6, 7, 8, 10, 32 );
+
+     #The defaults are 8  10  12  16  24 for scales upto 1:100; 7  8  10  14  20 for scales upto 1:200; 6  7  8  10  14 for scales upto 1:500 and 5  6  7  8  10 for scales smaller than 1:500.
+  endcode
   
 
 endlayout
@@ -51,7 +57,7 @@ layout plan
 
    grid bottom                                ### positionnement de la grille
    grid-size 50 50 50 m                  ### dimension de la grille
-  # grid-coords off                           ### border = sur les bords. off = pas de coordonnées. all = partout (horrible en plan)
+   #grid-coords border                           ### border = sur les bords. off = pas de coordonnées. all = partout (horrible en plan)
 
 
 endlayout
@@ -104,8 +110,6 @@ layout comment
 
 map-comment "<br>\
 Localisation : Massif des Bauges - Montagne de Bange - Commune d'Arith (Savoie 73) <br>\
-Coordonnées : 0271885N  5068161E  (UTM32T)<br>\
-                   Alt :  1021m<br>\
                     <br>\
 Exploration : Spéléo club de savoie (SCS) 1984-2026 <br>\
 Synthèse : Martin Kern <br>\ 

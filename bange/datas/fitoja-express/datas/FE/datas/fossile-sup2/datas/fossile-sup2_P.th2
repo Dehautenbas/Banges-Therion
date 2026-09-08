@@ -21,7 +21,7 @@ line floor-step
   smooth off
 endline
 
-point 703.0 36.5 label -text "imp. ponct." -scale xs
+point 703.0 36.5 label -text "imp. ponct." -scale s
 
 line wall -subtype presumed
   732.0 43.0
@@ -108,9 +108,9 @@ line contour
   smooth off
 endline
 
-point 161.25 408.75 label -text "etr." -scale xs
+point 161.25 408.75 label -text "etr." -scale s
 
-point 286.5 400.0 label -text "etr." -scale xs
+point 286.5 400.0 label -text "etr." -scale s
 
 line floor-step
   479.75 263.5
@@ -262,7 +262,7 @@ line wall
   smooth off
 endline
 
-point 491.5 242.0 label -text "R4" -scale s
+point 491.5 242.0 label -text "R4" 
 
 line wall -id L2_SP2_fossile-sup2
   501.0 171.0

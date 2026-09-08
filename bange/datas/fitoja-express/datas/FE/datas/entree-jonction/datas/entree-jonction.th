@@ -8,9 +8,6 @@ centerline
     date 2024.01.04
     #tpst 2h30
 
-    cs UTM32
-    fix BECQUET-ENTREE 0271829 5067291 0 #908
-
    	station BECQUET-ENTREE "Fitoja-Express" entrance
 
 

@@ -7,9 +7,9 @@ encoding  utf-8
 
 scrap SC1_tremiegratoire -projection plan -station-names "" "@tremiegratoire" -scale [0 0 1600 0 0.0 0.0 40.64 0.0 m]
 
-point 1765.5 318.0 blocks -orientation 114.9 -scale xs
+point 1765.5 318.0 blocks -orientation 114.9 -scale s
 
-point 1681.5 289.5 blocks -scale xs
+point 1681.5 289.5 blocks -scale s
 
 point 1568.0 553.5 air-draught -orientation 137.7
 

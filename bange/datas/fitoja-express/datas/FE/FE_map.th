@@ -2,6 +2,7 @@ encoding  utf-8
 
 
 map MP_FE_tot -projection plan
+  MP_p40bis@p40bis_tot
   MP_entree-jonction@entree-jonction_tot
   MP_fossile-sup@fossile-sup_tot
   MP_etage-sup@jonction-meduse-haute_tot

@@ -89,14 +89,14 @@ point 972.9199999999998 2090.9799999999996 station -name N028
 
 point 1065.0588235294117 2245.823529411765 label -text "P41" -scale m
 
-point 2282.0 2112.0 label -text "imp" -scale xs
+point 2282.0 2112.0 label -text "imp" -scale s
 
 line arrow
   1153.0 1744.0
   1012.0 1626.0
 endline
 
-point 1204.0 1786.0 label -scale xs -text [<center>Etroiture<br>de la jonction]
+point 1204.0 1786.0 label -scale s -text [<center>Etroiture<br>de la jonction]
 
 line wall
 endline
@@ -152,24 +152,24 @@ endline
 line arrow
 endline
 
-point 1656.0 1537.0 blocks -scale s
+point 1656.0 1537.0 blocks 
 
 line rock-edge
 endline
 
-point 967.8499999999999 2046.4099999999999 blocks -scale s
+point 967.8499999999999 2046.4099999999999 blocks 
 
 line arrow
   1115.0 1978.0
   968.0 1977.0
 endline
 
-point 1200.0 1980.0 label -scale xs -text [<center>Etroiture<br>de la douche]
+point 1200.0 1980.0 label -scale s -text [<center>Etroiture<br>de la douche]
 
 line wall -subtype unsurveyed
 endline
 
-point 691.0 2081.0 label -scale xs -text [Non topo.]
+point 691.0 2081.0 label -scale s -text [Non topo.]
 
 line wall -subtype unsurveyed
   838.0 2115.0
@@ -584,7 +584,7 @@ line arrow
   1306.0 2339.0
 endline
 
-point 1563.5 2124.0 label -scale xs -text [<center>Etroiture<br>(Entonnoir de l'espoir)]
+point 1563.5 2124.0 label -scale s -text [<center>Etroiture<br>(Entonnoir de l'espoir)]
 
 line wall
   1221.28 2335.11
@@ -598,7 +598,7 @@ endscrap
 
 scrap fe2 -projection plan -station-names "" "@FE" -scale [-128.0 -128.0 4813.0419 -128.0 0.0 0.0 125.50246426 0.0 m]
 
-point 2271.0 1179.0 label -text [(Ex. descente meduse)] -scale s
+point 2271.0 1179.0 label -text [(Ex. descente meduse)] 
 
 point 2275.0 1221.0 label -scale m -text P11
 
@@ -838,7 +838,7 @@ line rock-edge -id l199-3848-1002 -visibility off
   smooth off
 endline
 
-point 4558.0 1252.0 label -text "Vers salle fitoja" -scale s -visibility off
+point 4558.0 1252.0 label -text "Vers salle fitoja"  -visibility off
 
 line pit -reverse on
   4462.0 628.0
@@ -885,7 +885,7 @@ line rock-edge -id l634-4416-889 -close on -visibility off
   4672.09 903.99 4594.0 912.0 4575.0 913.0
 endline
 
-line arrow -scale s
+line arrow 
   4684.0 1444.0
   4572.0 848.0
 endline
@@ -980,11 +980,11 @@ line chimney
   smooth off
 endline
 
-point 3476.0 1008.0 blocks -scale xs
+point 3476.0 1008.0 blocks -scale s
 
-point 3544.0 990.0 blocks -scale s
+point 3544.0 990.0 blocks 
 
-point 3322.0 1622.0 label -scale xs -text [<center>Partie souterraine<br>du collecteur<br>(entre blocs)]
+point 3322.0 1622.0 label -scale s -text [<center>Partie souterraine<br>du collecteur<br>(entre blocs)]
 
 point 3600.369999999999 945.1099999999997 blocks
 
@@ -1039,7 +1039,7 @@ endscrap
 
 scrap fe1 -projection plan -station-names "" "@FE" -scale [-128.0 -128.0 4813.0419 -128.0 0.0 0.0 125.50246426 0.0 m]
 
-point 4.0 3636.0 label -text [UTM X: 271.786 Y: 5067.271 Zone 32T - Z: 900 m<br>Dessin: Yann Gardère<br>Topographes: Julie Siégel - Rémi Wyplata - Paul Bailleul<br>Simon Lefebvre - Yann Gardère<br>2016] -scale s -visibility on
+point 4.0 3636.0 label -text [UTM X: 271.786 Y: 5067.271 Zone 32T - Z: 900 m<br>Dessin: Yann Gardère<br>Topographes: Julie Siégel - Rémi Wyplata - Paul Bailleul<br>Simon Lefebvre - Yann Gardère<br>2016]  -visibility on
 
 point 4.0 3920.0 label -text [(Trou FE)] -scale l -visibility on
 
@@ -1248,7 +1248,7 @@ line pit -close on -clip off -outline out
   781.34 2343.44 763.82 2381.41 746.0 2391.0
 endline
 
-point 1294.5 2535.5 label -text "Mine" -scale xs
+point 1294.5 2535.5 label -text "Mine" -scale s
 
 point 1305.0 2646.0 danger
 
@@ -1267,7 +1267,7 @@ line arrow -reverse on
   1019.0 2466.0
 endline
 
-point 957.0 2370.5 blocks -scale s
+point 957.0 2370.5 blocks 
 
 line arrow
   296.0 3440.0
@@ -1295,7 +1295,7 @@ line wall
   smooth off
 endline
 
-point 1529.0 2541.0 label -scale xs -text Imp.
+point 1529.0 2541.0 label -scale s -text Imp.
 
 point 1664.4285714285716 2390.285714285714 label -text "P5" -scale m
 
@@ -1363,13 +1363,13 @@ endscrap
 
 scrap labyrinthe -projection plan -station-names "" "@FE" -scale [-128.0 -128.0 4813.0419 -128.0 0.0 0.0 125.50246426 0.0 m]
 
-point 1830.0 2918.0 label -scale xs -text [Balcons sur collecteur]
+point 1830.0 2918.0 label -scale s -text [Balcons sur collecteur]
 
-point 1788.0 2640.0 label -text "Labyr." -scale xs -place bottom
+point 1788.0 2640.0 label -text "Labyr." -scale s -place bottom
 
-point 1716.0 1354.0 label -orientation 45.7 -text "Labyr." -scale xs -place bottom
+point 1716.0 1354.0 label -orientation 45.7 -text "Labyr." -scale s -place bottom
 
-point 1016.0 3058.0 label -orientation 77.5 -text "Labyr." -scale xs -place bottom
+point 1016.0 3058.0 label -orientation 77.5 -text "Labyr." -scale s -place bottom
 
 line wall
   1051.0 3108.0
@@ -1610,7 +1610,7 @@ endline
 
 point 3262.0 6486.0 label -scale xl -visibility on -text COLLECTEUR
 
-point 3300.0 6080.0 label -text [Dessin: Yann Gardère<br>Topographes: Matthieu Benoit - Nicolas Baudier - Yann Gardère<br>2022] -scale s -visibility on
+point 3300.0 6080.0 label -text [Dessin: Yann Gardère<br>Topographes: Matthieu Benoit - Nicolas Baudier - Yann Gardère<br>2022]  -visibility on
 
 point 2534.0 1720.0 blocks
 
@@ -2055,7 +2055,7 @@ endline
 
 point 2070.0 4012.0 blocks -clip off
 
-point 1752.0 3558.0 label -text "Probable, non verifié" -scale xs
+point 1752.0 3558.0 label -text "Probable, non verifié" -scale s
 
 line arrow
   2308.0 4096.0
@@ -2119,11 +2119,11 @@ line wall
   smooth off
 endline
 
-point 2054.0 3674.0 blocks -scale xs -clip off
+point 2054.0 3674.0 blocks -scale s -clip off
 
-point 2168.0 3334.0 blocks -scale xs -clip off
+point 2168.0 3334.0 blocks -scale s -clip off
 
-point 2202.0 2912.0 blocks -scale xs -clip off
+point 2202.0 2912.0 blocks -scale s -clip off
 
 line dripline -clip off
   2896.0 1148.0

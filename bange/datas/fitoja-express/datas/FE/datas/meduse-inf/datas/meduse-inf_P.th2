@@ -659,9 +659,9 @@ endline
 
 point 1474.5 680.5 stalagmite
 
-point 973.0 1008.0 label -text "étage inter." -scale s
+point 973.0 1008.0 label -text "étage inter." 
 
-point 1043.0 891.0 label -text "étage inter." -scale s
+point 1043.0 891.0 label -text "étage inter." 
 
 line wall -reverse on
   1019.0 901.0
@@ -703,7 +703,7 @@ endline
 
 point 1661.0 730.5 label -text "<it>méduse - P10" -scale l
 
-point 1253.5 600.0 label -text ch15 -scale xs
+point 1253.5 600.0 label -text ch15 -scale s
 
 point 1066.0 737.5 stalagmite
 
@@ -870,7 +870,7 @@ line wall -reverse on
   smooth off
 endline
 
-point 1440.0 1097.0 label -orientation 44.6 -text "strates décollées" -scale xs
+point 1440.0 1097.0 label -orientation 44.6 -text "strates décollées" -scale s
 
 point 1049.0 815.0 flute
 

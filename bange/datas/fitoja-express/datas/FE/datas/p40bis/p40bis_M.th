@@ -1,0 +1,9 @@
+encoding  utf-8
+map MP_p40bis -proj plan -title "p40bis"
+    p40bis_SP1
+endmap
+
+
+map MC_p40bis -proj extended -title "p40bis"
+    p40bis_SC1
+endmap

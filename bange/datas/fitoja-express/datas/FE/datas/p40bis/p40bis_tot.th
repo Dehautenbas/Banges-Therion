@@ -1,0 +1,21 @@
+encoding  utf-8
+survey p40bis_tot -title "p40bis"
+
+input p40bis_M.th
+
+
+    input datas/p40bis.th    
+
+    
+
+
+#####   PLAN    #####
+    input datas/p40bis_P.th2
+
+
+##### COUPE EXTENTED #####   
+    input datas/p40bis_C.th2
+
+
+
+endsurvey

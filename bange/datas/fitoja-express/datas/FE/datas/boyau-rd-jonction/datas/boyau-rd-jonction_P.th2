@@ -65,7 +65,7 @@ line arrow
   472.75 391.75
 endline
 
-point 488.5 374.0 label -text "imp." -scale xs
+point 488.5 374.0 label -text "imp." -scale s
 
 line pit -id l40-473-394 -close on -reverse on
   466.5 395.75
@@ -139,7 +139,7 @@ line arrow
   294.5 558.75
 endline
 
-point 280.75 513.75 label -text "jonction imp. galerie sup." -scale xs
+point 280.75 513.75 label -text "jonction imp. galerie sup." -scale s
 
 line chimney -close on
   290.25 573.0
@@ -409,7 +409,7 @@ line label -id l90-589-373 -close on
   591.75 374.0 591.25 375.0 585.25 371.5
 endline
 
-point 578.75 345.0 label -text "etr. aquatique" -scale xs
+point 578.75 345.0 label -text "etr. aquatique" -scale s
 
 line water-flow
   543.75 359.75
@@ -427,7 +427,7 @@ endline
 line water-flow
 endline
 
-point 217.25 128.25 label -text "salle blanche" -scale xs
+point 217.25 128.25 label -text "salle blanche" -scale s
 
 line pit
   393.5 238.75

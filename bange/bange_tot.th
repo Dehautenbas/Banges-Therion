@@ -6,13 +6,37 @@ input bange_map.th
 
 
     input datas/corneilles/corneilles_tot.th
+        equate 0@entree.entree_tot.corneilles_tot 0_corneilles_alti-2
     input datas/epervier/epervier_tot.th
+        equate 0@epervier.epervier_tot 0_epervier_alti-2
     #input datas/fitoja-express/fitoja-express_tot.th
     input datas/fitoja-express/datas/FE/FE_tot.th
+        equate BECQUET-ENTREE@entree-jonction.entree-jonction_tot.FE_tot BECQUET-ENTREE_alti-2
     
 
+centerline
+
+data normal from to length compass clino ignoreall
+cs UTM32
+
+    #FE
+    BECQUET-ENTREE_alti BECQUET-ENTREE_alti-2 0.01 0.01 0.01
+    fix BECQUET-ENTREE_alti 0271829 5067291                     908
+
+    #Corneilles
+    0_corneilles_alti 0_corneilles_alti-2 0.01 0.01 0.01
+    fix 0_corneilles_alti 0271885 5068161                       1021
+
+    #Epervier 
+    0_epervier_alti 0_epervier_alti-2 0.01 0.01 0.01
+    fix 0_epervier_alti 0271884 5068400                         1036   
 
 
+data normal from to length compass clino left right up down ignoreall
+
+    extend right
+    0_corneilles_alti 0_epervier_alti 240 358.5 3.576 0 0 0 0
 
 
+endcenterline
 endsurvey

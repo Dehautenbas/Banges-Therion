@@ -1,5 +1,6 @@
 encoding  utf-8
-map MP_corneilles -proj plan -title "Creux de la Corneille - N°84"  
+map MP_corneilles -proj plan -title "<it><center>Creux de la Corneille - N°84 <br>\
+Plan"  
    MP_entree@entree_tot
    break
    MP_etr-du-sbib@etr-du-sbib_tot
@@ -17,7 +18,8 @@ endmap
 
 
 
-map MC_corneilles -proj extended -title "Creux de la Corneille - N°84"
+map MC_corneilles -proj extended -title "<it><center>Creux de la Corneille - N°84 <br>\
+Coupe développée"
    MC_entree@entree_tot
    break
    MC_etr-du-sbib@etr-du-sbib_tot

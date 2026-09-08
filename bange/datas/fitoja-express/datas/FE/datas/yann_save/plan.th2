@@ -49,15 +49,15 @@ point 2107.29 3074.89 station -name N0930
 
 point 2070.0 4012.0 blocks -clip off
 
-point 2202.0 2912.0 blocks -scale xs -clip off
+point 2202.0 2912.0 blocks -scale s -clip off
 
-point 1464.0 4338.0 label -text Pxx -scale xs
+point 1464.0 4338.0 label -text Pxx -scale s
 
-point 1400.0 4080.0 label -text P3 -scale xs
+point 1400.0 4080.0 label -text P3 -scale s
 
-point 2168.0 3334.0 blocks -scale xs -clip off
+point 2168.0 3334.0 blocks -scale s -clip off
 
-point 2054.0 3674.0 blocks -scale xs -clip off
+point 2054.0 3674.0 blocks -scale s -clip off
 
 line wall -reverse on
   2108.0 5284.0
@@ -250,14 +250,14 @@ endline
 line wall
 endline
 
-point 1752.0 3558.0 label -text "Probable, non verifié" -scale xs
+point 1752.0 3558.0 label -text "Probable, non verifié" -scale s
 
 line arrow
   1774.0 3622.0
   1794.0 4224.0
 endline
 
-point 1830.0 2918.0 label -scale xs -text [Balcons sur collecteur]
+point 1830.0 2918.0 label -scale s -text [Balcons sur collecteur]
 
 line wall -subtype unsurveyed
   1728.0 4202.0
@@ -308,9 +308,9 @@ line arrow
   2094.0 4652.0
 endline
 
-point 1738.0 4636.0 label -text R5 -scale xs
+point 1738.0 4636.0 label -text R5 -scale s
 
-point 1952.0 4544.0 label -text R4 -scale xs
+point 1952.0 4544.0 label -text R4 -scale s
 
 line arrow
   1460.0 4074.0
@@ -339,7 +339,7 @@ line arrow
   1672.0 5118.0
 endline
 
-point 1824.0 5236.0 label -text P6 -scale xs
+point 1824.0 5236.0 label -text P6 -scale s
 
 line overhang -reverse on
   1556.0 4820.0
@@ -533,7 +533,7 @@ area ice
   l238-1780-2964
 endarea
 
-point 2384.0 4084.0 label -scale xs -text Vire
+point 2384.0 4084.0 label -scale s -text Vire
 
 line wall -reverse on -subtype unsurveyed
   1964.0 2556.0
@@ -594,11 +594,11 @@ line arrow
   2176.0 4444.0
 endline
 
-point 2452.0 4356.0 label -scale xs -text Cascade
+point 2452.0 4356.0 label -scale s -text Cascade
 
-point 3280.0 6128.0 label -text [Dessin: Yann Gardère<br>Topographes: Matthieu Benoit - Nicolas Baudier - Yann Gardère<br>2022] -scale s
+point 3280.0 6128.0 label -text [Dessin: Yann Gardère<br>Topographes: Matthieu Benoit - Nicolas Baudier - Yann Gardère<br>2022] 
 
-point 0.0 3552.0 label -text [UTM X: 271.786 Y: 5067.271 Zone 32T - Z: 900 m<br>Dessin: Yann Gardère<br>Topographes: Julie Siégel - Rémi Wyplata - Paul Bailleul<br>Simon Lefebvre - Yann Gardère<br>2016] -scale s
+point 0.0 3552.0 label -text [UTM X: 271.786 Y: 5067.271 Zone 32T - Z: 900 m<br>Dessin: Yann Gardère<br>Topographes: Julie Siégel - Rémi Wyplata - Paul Bailleul<br>Simon Lefebvre - Yann Gardère<br>2016] 
 
 point 3278.0 6458.0 label -scale xl -text [COLLECTEUR DES ETIORNEAUX]
 
@@ -702,20 +702,20 @@ point 964.4099999999999 2008.62 station -name N029
 
 point 972.9199999999998 2090.9799999999996 station -name N028
 
-point 1020.0 2492.0 label -text "R2" -scale xs
+point 1020.0 2492.0 label -text "R2" -scale s
 
-point 591.3529411764706 2544.4117647058824 label -text "P16" -scale s
+point 591.3529411764706 2544.4117647058824 label -text "P16" 
 
-point 1065.0588235294117 2245.823529411765 label -text "P41" -scale xs
+point 1065.0588235294117 2245.823529411765 label -text "P41" -scale s
 
-point 2282.0 2112.0 label -text "imp" -scale xs
+point 2282.0 2112.0 label -text "imp" -scale s
 
 line arrow
   1166.0 1746.0
   1012.0 1626.0
 endline
 
-point 1204.0 1786.0 label -text "Etroiture<br>de la jonction" -scale xs
+point 1204.0 1786.0 label -text "Etroiture<br>de la jonction" -scale s
 
 line wall
 endline
@@ -762,7 +762,7 @@ line arrow -reverse on
   1019.0 2466.0
 endline
 
-point 957.0 2370.5 blocks -scale s
+point 957.0 2370.5 blocks 
 
 line pit -reverse on
   668.0 2675.0
@@ -781,7 +781,7 @@ line arrow
   1741.0 1136.0
 endline
 
-point 1570.0 883.0 label -text "P10" -scale xs
+point 1570.0 883.0 label -text "P10" -scale s
 
 line arrow
   2069.0 1079.0
@@ -793,7 +793,7 @@ line arrow
   2038.0 920.0
 endline
 
-point 2157.0 957.0 label -text "P11" -scale xs
+point 2157.0 957.0 label -text "P11" -scale s
 
 line wall
   1556.0 1594.0
@@ -823,7 +823,7 @@ endline
 line arrow
 endline
 
-point 1656.0 1537.0 blocks -scale s
+point 1656.0 1537.0 blocks 
 
 line rock-edge
 endline
@@ -835,14 +835,14 @@ line pit -reverse on
   smooth off
 endline
 
-point 967.8499999999999 2046.4099999999999 blocks -scale s
+point 967.8499999999999 2046.4099999999999 blocks 
 
 line arrow
   1128.0 2016.0
   964.4099999999999 2008.62
 endline
 
-point 1176.0 2018.0 label -text "Etroiture<br>de la douche" -scale xs
+point 1176.0 2018.0 label -text "Etroiture<br>de la douche" -scale s
 
 line wall -reverse on
   932.0 1950.0
@@ -942,7 +942,7 @@ line pit -reverse on
   smooth off
 endline
 
-point 1358.0 5808.0 label -align center -scale s -text [<center>- Litorne<br>- Pic noir]
+point 1358.0 5808.0 label -align center  -text [<center>- Litorne<br>- Pic noir]
 
 point 1352.0 6013.0 label -align center -text Arrivée -scale l
 
@@ -951,7 +951,7 @@ line arrow -visibility off
   4952.0 934.0
 endline
 
-point 3322.0 1622.0 label -scale xs -text [<center>Partie souterraine<br>du collecteur<br>(entre blocs)]
+point 3322.0 1622.0 label -scale s -text [<center>Partie souterraine<br>du collecteur<br>(entre blocs)]
 
 line arrow
   4684.0 1444.0
@@ -1005,7 +1005,7 @@ line rock-edge -id l199-3848-1002 -visibility off
   smooth off
 endline
 
-point 4558.0 1252.0 label -text "Vers salle fitoja" -scale s -visibility off
+point 4558.0 1252.0 label -text "Vers salle fitoja"  -visibility off
 
 line wall
 endline
@@ -1166,7 +1166,7 @@ endline
 
 point 2272.0 1732.0 label -text "R4"
 
-point 3544.0 990.0 blocks -scale s
+point 3544.0 990.0 blocks 
 
 line chimney
   2596.0 1758.0
@@ -1185,16 +1185,16 @@ line chimney
   smooth off
 endline
 
-point 3476.0 1008.0 blocks -scale xs
+point 3476.0 1008.0 blocks -scale s
 
 line arrow
   2262.0 3952.0
   2162.0 4060.0
 endline
 
-point 2316.0 3910.0 label -text "Pxx - Environ 11m." -scale xs
+point 2316.0 3910.0 label -text "Pxx - Environ 11m." -scale s
 
-point 1266.0 5528.0 entrance -orientation 7.5 -scale s
+point 1266.0 5528.0 entrance -orientation 7.5 
 
 line dripline -clip off
   2312.0 2544.0
@@ -1533,9 +1533,9 @@ line wall -reverse on
   smooth off
 endline
 
-point 1661.4285714285716 2384.285714285714 label -text "P5" -scale xs
+point 1661.4285714285716 2384.285714285714 label -text "P5" -scale s
 
-point 698.7841945288753 1818.5355070461455 label -text "P15" -scale xs
+point 698.7841945288753 1818.5355070461455 label -text "P15" -scale s
 
 line wall -reverse on
   1221.28 2335.11
@@ -1607,11 +1607,11 @@ line rock-edge
   smooth off
 endline
 
-point 4380.0 1050.0 label -text "P13" -scale s
+point 4380.0 1050.0 label -text "P13" 
 
-point 4210.0 1066.0 label -text "P8" -scale s
+point 4210.0 1066.0 label -text "P8" 
 
-point 2272.0 1224.0 label -scale xs -text [<center>P11<br>(Ex. descente meduse)]
+point 2272.0 1224.0 label -scale s -text [<center>P11<br>(Ex. descente meduse)]
 
 line rock-edge
 endline
@@ -1665,7 +1665,7 @@ area water -clip off
   l200-3656-994
 endarea
 
-point 1471.0 2713.0 label -text "Trémie + R2" -scale xs
+point 1471.0 2713.0 label -text "Trémie + R2" -scale s
 
 point 1046.3823529411766 2603.294117647059 label -text "Entrée" -scale l
 
@@ -1690,13 +1690,13 @@ line wall -reverse on
   smooth off
 endline
 
-point 1788.0 2640.0 label -text "Labyr." -scale xs -place bottom
+point 1788.0 2640.0 label -text "Labyr." -scale s -place bottom
 
-point 1016.0 3058.0 label -orientation 77.5 -text "Labyr." -scale xs -place bottom
+point 1016.0 3058.0 label -orientation 77.5 -text "Labyr." -scale s -place bottom
 
-point 1716.0 1354.0 label -orientation 45.7 -text "Labyr." -scale xs -place bottom
+point 1716.0 1354.0 label -orientation 45.7 -text "Labyr." -scale s -place bottom
 
-point 2120.6666666666665 1098.6666666666665 label -text "R4" -scale xs
+point 2120.6666666666665 1098.6666666666665 label -text "R4" -scale s
 
 line pit
   861.0 1747.0
@@ -1926,14 +1926,14 @@ line pit -close on -clip off -outline out
   781.34 2343.44 763.82 2381.41 746.0 2391.0
 endline
 
-point 1312.5 2521.5 label -text "Mine" -scale xs
+point 1312.5 2521.5 label -text "Mine" -scale s
 
 line arrow
   1430.0 2134.0
   1309.0 2345.5
 endline
 
-point 1471.5 2115.0 label -text "Etroiture<br>(Entonnoir de l'espoir)" -scale xs
+point 1471.5 2115.0 label -text "Etroiture<br>(Entonnoir de l'espoir)" -scale s
 
 line arrow
   1297.0 2492.0
@@ -1979,7 +1979,7 @@ scrap fitoja -projection plan -scale [-128.0 -128.0 4813.0419 -128.0 0.0 0.0 125
 area ice
 endarea
 
-point 10824.0 3160.0 label -text [Dessin: Yann Gardère<br>Topographes:  Jérome Poletti - Eric Burdo<br>Matthieu Benoit - Yann Gardère<br>2018-2021] -scale s
+point 10824.0 3160.0 label -text [Dessin: Yann Gardère<br>Topographes:  Jérome Poletti - Eric Burdo<br>Matthieu Benoit - Yann Gardère<br>2018-2021] 
 
 point 10822.0 3502.0 label -scale xl -text [SALLE FITOJA]
 

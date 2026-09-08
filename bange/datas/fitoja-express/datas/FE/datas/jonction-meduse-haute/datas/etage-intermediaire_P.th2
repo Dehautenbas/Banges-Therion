@@ -147,7 +147,7 @@ point 1055.7089999999998 -533.018 station -name MEDU23
 
 point 1068.809 -527.668 station -name MEDU22_2
 
-point 873.0 -272.0 label -text "P10 sur étage inf" -scale xs
+point 873.0 -272.0 label -text "P10 sur étage inf" -scale s
 
 line pit
   869.5 -311.0
@@ -201,7 +201,7 @@ point 380.59099999999995 545.77 station -name 5
 
 point 367.0 417.5 debris
 
-point 319.0 537.5 label -text "colm." -scale xs
+point 319.0 537.5 label -text "colm." -scale s
 
 line floor-step
   392.5 490.5
@@ -209,7 +209,7 @@ line floor-step
   smooth off
 endline
 
-point 315.0 425.0 label -text "imp. blocs" -scale xs
+point 315.0 425.0 label -text "imp. blocs" -scale s
 
 line fault -clip off -outline none
   224.0 388.0
@@ -445,7 +445,7 @@ area u:galerie
   l109-896--980
 endarea
 
-point 930.0 -971.25 label -orientation 339.5 -text "R5/R3 étage inf. "-place top -scale xs
+point 930.0 -971.25 label -orientation 339.5 -text "R5/R3 étage inf. "-place top -scale s
 
 line pit -id l109-896--980 -close on -reverse on
   934.5 -929.0
@@ -645,7 +645,7 @@ area u:galerie
   l115-1037--1120
 endarea
 
-point 1019.25 -1094.5 label -orientation 53.3 -text "P10 étage inf" -scale xs -place top
+point 1019.25 -1094.5 label -orientation 53.3 -text "P10 étage inf" -scale s -place top
 
 line flowstone
   1032.0 -1053.0

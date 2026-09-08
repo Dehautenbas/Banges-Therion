@@ -19,7 +19,13 @@ layout general
     #min-symbol-scale <scale>    ### define minimal <scale>, from which points and lines are displayed on the map. 
                                  ### Ex: for min-symbol-scale M, no points or lines scaled S and XS will be shown on the map. <scale> has the same format, as scale option for points and lines.
         
-    
+  code metapost
+     \fonts_setup( 6, 7, 8, 10, 32 );
+
+     #The defaults are 8  10  12  16  24 for scales upto 1:100; 7  8  10  14  20 for scales upto 1:200; 6  7  8  10  14 for scales upto 1:500 and 5  6  7  8  10 for scales smaller than 1:500.
+
+     
+  endcode
   symbol-hide point station        
   symbol-hide line survey
   
@@ -41,7 +47,7 @@ layout plan
 
   cs UTM32
  
-  map-header 0 0 sw
+  map-header -20 100 ne
   scale-bar 25 m
   #copy scalebar_horiz
   #copy scalebar_vert
@@ -49,9 +55,9 @@ layout plan
   legend-columns 3
   #colour-legend off
 
-   grid bottom                                ### positionnement de la grille
-   grid-size 50 50 50 m                  ### dimension de la grille
-  # grid-coords off                           ### border = sur les bords. off = pas de coordonnées. all = partout (horrible en plan)
+   #grid bottom                                ### positionnement de la grille
+   #grid-size 50 50 50 m                  ### dimension de la grille
+   # grid-coords off                           ### border = sur les bords. off = pas de coordonnées. all = partout (horrible en plan)
 
 
 endlayout
@@ -67,14 +73,14 @@ layout coupe
   scale 1  300                    
   #base-scale 1 150                
 
-   grid bottom                                ### positionnement de la grille
-   grid-size 50 50 50 m                  ### dimension de la grille
+   #grid bottom                                ### positionnement de la grille
+   #grid-size 50 50 50 m                  ### dimension de la grille
   # grid-coords off                           ### border = sur les bords. off = pas de coordonnées. all = partout (horrible en plan)
 
 
   cs UTM32
  
-  map-header 0 -30 sw             ### positionnement du cartouche  Lower-left corner of the map is 0 0, upper-right corner is 100 100
+  map-header 100 -10 ne             ### positionnement du cartouche  Lower-left corner of the map is 0 0, upper-right corner is 100 100
   map-header-bg on                 ### pour enlever le carroyage ou l'image de l'arrière plan de la légende
   scale-bar 25 m
   #copy scalebar_horiz
@@ -104,12 +110,12 @@ layout comment
 
 map-comment "<br>\
 Localisation : Massif des Bauges - Montagne de Bange - Commune d'Arith (Savoie 73) <br>\
-Coordonnées : 0271885N  5068161E  (UTM32T)<br>\
-                   Alt :  1021m<br>\
+Coordonnées : 0271884E  5068400X  (UTM32T)<br>\
+                   Alt :  1036m<br>\
                     <br>\
-Exploration : Spéléo club de savoie (SCS) 1984-2026 <br>\
+Exploration : Spéléo club de savoie (SCS) 1980 - 2023 <br>\
 Synthèse : Martin Kern <br>\ 
-Dessins : Charlie Guichebaron , Martin Kern, Jacques Nant  <br>\
+Dessins : Jacques Nant  <br>\
 "
 
 

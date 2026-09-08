@@ -7,13 +7,13 @@ source bange_tot.th
 ################################## Selection de la map à exporter #################################
 ###################################################################################################
 #select MP_bange@bange_tot       #uncomment ONLY one
-#select MC_bange@bange_tot      #uncomment ONLY one
+select MC_bange@bange_tot      #uncomment ONLY one
 
 
 
 
 ######################## PDF ########################
-export map \
+#export map \
      -projection plan \
      -layout plan \
      -output exports/bange_plan.pdf \
@@ -27,13 +27,13 @@ export map \
 ######################## STATIONS ########################
 # l'ordre des layouts est importants !
 
-export map \
+#export map \
      -projection plan \
      -layout plan \
      -layout centerline \
      -output exports/bange_plan-travail.pdf \
 
-export map \
+#export map \
      -projection extended \
      -layout coupe \
      -layout centerline \
@@ -93,11 +93,20 @@ export map \
 
 
 ######################## MODELE 3D ########################
-    export model \
+    #export model \
      -format loch \
      -o exports/bange-3d.lox \
      #-wall-source maps
 
+    #export model \
+     -format dxf \
+     -o exports/bange-3d.dxf \
+     #-wall-source maps
+
+    export model \
+     -format shp \
+     -o exports/bange-3d.shp \
+     #-wall-source maps
 
 
 ######################## KML #######################

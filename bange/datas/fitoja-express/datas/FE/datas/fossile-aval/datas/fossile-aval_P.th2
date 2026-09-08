@@ -85,7 +85,7 @@ endline
 
 point 2028.5 -1186.5 label -text "imp."
 
-point 1765.5 -846.0 label -text "imp. argile" -scale xs
+point 1765.5 -846.0 label -text "imp. argile" -scale s
 
 line water-flow
   1716.5 -792.5
@@ -149,7 +149,7 @@ endline
 
 point 1532.5 -1170.0 air-draught -orientation 343.9 -subtype winter
 
-point 1608.5 -1166.0 label -text "? désob" -scale xs
+point 1608.5 -1166.0 label -text "? désob" -scale s
 
 point 1553.5 -1120.5 stalagmite
 
@@ -193,7 +193,7 @@ point 1415.5 -188.0 stalagmite
 
 point 1305.0 -216.5 wall-calcite
 
-line label -text "galerie basse - argile calcifiée" -scale s
+line label -text "galerie basse - argile calcifiée" 
   1252.0 -216.0
   1293.5 -192.5 1472.0 -132.5 1496.0 -130.0
   smooth off

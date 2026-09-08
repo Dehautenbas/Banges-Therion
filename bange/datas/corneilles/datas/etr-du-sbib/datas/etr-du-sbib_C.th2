@@ -38,9 +38,9 @@ point 690.0 625.0 label -scale m -text "P7"
 
 point 711.5 523.0 debris
 
-point 568.5 696.5 stalactite -scale s
+point 568.5 696.5 stalactite 
 
-point 824.0 730.5 dig -scale xs
+point 824.0 730.5 dig -scale s
 
 line rope
   729.5 704.0
@@ -60,11 +60,11 @@ endline
 area water
 endarea
 
-point 370.5 706.0 anchor -scale s
+point 370.5 706.0 anchor 
 
-point 616.0 695.0 anchor -scale s
+point 616.0 695.0 anchor 
 
-point 729.5 704.0 anchor -scale s
+point 729.5 704.0 anchor 
 
 line wall -reverse on
   345.0 723.5
@@ -124,7 +124,7 @@ line border
   747.0 685.5 764.0 694.5 768.0 694.0
 endline
 
-point 816.0 761.0 label -scale xs -text "imp. colmatage"
+point 816.0 761.0 label -scale s -text "imp. colmatage"
 
 line border
   620.0 671.5
@@ -146,7 +146,7 @@ endline
 line rope
 endline
 
-point 1271.0 559.5 label -scale xs -text "ramping argileux"
+point 1271.0 559.5 label -scale s -text "ramping argileux"
 
 line label -text "faille glissante"
   981.0 506.5
@@ -167,7 +167,7 @@ line rope
   1111.5 591.0
 endline
 
-point 1118.0 626.0 anchor -scale s
+point 1118.0 626.0 anchor 
 
 line wall -reverse on
   1171.0 362.0
@@ -275,11 +275,11 @@ line wall -reverse on
   2910.5 639.0 2915.0 583.0 2915.0 577.5
 endline
 
-point 3726.5 821.5 dig -scale xs
+point 3726.5 821.5 dig -scale s
 
-point 3615.5 820.0 dig -scale xs
+point 3615.5 820.0 dig -scale s
 
-point 3395.5 820.5 dig -scale xs
+point 3395.5 820.5 dig -scale s
 
 line label -text "étr. du Sbib"
   3376.5 759.0
